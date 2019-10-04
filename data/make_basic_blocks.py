@@ -31,10 +31,10 @@ def make_basic_blocks(input_file):
 
 		# Get node 
 		node = nodes[pointer]
-	    # Get node's id 
+	    	# Get node's id 
 		node_id = node['id']
 	    
-	    # Find source and target nodes
+	    	# Find source and target nodes
 		s_nodes = [list(d.values())[1] for d in edges]
 		d_nodes = [list(d.values())[2] for d in edges]
 
@@ -42,17 +42,15 @@ def make_basic_blocks(input_file):
 		count_s_nodes = Counter(s_nodes)
 		count_d_nodes = Counter(d_nodes)
 
-	    # Find nodes which have multiple children(branches)
+	    	# Find nodes which have multiple children(branches)
 		multi_child_nodes  = [node for node, frequecny in count_s_nodes.items() if frequecny > 1]
-	    # Find nodes which have multiple parents
+	    	# Find nodes which have multiple parents
 		multi_parent_nodes = [node for node, frequecny in count_d_nodes.items() if frequecny > 1]
 		##################################################################
 
-	    # 자식이 있는 노드이고(자식이 없으면 합칠필요X), 자식의 부모가 2개 이상이 아니면
+	    	# If the number of node's branches is not 1, cannnot merge.
 
-	    # If the number of node's branches is not 1, cannnot merge.
-
-	    #Traverse all source nodes
+	    	#Traverse all source nodes
 		if(node_id in s_nodes): 
 			"""
 			1. If the number of node's branches is not 1, cannnot merge.
@@ -86,11 +84,11 @@ def make_basic_blocks(input_file):
 					3-2. In edges, Change all node ID to new node ID.
 					"""
 
-	                # Copy node, and delete it
+	                		# Copy node, and delete it
 					tmp_node = node     
 					del nodes[pointer]
 	               
-	                # Find child node, and delete it
+	                		# Find child node, and delete it
 					tmp_child_idx, tmp_child = [(idx, child) for idx, child in enumerate(nodes) if child['id'] == child_id][0]
 					del nodes[tmp_child_idx]
 
@@ -104,13 +102,13 @@ def make_basic_blocks(input_file):
 
 	         		
 	                
-	                # Find a edge which connects two nodes, and delete it
+	                		# Find a edge which connects two nodes, and delete it
 					tmp_edge_idx, tmp_edge = [(idx, edge) for idx, edge in enumerate(edges) 
 	                                          if ((edge['source'] == tmp_node['id']) and (edge['target'] == tmp_child['id']))][0]
 					del edges[tmp_edge_idx]
 	                
 
-	                # In edges, modify node ID as alternative node ID (new noe ID)
+	                		# In edges, modify node ID as alternative node ID (new noe ID)
 					for (i, e) in enumerate(edges):
 						if(e['source'] == tmp_child['id']):
 							edges[i]['source'] = 'a' + str(alternative_node)
@@ -121,7 +119,7 @@ def make_basic_blocks(input_file):
 						if(e['target'] == tmp_node['id']):
    							edges[i]['target'] = 'a' + str(alternative_node)    
 	                        
-	                # After add new node, update alternative node number        
+	                		# After add new node, update alternative node number        
 					alternative_node += 1
 	                
 		else: # It is not one of the source node, and it is the last node with no branch.  ++해줘야함
