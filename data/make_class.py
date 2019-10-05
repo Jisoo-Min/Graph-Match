@@ -11,6 +11,10 @@ def main():
 	path = "codingbat-master/java/"
 	dirs = os.listdir(path)
 
+	if not os.path.exists("codingbat-data"):
+		os.makedirs("codingbat-data")
+
+
 	data_list = open("data_list", 'a')
 	for folder_name in dirs:
 		print("folder: ", folder_name)
