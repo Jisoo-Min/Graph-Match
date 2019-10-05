@@ -1,0 +1,57 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Warmup1Posneg.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Warmup1Posneg.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "boolean posNeg(int a, int b, boolean negative)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "if (negative)"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "return a < 0 && b < 0;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "return a * b < 0;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 4,
+      "label": "False"
+    }
+  ]
+}

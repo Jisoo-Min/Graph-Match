@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Warmup1Hasteen.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Warmup1Hasteen.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "boolean hasTeen(int a, int b, int c)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "return 13 <= a && a <= 19 || 13 <= b && b <= 19 || 13 <= c && c <= 19;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

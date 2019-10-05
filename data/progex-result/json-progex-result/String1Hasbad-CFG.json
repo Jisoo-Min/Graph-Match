@@ -1,0 +1,96 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Hasbad.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Hasbad.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 7,
+      "label": "boolean hasBad(String str)"
+    },
+    {
+      "id": 1,
+      "line": 8,
+      "label": "if (str.length() == 3)"
+    },
+    {
+      "id": 2,
+      "line": 9,
+      "label": "return str.substring(0, 3).equals('bad');"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 11,
+      "label": "if (str.length() >= 4)"
+    },
+    {
+      "id": 5,
+      "line": 12,
+      "label": "return str.substring(0, 3).equals('bad') || str.substring(1, 4).equals('bad');"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 7,
+      "line": 15,
+      "label": "return false;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": "True"
+    },
+    {
+      "id": 5,
+      "source": 4,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 7,
+      "label": ""
+    }
+  ]
+}

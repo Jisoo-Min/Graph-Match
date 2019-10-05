@@ -1,0 +1,141 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Ap1Sumheights2.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Ap1Sumheights2.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 10,
+      "label": "int sumHeights2(int[] heights, int start, int end)"
+    },
+    {
+      "id": 1,
+      "line": 11,
+      "label": "int sum = 0"
+    },
+    {
+      "id": 2,
+      "line": 13,
+      "label": "int i = start"
+    },
+    {
+      "id": 3,
+      "line": 13,
+      "label": "for (i < end)"
+    },
+    {
+      "id": 4,
+      "line": 13,
+      "label": "i++"
+    },
+    {
+      "id": 5,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 6,
+      "line": 14,
+      "label": "if (heights[i] < heights[i+1])"
+    },
+    {
+      "id": 7,
+      "line": 15,
+      "label": "sum = sum + 2 * (heights[i+1] - heights[i])"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 9,
+      "line": 17,
+      "label": "sum = sum + heights[i] - heights[i+1]"
+    },
+    {
+      "id": 10,
+      "line": 20,
+      "label": "return sum;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 4,
+      "source": 3,
+      "target": 6,
+      "label": "True"
+    },
+    {
+      "id": 5,
+      "source": 6,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 7,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 6,
+      "target": 9,
+      "label": "False"
+    },
+    {
+      "id": 8,
+      "source": 9,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 8,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 4,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 5,
+      "target": 10,
+      "label": ""
+    }
+  ]
+}

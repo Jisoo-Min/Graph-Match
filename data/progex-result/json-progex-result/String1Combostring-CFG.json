@@ -1,0 +1,91 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Combostring.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Combostring.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 7,
+      "label": "String comboString(String a, String b)"
+    },
+    {
+      "id": 1,
+      "line": 8,
+      "label": "if (b.length() < a.length())"
+    },
+    {
+      "id": 2,
+      "line": 9,
+      "label": "String temp = a"
+    },
+    {
+      "id": 3,
+      "line": 10,
+      "label": "a = b"
+    },
+    {
+      "id": 4,
+      "line": 11,
+      "label": "b = temp"
+    },
+    {
+      "id": 5,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 6,
+      "line": 14,
+      "label": "return a + b + a;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 1,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Ap1Commontwo.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Ap1Commontwo.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 8,
+      "label": "int commonTwo(String[] a, String[] b)"
+    },
+    {
+      "id": 1,
+      "line": 9,
+      "label": "int count = 0"
+    },
+    {
+      "id": 2,
+      "line": 10,
+      "label": "int aIndex = 0"
+    },
+    {
+      "id": 3,
+      "line": 11,
+      "label": "int bIndex = 0"
+    },
+    {
+      "id": 4,
+      "line": 13,
+      "label": "if (a[0].equals(b[0]))"
+    },
+    {
+      "id": 5,
+      "line": 14,
+      "label": "count++"
+    },
+    {
+      "id": 6,
+      "line": 15,
+      "label": "aIndex++"
+    },
+    {
+      "id": 7,
+      "line": 16,
+      "label": "bIndex++"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 9,
+      "line": 17,
+      "label": "if (a[0].compareTo(b[0]) < 0)"
+    },
+    {
+      "id": 10,
+      "line": 18,
+      "label": "aIndex++"
+    },
+    {
+      "id": 11,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 12,
+      "line": 20,
+      "label": "bIndex++"
+    },
+    {
+      "id": 13,
+      "line": 23,
+      "label": "while (aIndex < a.length && bIndex < b.length)"
+    },
+    {
+      "id": 14,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 15,
+      "line": 24,
+      "label": "if (aIndex > 0 && a[aIndex-1].equals(a[aIndex]))"
+    },
+    {
+      "id": 16,
+      "line": 25,
+      "label": "aIndex++"
+    },
+    {
+      "id": 17,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 18,
+      "line": 26,
+      "label": "if (a[aIndex].equals(b[bIndex]))"
+    },
+    {
+      "id": 19,
+      "line": 27,
+      "label": "count++"
+    },
+    {
+      "id": 20,
+      "line": 28,
+      "label": "aIndex++"
+    },
+    {
+      "id": 21,
+      "line": 29,
+      "label": "bIndex++"
+    },
+    {
+      "id": 22,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 23,
+      "line": 30,
+      "label": "if (a[aIndex].compareTo(b[bIndex]) < 0)"
+    },
+    {
+      "id": 24,
+      "line": 31,
+      "label": "aIndex++"
+    },
+    {
+      "id": 25,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 26,
+      "line": 33,
+      "label": "bIndex++"
+    },
+    {
+      "id": 27,
+      "line": 37,
+      "label": "return count;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": "True"
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 7,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 4,
+      "target": 9,
+      "label": "False"
+    },
+    {
+      "id": 9,
+      "source": 9,
+      "target": 10,
+      "label": "True"
+    },
+    {
+      "id": 10,
+      "source": 10,
+      "target": 11,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 9,
+      "target": 12,
+      "label": "False"
+    },
+    {
+      "id": 12,
+      "source": 12,
+      "target": 11,
+      "label": ""
+    },
+    {
+      "id": 13,
+      "source": 11,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 14,
+      "source": 8,
+      "target": 13,
+      "label": ""
+    },
+    {
+      "id": 15,
+      "source": 13,
+      "target": 14,
+      "label": "False"
+    },
+    {
+      "id": 16,
+      "source": 13,
+      "target": 15,
+      "label": "True"
+    },
+    {
+      "id": 17,
+      "source": 15,
+      "target": 16,
+      "label": "True"
+    },
+    {
+      "id": 18,
+      "source": 16,
+      "target": 17,
+      "label": ""
+    },
+    {
+      "id": 19,
+      "source": 15,
+      "target": 18,
+      "label": "False"
+    },
+    {
+      "id": 20,
+      "source": 18,
+      "target": 19,
+      "label": "True"
+    },
+    {
+      "id": 21,
+      "source": 19,
+      "target": 20,
+      "label": ""
+    },
+    {
+      "id": 22,
+      "source": 20,
+      "target": 21,
+      "label": ""
+    },
+    {
+      "id": 23,
+      "source": 21,
+      "target": 22,
+      "label": ""
+    },
+    {
+      "id": 24,
+      "source": 18,
+      "target": 23,
+      "label": "False"
+    },
+    {
+      "id": 25,
+      "source": 23,
+      "target": 24,
+      "label": "True"
+    },
+    {
+      "id": 26,
+      "source": 24,
+      "target": 25,
+      "label": ""
+    },
+    {
+      "id": 27,
+      "source": 23,
+      "target": 26,
+      "label": "False"
+    },
+    {
+      "id": 28,
+      "source": 26,
+      "target": 25,
+      "label": ""
+    },
+    {
+      "id": 29,
+      "source": 25,
+      "target": 22,
+      "label": ""
+    },
+    {
+      "id": 30,
+      "source": 22,
+      "target": 17,
+      "label": ""
+    },
+    {
+      "id": 31,
+      "source": 17,
+      "target": 13,
+      "label": ""
+    },
+    {
+      "id": 32,
+      "source": 14,
+      "target": 27,
+      "label": ""
+    }
+  ]
+}

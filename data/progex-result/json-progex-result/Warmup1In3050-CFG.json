@@ -1,0 +1,74 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Warmup1In3050.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Warmup1In3050.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "boolean in3050(int a, int b)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "boolean aRange1 = 30 <= a && a <= 40"
+    },
+    {
+      "id": 2,
+      "line": 7,
+      "label": "boolean aRange2 = 40 <= a && a <= 50"
+    },
+    {
+      "id": 3,
+      "line": 8,
+      "label": "boolean bRange1 = 30 <= b && b <= 40"
+    },
+    {
+      "id": 4,
+      "line": 9,
+      "label": "boolean bRange2 = 40 <= b && b <= 50"
+    },
+    {
+      "id": 5,
+      "line": 11,
+      "label": "return aRange1 && bRange1 || aRange2 && bRange2;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    }
+  ]
+}

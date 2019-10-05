@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array1Sum3.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array1Sum3.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 4,
+      "label": "int sum3(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 5,
+      "label": "return nums[0] + nums[1] + nums[2];"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

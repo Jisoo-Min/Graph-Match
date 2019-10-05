@@ -1,0 +1,185 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Warmup2Stringsplosion.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Warmup2Stringsplosion.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 4,
+      "label": "String stringSplosion(String str)"
+    },
+    {
+      "id": 1,
+      "line": 5,
+      "label": "int size = (str.length() * (str.length() + 1)) / 2"
+    },
+    {
+      "id": 2,
+      "line": 6,
+      "label": "char[] result = new char[size]"
+    },
+    {
+      "id": 3,
+      "line": 8,
+      "label": "int index = 0"
+    },
+    {
+      "id": 4,
+      "line": 9,
+      "label": "int i = 0"
+    },
+    {
+      "id": 5,
+      "line": 9,
+      "label": "for (i < str.length())"
+    },
+    {
+      "id": 6,
+      "line": 9,
+      "label": "i++"
+    },
+    {
+      "id": 7,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 8,
+      "line": 10,
+      "label": "int j = 0"
+    },
+    {
+      "id": 9,
+      "line": 10,
+      "label": "for (j <= i)"
+    },
+    {
+      "id": 10,
+      "line": 10,
+      "label": "j++"
+    },
+    {
+      "id": 11,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 12,
+      "line": 11,
+      "label": "result[index] = str.charAt(j)"
+    },
+    {
+      "id": 13,
+      "line": 12,
+      "label": "index++"
+    },
+    {
+      "id": 14,
+      "line": 16,
+      "label": "return new String(result);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 7,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 5,
+      "target": 8,
+      "label": "True"
+    },
+    {
+      "id": 7,
+      "source": 8,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 9,
+      "target": 11,
+      "label": "False"
+    },
+    {
+      "id": 9,
+      "source": 9,
+      "target": 12,
+      "label": "True"
+    },
+    {
+      "id": 10,
+      "source": 12,
+      "target": 13,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 13,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 10,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 13,
+      "source": 11,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 14,
+      "source": 6,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 15,
+      "source": 7,
+      "target": 14,
+      "label": ""
+    }
+  ]
+}

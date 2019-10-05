@@ -1,0 +1,185 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array3Squareup.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array3Squareup.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "int[] squareUp(int n)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "int[] arr = new int[n*n]"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "if (n == 0)"
+    },
+    {
+      "id": 3,
+      "line": 9,
+      "label": "return arr;"
+    },
+    {
+      "id": 4,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 5,
+      "line": 11,
+      "label": "int i = n - 1"
+    },
+    {
+      "id": 6,
+      "line": 11,
+      "label": "for (i < arr.length)"
+    },
+    {
+      "id": 7,
+      "line": 11,
+      "label": "i += n"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 9,
+      "line": 12,
+      "label": "int j = i"
+    },
+    {
+      "id": 10,
+      "line": 12,
+      "label": "for (j >= i - i / n)"
+    },
+    {
+      "id": 11,
+      "line": 12,
+      "label": "j--"
+    },
+    {
+      "id": 12,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 13,
+      "line": 13,
+      "label": "arr[j] = i - j + 1"
+    },
+    {
+      "id": 14,
+      "line": 16,
+      "label": "return arr;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": "True"
+    },
+    {
+      "id": 3,
+      "source": 2,
+      "target": 4,
+      "label": "False"
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 8,
+      "label": "False"
+    },
+    {
+      "id": 7,
+      "source": 6,
+      "target": 9,
+      "label": "True"
+    },
+    {
+      "id": 8,
+      "source": 9,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 10,
+      "target": 12,
+      "label": "False"
+    },
+    {
+      "id": 10,
+      "source": 10,
+      "target": 13,
+      "label": "True"
+    },
+    {
+      "id": 11,
+      "source": 13,
+      "target": 11,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 11,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 13,
+      "source": 12,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 14,
+      "source": 7,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 15,
+      "source": 8,
+      "target": 14,
+      "label": ""
+    }
+  ]
+}

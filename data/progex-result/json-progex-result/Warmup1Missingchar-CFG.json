@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Warmup1Missingchar.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Warmup1Missingchar.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 7,
+      "label": "String missingChar(String str, int n)"
+    },
+    {
+      "id": 1,
+      "line": 8,
+      "label": "return str.substring(0,n) + str.substring(n+1);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

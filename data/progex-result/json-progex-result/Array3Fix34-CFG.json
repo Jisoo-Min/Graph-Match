@@ -1,0 +1,269 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array3Fix34.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array3Fix34.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 8,
+      "label": "int[] fix34(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 9,
+      "label": "int i = 0"
+    },
+    {
+      "id": 2,
+      "line": 11,
+      "label": "while (i < nums.length && nums[i] != 3)"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 4,
+      "line": 12,
+      "label": "i++"
+    },
+    {
+      "id": 5,
+      "line": 14,
+      "label": "int j = i + 1"
+    },
+    {
+      "id": 6,
+      "line": 16,
+      "label": "while (j < nums.length && nums[j] != 4)"
+    },
+    {
+      "id": 7,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 8,
+      "line": 17,
+      "label": "j++"
+    },
+    {
+      "id": 9,
+      "line": 19,
+      "label": "while (i < nums.length)"
+    },
+    {
+      "id": 10,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 11,
+      "line": 20,
+      "label": "if (nums[i] == 3)"
+    },
+    {
+      "id": 12,
+      "line": 21,
+      "label": "int temp = nums[i+1]"
+    },
+    {
+      "id": 13,
+      "line": 22,
+      "label": "nums[i+1] = nums[j]"
+    },
+    {
+      "id": 14,
+      "line": 23,
+      "label": "nums[j] = temp"
+    },
+    {
+      "id": 15,
+      "line": 25,
+      "label": "while (j < nums.length && nums[j] != 4)"
+    },
+    {
+      "id": 16,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 17,
+      "line": 26,
+      "label": "j++"
+    },
+    {
+      "id": 18,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 19,
+      "line": 28,
+      "label": "i++"
+    },
+    {
+      "id": 20,
+      "line": 31,
+      "label": "return nums;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 2,
+      "target": 4,
+      "label": "True"
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 3,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 6,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 6,
+      "target": 7,
+      "label": "False"
+    },
+    {
+      "id": 8,
+      "source": 6,
+      "target": 8,
+      "label": "True"
+    },
+    {
+      "id": 9,
+      "source": 8,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 7,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 9,
+      "target": 10,
+      "label": "False"
+    },
+    {
+      "id": 12,
+      "source": 9,
+      "target": 11,
+      "label": "True"
+    },
+    {
+      "id": 13,
+      "source": 11,
+      "target": 12,
+      "label": "True"
+    },
+    {
+      "id": 14,
+      "source": 12,
+      "target": 13,
+      "label": ""
+    },
+    {
+      "id": 15,
+      "source": 13,
+      "target": 14,
+      "label": ""
+    },
+    {
+      "id": 16,
+      "source": 14,
+      "target": 15,
+      "label": ""
+    },
+    {
+      "id": 17,
+      "source": 15,
+      "target": 16,
+      "label": "False"
+    },
+    {
+      "id": 18,
+      "source": 15,
+      "target": 17,
+      "label": "True"
+    },
+    {
+      "id": 19,
+      "source": 17,
+      "target": 15,
+      "label": ""
+    },
+    {
+      "id": 20,
+      "source": 16,
+      "target": 18,
+      "label": ""
+    },
+    {
+      "id": 21,
+      "source": 11,
+      "target": 18,
+      "label": "False"
+    },
+    {
+      "id": 22,
+      "source": 18,
+      "target": 19,
+      "label": ""
+    },
+    {
+      "id": 23,
+      "source": 19,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 24,
+      "source": 10,
+      "target": 20,
+      "label": ""
+    }
+  ]
+}

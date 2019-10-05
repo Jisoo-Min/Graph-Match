@@ -1,0 +1,102 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Ap1Hasone.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Ap1Hasone.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 4,
+      "label": "boolean hasOne(int n)"
+    },
+    {
+      "id": 1,
+      "line": 5,
+      "label": "while (n != 0)"
+    },
+    {
+      "id": 2,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 3,
+      "line": 6,
+      "label": "if (n % 10 == 1)"
+    },
+    {
+      "id": 4,
+      "line": 7,
+      "label": "return true;"
+    },
+    {
+      "id": 5,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 6,
+      "line": 9,
+      "label": "n /= 10"
+    },
+    {
+      "id": 7,
+      "line": 12,
+      "label": "return false;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "False"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "True"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": "True"
+    },
+    {
+      "id": 4,
+      "source": 3,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 2,
+      "target": 7,
+      "label": ""
+    }
+  ]
+}

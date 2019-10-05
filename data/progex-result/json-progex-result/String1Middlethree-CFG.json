@@ -1,0 +1,41 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Middlethree.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Middlethree.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "String middleThree(String str)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "int mid = str.length() / 2"
+    },
+    {
+      "id": 2,
+      "line": 7,
+      "label": "return str.substring(mid - 1, mid + 2);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    }
+  ]
+}

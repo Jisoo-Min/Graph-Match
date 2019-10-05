@@ -1,0 +1,146 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String2Xyzthere.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String2Xyzthere.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "boolean xyzThere(String str)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "if (str.length() >= 3 && str.substring(0, 3).equals('xyz'))"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "return true;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "int i = 1"
+    },
+    {
+      "id": 5,
+      "line": 10,
+      "label": "for (i < str.length() - 2)"
+    },
+    {
+      "id": 6,
+      "line": 10,
+      "label": "i++"
+    },
+    {
+      "id": 7,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 8,
+      "line": 11,
+      "label": "if (str.charAt(i - 1) != '.' && str.substring(i, i + 3).equals('xyz'))"
+    },
+    {
+      "id": 9,
+      "line": 12,
+      "label": "return true;"
+    },
+    {
+      "id": 10,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 11,
+      "line": 15,
+      "label": "return false;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 7,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 5,
+      "target": 8,
+      "label": "True"
+    },
+    {
+      "id": 7,
+      "source": 8,
+      "target": 9,
+      "label": "True"
+    },
+    {
+      "id": 8,
+      "source": 8,
+      "target": 10,
+      "label": "False"
+    },
+    {
+      "id": 9,
+      "source": 10,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 6,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 7,
+      "target": 11,
+      "label": ""
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Withoutend2.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Withoutend2.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "String withouEnd2(String str)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "if (str.length() <= 2)"
+    },
+    {
+      "id": 2,
+      "line": 7,
+      "label": "return '';"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 9,
+      "label": "return str.substring(1, str.length() - 1);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    }
+  ]
+}

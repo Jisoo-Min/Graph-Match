@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Logic1Specialeleven.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Logic1Specialeleven.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "boolean specialEleven(int n)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "return (n % 11) == 0 || (n % 11) == 1;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

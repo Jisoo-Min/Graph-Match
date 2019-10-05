@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Warmup1Icyhot.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Warmup1Icyhot.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "boolean icyHot(int temp1, int temp2)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "return (temp1 * temp2 < 0) && Math.abs(temp1 - temp2) >= 102;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

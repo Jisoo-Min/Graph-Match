@@ -1,0 +1,129 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Logic1Alarmclock.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Logic1Alarmclock.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 9,
+      "label": "String alarmClock(int day, boolean vacation)"
+    },
+    {
+      "id": 1,
+      "line": 10,
+      "label": "if (vacation)"
+    },
+    {
+      "id": 2,
+      "line": 11,
+      "label": "if (day == 0 || day == 6)"
+    },
+    {
+      "id": 3,
+      "line": 12,
+      "label": "return 'off';"
+    },
+    {
+      "id": 4,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 5,
+      "line": 14,
+      "label": "return '10:00';"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 7,
+      "line": 17,
+      "label": "if (day == 0 || day == 6)"
+    },
+    {
+      "id": 8,
+      "line": 18,
+      "label": "return '10:00';"
+    },
+    {
+      "id": 9,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 10,
+      "line": 20,
+      "label": "return '7:00';"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": "True"
+    },
+    {
+      "id": 3,
+      "source": 2,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 1,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 7,
+      "target": 8,
+      "label": "True"
+    },
+    {
+      "id": 8,
+      "source": 7,
+      "target": 9,
+      "label": "False"
+    },
+    {
+      "id": 9,
+      "source": 9,
+      "target": 10,
+      "label": ""
+    }
+  ]
+}

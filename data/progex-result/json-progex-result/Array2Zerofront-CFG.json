@@ -1,0 +1,235 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array2Zerofront.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array2Zerofront.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 7,
+      "label": "int[] zeroFront(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 8,
+      "label": "if (nums.length == 0)"
+    },
+    {
+      "id": 2,
+      "line": 9,
+      "label": "return nums;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 11,
+      "label": "int i = 0"
+    },
+    {
+      "id": 5,
+      "line": 13,
+      "label": "while (nums[i] == 0)"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 7,
+      "line": 14,
+      "label": "i++"
+    },
+    {
+      "id": 8,
+      "line": 16,
+      "label": "int j = i + 1"
+    },
+    {
+      "id": 9,
+      "line": 16,
+      "label": "for (j < nums.length)"
+    },
+    {
+      "id": 10,
+      "line": 16,
+      "label": "j++"
+    },
+    {
+      "id": 11,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 12,
+      "line": 17,
+      "label": "if (nums[j] == 0)"
+    },
+    {
+      "id": 13,
+      "line": 18,
+      "label": "int temp = nums[i]"
+    },
+    {
+      "id": 14,
+      "line": 19,
+      "label": "nums[i] = nums[j]"
+    },
+    {
+      "id": 15,
+      "line": 20,
+      "label": "nums[j] = temp"
+    },
+    {
+      "id": 16,
+      "line": 21,
+      "label": "i++"
+    },
+    {
+      "id": 17,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 18,
+      "line": 25,
+      "label": "return nums;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 5,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 7,
+      "source": 7,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 6,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 8,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 9,
+      "target": 11,
+      "label": "False"
+    },
+    {
+      "id": 11,
+      "source": 9,
+      "target": 12,
+      "label": "True"
+    },
+    {
+      "id": 12,
+      "source": 12,
+      "target": 13,
+      "label": "True"
+    },
+    {
+      "id": 13,
+      "source": 13,
+      "target": 14,
+      "label": ""
+    },
+    {
+      "id": 14,
+      "source": 14,
+      "target": 15,
+      "label": ""
+    },
+    {
+      "id": 15,
+      "source": 15,
+      "target": 16,
+      "label": ""
+    },
+    {
+      "id": 16,
+      "source": 16,
+      "target": 17,
+      "label": ""
+    },
+    {
+      "id": 17,
+      "source": 12,
+      "target": 17,
+      "label": "False"
+    },
+    {
+      "id": 18,
+      "source": 17,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 19,
+      "source": 10,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 20,
+      "source": 11,
+      "target": 18,
+      "label": ""
+    }
+  ]
+}

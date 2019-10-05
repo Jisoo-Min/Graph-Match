@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Helloname.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Helloname.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 4,
+      "label": "String helloName(String name)"
+    },
+    {
+      "id": 1,
+      "line": 5,
+      "label": "return 'Hello ' + name + '!';"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

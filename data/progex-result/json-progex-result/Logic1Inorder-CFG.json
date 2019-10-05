@@ -1,0 +1,63 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Logic1Inorder.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Logic1Inorder.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "boolean inOrder(int a, int b, int c, boolean bOk)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "if (bOk)"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "return c > b;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "return b > a && c > b;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    }
+  ]
+}

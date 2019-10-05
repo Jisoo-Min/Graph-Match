@@ -1,0 +1,96 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Seecolor.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Seecolor.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "String seeColor(String str)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "if (str.length() >= 3 && str.substring(0, 3).equals('red'))"
+    },
+    {
+      "id": 2,
+      "line": 7,
+      "label": "return 'red';"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 9,
+      "label": "if (str.length() >= 4 && str.substring(0, 4).equals('blue'))"
+    },
+    {
+      "id": 5,
+      "line": 10,
+      "label": "return 'blue';"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 7,
+      "line": 12,
+      "label": "return '';"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": "True"
+    },
+    {
+      "id": 5,
+      "source": 4,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 7,
+      "label": ""
+    }
+  ]
+}

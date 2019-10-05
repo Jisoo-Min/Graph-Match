@@ -1,0 +1,196 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array3Linearin.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array3Linearin.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 7,
+      "label": "boolean linearIn(int[] outer, int[] inner)"
+    },
+    {
+      "id": 1,
+      "line": 8,
+      "label": "int i = 0"
+    },
+    {
+      "id": 2,
+      "line": 9,
+      "label": "int j = 0"
+    },
+    {
+      "id": 3,
+      "line": 11,
+      "label": "while (i < inner.length && j < outer.length)"
+    },
+    {
+      "id": 4,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 5,
+      "line": 12,
+      "label": "if (inner[i] > outer[j])"
+    },
+    {
+      "id": 6,
+      "line": 13,
+      "label": "j++"
+    },
+    {
+      "id": 7,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 8,
+      "line": 14,
+      "label": "if (inner[i] < outer[j])"
+    },
+    {
+      "id": 9,
+      "line": 15,
+      "label": "return false;"
+    },
+    {
+      "id": 10,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 11,
+      "line": 17,
+      "label": "i++"
+    },
+    {
+      "id": 12,
+      "line": 21,
+      "label": "if (i != inner.length)"
+    },
+    {
+      "id": 13,
+      "line": 22,
+      "label": "return false;"
+    },
+    {
+      "id": 14,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 15,
+      "line": 24,
+      "label": "return true;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": "False"
+    },
+    {
+      "id": 4,
+      "source": 3,
+      "target": 5,
+      "label": "True"
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 6,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 5,
+      "target": 8,
+      "label": "False"
+    },
+    {
+      "id": 8,
+      "source": 8,
+      "target": 9,
+      "label": "True"
+    },
+    {
+      "id": 9,
+      "source": 8,
+      "target": 11,
+      "label": "False"
+    },
+    {
+      "id": 10,
+      "source": 11,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 10,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 7,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 13,
+      "source": 4,
+      "target": 12,
+      "label": ""
+    },
+    {
+      "id": 14,
+      "source": 12,
+      "target": 13,
+      "label": "True"
+    },
+    {
+      "id": 15,
+      "source": 12,
+      "target": 14,
+      "label": "False"
+    },
+    {
+      "id": 16,
+      "source": 14,
+      "target": 15,
+      "label": ""
+    }
+  ]
+}

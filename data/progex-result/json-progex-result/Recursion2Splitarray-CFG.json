@@ -1,0 +1,145 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Recursion2Splitarray.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Recursion2Splitarray.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 8,
+      "label": "boolean splitArray(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 9,
+      "label": "return splitArrayHelper(0, nums, 0, 0);"
+    },
+    {
+      "id": 2,
+      "line": 12,
+      "label": "boolean splitArrayHelper(int start, int[] nums, int group1, int group2)"
+    },
+    {
+      "id": 3,
+      "line": 14,
+      "label": "if (start >= nums.length)"
+    },
+    {
+      "id": 4,
+      "line": 15,
+      "label": "return group1 == group2;"
+    },
+    {
+      "id": 5,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 6,
+      "line": 17,
+      "label": "if (splitArrayHelper(start+1, nums, group1 + nums[start], group2))"
+    },
+    {
+      "id": 7,
+      "line": 18,
+      "label": "return true;"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 9,
+      "line": 20,
+      "label": "if (splitArrayHelper(start+1, nums, group1, group2 + nums[start]))"
+    },
+    {
+      "id": 10,
+      "line": 21,
+      "label": "return true;"
+    },
+    {
+      "id": 11,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 12,
+      "line": 23,
+      "label": "return false;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 3,
+      "target": 4,
+      "label": "True"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 4,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 6,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 8,
+      "label": "False"
+    },
+    {
+      "id": 7,
+      "source": 8,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 9,
+      "target": 10,
+      "label": "True"
+    },
+    {
+      "id": 9,
+      "source": 9,
+      "target": 11,
+      "label": "False"
+    },
+    {
+      "id": 10,
+      "source": 11,
+      "target": 12,
+      "label": ""
+    }
+  ]
+}

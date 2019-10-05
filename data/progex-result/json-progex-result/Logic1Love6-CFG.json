@@ -1,0 +1,63 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Logic1Love6.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Logic1Love6.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "boolean love6(int a, int b)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "if (a == 6 || b == 6 || a + b == 6 || Math.abs(a - b) == 6)"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "return true;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "return false;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    }
+  ]
+}

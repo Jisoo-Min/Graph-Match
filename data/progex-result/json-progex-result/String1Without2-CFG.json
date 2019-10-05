@@ -1,0 +1,63 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Without2.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Without2.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 7,
+      "label": "String without2(String str)"
+    },
+    {
+      "id": 1,
+      "line": 8,
+      "label": "if (str.length () >= 2 && str.substring(0, 2).equals(str.substring(str.length() - 2)))"
+    },
+    {
+      "id": 2,
+      "line": 10,
+      "label": "return str.substring(2);"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 12,
+      "label": "return str;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    }
+  ]
+}

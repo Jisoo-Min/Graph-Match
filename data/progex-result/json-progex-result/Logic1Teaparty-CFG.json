@@ -1,0 +1,96 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Logic1Teaparty.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Logic1Teaparty.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 9,
+      "label": "int teaParty(int tea, int candy)"
+    },
+    {
+      "id": 1,
+      "line": 10,
+      "label": "if (tea < 5 || candy < 5)"
+    },
+    {
+      "id": 2,
+      "line": 11,
+      "label": "return 0;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 13,
+      "label": "if (tea >= 2 * candy || candy >= 2 * tea)"
+    },
+    {
+      "id": 5,
+      "line": 14,
+      "label": "return 2;"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 7,
+      "line": 16,
+      "label": "return 1;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": "True"
+    },
+    {
+      "id": 5,
+      "source": 4,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 7,
+      "label": ""
+    }
+  ]
+}

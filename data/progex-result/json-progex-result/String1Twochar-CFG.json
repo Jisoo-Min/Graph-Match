@@ -1,0 +1,63 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Twochar.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Twochar.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "String twoChar(String str, int index)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "if (index + 2 > str.length() || index < 0)"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "return str.substring(0, 2);"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "return str.substring(index, index + 2);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    }
+  ]
+}

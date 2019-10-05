@@ -1,0 +1,63 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Startword.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Startword.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 9,
+      "label": "String startWord(String str, String word)"
+    },
+    {
+      "id": 1,
+      "line": 10,
+      "label": "if (str.length() >= word.length() && str.substring(1, word.length()).equals(word.substring(1)))"
+    },
+    {
+      "id": 2,
+      "line": 12,
+      "label": "return str.substring(0, word.length());"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 14,
+      "label": "return '';"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    }
+  ]
+}

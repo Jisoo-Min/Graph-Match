@@ -1,0 +1,324 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String3Sumnumbers.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String3Sumnumbers.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "int sumNumbers(String str)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "int sum = 0"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "int i = 0"
+    },
+    {
+      "id": 3,
+      "line": 9,
+      "label": "int begin"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "int end"
+    },
+    {
+      "id": 5,
+      "line": 12,
+      "label": "while (i < str.length() && !Character.isDigit(str.charAt(i)))"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 7,
+      "line": 13,
+      "label": "i++"
+    },
+    {
+      "id": 8,
+      "line": 15,
+      "label": "begin = i"
+    },
+    {
+      "id": 9,
+      "line": 16,
+      "label": "end = i"
+    },
+    {
+      "id": 10,
+      "line": 18,
+      "label": "while (i < str.length())"
+    },
+    {
+      "id": 11,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 12,
+      "line": 19,
+      "label": "if (!Character.isDigit(str.charAt(i)))"
+    },
+    {
+      "id": 13,
+      "line": 20,
+      "label": "sum += Integer.parseInt(str.substring(begin, end))"
+    },
+    {
+      "id": 14,
+      "line": 21,
+      "label": "while (i < str.length() && !Character.isDigit(str.charAt(i)))"
+    },
+    {
+      "id": 15,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 16,
+      "line": 22,
+      "label": "i++"
+    },
+    {
+      "id": 17,
+      "line": 24,
+      "label": "begin = i"
+    },
+    {
+      "id": 18,
+      "line": 25,
+      "label": "end = i"
+    },
+    {
+      "id": 19,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 20,
+      "line": 27,
+      "label": "end++"
+    },
+    {
+      "id": 21,
+      "line": 28,
+      "label": "i++"
+    },
+    {
+      "id": 22,
+      "line": 32,
+      "label": "if (end > begin)"
+    },
+    {
+      "id": 23,
+      "line": 33,
+      "label": "sum += Integer.parseInt(str.substring(begin, end))"
+    },
+    {
+      "id": 24,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 25,
+      "line": 35,
+      "label": "return sum;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 5,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 7,
+      "source": 7,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 6,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 8,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 9,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 10,
+      "target": 11,
+      "label": "False"
+    },
+    {
+      "id": 12,
+      "source": 10,
+      "target": 12,
+      "label": "True"
+    },
+    {
+      "id": 13,
+      "source": 12,
+      "target": 13,
+      "label": "True"
+    },
+    {
+      "id": 14,
+      "source": 13,
+      "target": 14,
+      "label": ""
+    },
+    {
+      "id": 15,
+      "source": 14,
+      "target": 15,
+      "label": "False"
+    },
+    {
+      "id": 16,
+      "source": 14,
+      "target": 16,
+      "label": "True"
+    },
+    {
+      "id": 17,
+      "source": 16,
+      "target": 14,
+      "label": ""
+    },
+    {
+      "id": 18,
+      "source": 15,
+      "target": 17,
+      "label": ""
+    },
+    {
+      "id": 19,
+      "source": 17,
+      "target": 18,
+      "label": ""
+    },
+    {
+      "id": 20,
+      "source": 18,
+      "target": 19,
+      "label": ""
+    },
+    {
+      "id": 21,
+      "source": 12,
+      "target": 20,
+      "label": "False"
+    },
+    {
+      "id": 22,
+      "source": 20,
+      "target": 21,
+      "label": ""
+    },
+    {
+      "id": 23,
+      "source": 21,
+      "target": 19,
+      "label": ""
+    },
+    {
+      "id": 24,
+      "source": 19,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 25,
+      "source": 11,
+      "target": 22,
+      "label": ""
+    },
+    {
+      "id": 26,
+      "source": 22,
+      "target": 23,
+      "label": "True"
+    },
+    {
+      "id": 27,
+      "source": 23,
+      "target": 24,
+      "label": ""
+    },
+    {
+      "id": 28,
+      "source": 22,
+      "target": 24,
+      "label": "False"
+    },
+    {
+      "id": 29,
+      "source": 24,
+      "target": 25,
+      "label": ""
+    }
+  ]
+}

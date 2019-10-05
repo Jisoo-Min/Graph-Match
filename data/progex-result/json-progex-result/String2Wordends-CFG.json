@@ -1,0 +1,230 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String2Wordends.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String2Wordends.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 7,
+      "label": "String wordEnds(String str, String word)"
+    },
+    {
+      "id": 1,
+      "line": 8,
+      "label": "StringBuffer result = new StringBuffer()"
+    },
+    {
+      "id": 2,
+      "line": 9,
+      "label": "int i = 0"
+    },
+    {
+      "id": 3,
+      "line": 11,
+      "label": "if (str.length() >= word.length() + 1 && str.substring(0, word.length()).equals(word))"
+    },
+    {
+      "id": 4,
+      "line": 13,
+      "label": "i = word.length() - 1"
+    },
+    {
+      "id": 5,
+      "line": 14,
+      "label": "result.append(str.charAt(i + 1))"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 7,
+      "line": 17,
+      "label": "while (i < str.length() - word.length())"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 9,
+      "line": 18,
+      "label": "if (str.substring(i + 1, i + 1 + word.length()).equals(word))"
+    },
+    {
+      "id": 10,
+      "line": 19,
+      "label": "result.append(str.charAt(i))"
+    },
+    {
+      "id": 11,
+      "line": 20,
+      "label": "i = i + word.length()"
+    },
+    {
+      "id": 12,
+      "line": 21,
+      "label": "if (i < str.length() - 1)"
+    },
+    {
+      "id": 13,
+      "line": 22,
+      "label": "result.append(str.charAt(i + 1))"
+    },
+    {
+      "id": 14,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 15,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 16,
+      "line": 25,
+      "label": "i++"
+    },
+    {
+      "id": 17,
+      "line": 29,
+      "label": "return result.toString();"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": "True"
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 6,
+      "source": 3,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 7,
+      "source": 6,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 7,
+      "target": 8,
+      "label": "False"
+    },
+    {
+      "id": 9,
+      "source": 7,
+      "target": 9,
+      "label": "True"
+    },
+    {
+      "id": 10,
+      "source": 9,
+      "target": 10,
+      "label": "True"
+    },
+    {
+      "id": 11,
+      "source": 10,
+      "target": 11,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 11,
+      "target": 12,
+      "label": ""
+    },
+    {
+      "id": 13,
+      "source": 12,
+      "target": 13,
+      "label": "True"
+    },
+    {
+      "id": 14,
+      "source": 13,
+      "target": 14,
+      "label": ""
+    },
+    {
+      "id": 15,
+      "source": 12,
+      "target": 14,
+      "label": "False"
+    },
+    {
+      "id": 16,
+      "source": 14,
+      "target": 15,
+      "label": ""
+    },
+    {
+      "id": 17,
+      "source": 9,
+      "target": 16,
+      "label": "False"
+    },
+    {
+      "id": 18,
+      "source": 16,
+      "target": 15,
+      "label": ""
+    },
+    {
+      "id": 19,
+      "source": 15,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 20,
+      "source": 8,
+      "target": 17,
+      "label": ""
+    }
+  ]
+}

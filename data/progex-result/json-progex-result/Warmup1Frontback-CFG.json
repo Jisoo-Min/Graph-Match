@@ -1,0 +1,85 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Warmup1Frontback.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Warmup1Frontback.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "String frontBack(String str)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "if (str.length() <= 1)"
+    },
+    {
+      "id": 2,
+      "line": 7,
+      "label": "return str;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 9,
+      "label": "char first = str.charAt(0)"
+    },
+    {
+      "id": 5,
+      "line": 10,
+      "label": "char last = str.charAt(str.length() - 1)"
+    },
+    {
+      "id": 6,
+      "line": 12,
+      "label": "return last + str.substring(1, str.length()-1) + first;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    }
+  ]
+}

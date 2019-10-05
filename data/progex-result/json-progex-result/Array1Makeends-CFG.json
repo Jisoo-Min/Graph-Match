@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array1Makeends.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array1Makeends.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "int[] makeEnds(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "return new int[] {nums[0], nums[nums.length - 1]};"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

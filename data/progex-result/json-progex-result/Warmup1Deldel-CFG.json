@@ -1,0 +1,63 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Warmup1Deldel.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Warmup1Deldel.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "String delDel(String str)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "if (str.length() >= 4 && str.substring(1, 4).equals('del'))"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "return str.charAt(0) + str.substring(4);"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "return str;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array1Commonend.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array1Commonend.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "boolean commonEnd(int[] a, int[] b)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "return a[0] == b[0] || a[a.length - 1] == b[b.length - 1];"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

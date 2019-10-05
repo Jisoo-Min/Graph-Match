@@ -1,0 +1,163 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String2Xybalance.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String2Xybalance.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 7,
+      "label": "boolean xyBalance(String str)"
+    },
+    {
+      "id": 1,
+      "line": 8,
+      "label": "boolean y = false"
+    },
+    {
+      "id": 2,
+      "line": 9,
+      "label": "int i = str.length() - 1"
+    },
+    {
+      "id": 3,
+      "line": 9,
+      "label": "for (i >= 0)"
+    },
+    {
+      "id": 4,
+      "line": 9,
+      "label": "i--"
+    },
+    {
+      "id": 5,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 6,
+      "line": 10,
+      "label": "if (str.charAt(i) == 'y')"
+    },
+    {
+      "id": 7,
+      "line": 11,
+      "label": "y = true"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 9,
+      "line": 13,
+      "label": "if (str.charAt(i) == 'x' && !y)"
+    },
+    {
+      "id": 10,
+      "line": 14,
+      "label": "return false;"
+    },
+    {
+      "id": 11,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 12,
+      "line": 17,
+      "label": "return true;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 4,
+      "source": 3,
+      "target": 6,
+      "label": "True"
+    },
+    {
+      "id": 5,
+      "source": 6,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 7,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 6,
+      "target": 8,
+      "label": "False"
+    },
+    {
+      "id": 8,
+      "source": 8,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 9,
+      "target": 10,
+      "label": "True"
+    },
+    {
+      "id": 10,
+      "source": 9,
+      "target": 11,
+      "label": "False"
+    },
+    {
+      "id": 11,
+      "source": 11,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 4,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 13,
+      "source": 5,
+      "target": 12,
+      "label": ""
+    }
+  ]
+}

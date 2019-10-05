@@ -1,0 +1,74 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Logic1Sharedigit.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Logic1Sharedigit.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "boolean shareDigit(int a, int b)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "int al = a / 10"
+    },
+    {
+      "id": 2,
+      "line": 7,
+      "label": "int ar = a % 10"
+    },
+    {
+      "id": 3,
+      "line": 8,
+      "label": "int bl = b / 10"
+    },
+    {
+      "id": 4,
+      "line": 9,
+      "label": "int br = b % 10"
+    },
+    {
+      "id": 5,
+      "line": 11,
+      "label": "return al == bl || al == br || ar == bl || ar == br;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    }
+  ]
+}

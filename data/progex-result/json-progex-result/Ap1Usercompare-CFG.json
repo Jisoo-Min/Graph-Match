@@ -1,0 +1,162 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Ap1Usercompare.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Ap1Usercompare.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 7,
+      "label": "int userCompare(String aName, int aId, String bName, int bId)"
+    },
+    {
+      "id": 1,
+      "line": 8,
+      "label": "if (aName.compareTo(bName) < 0)"
+    },
+    {
+      "id": 2,
+      "line": 9,
+      "label": "return -1;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "if (aName.compareTo(bName) > 0)"
+    },
+    {
+      "id": 5,
+      "line": 11,
+      "label": "return 1;"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 7,
+      "line": 12,
+      "label": "if (aId < bId)"
+    },
+    {
+      "id": 8,
+      "line": 13,
+      "label": "return -1;"
+    },
+    {
+      "id": 9,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 10,
+      "line": 14,
+      "label": "if (aId > bId)"
+    },
+    {
+      "id": 11,
+      "line": 15,
+      "label": "return 1;"
+    },
+    {
+      "id": 12,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 13,
+      "line": 18,
+      "label": "return 0;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 4,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 4,
+      "target": 5,
+      "label": "True"
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 7,
+      "label": "False"
+    },
+    {
+      "id": 5,
+      "source": 7,
+      "target": 8,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 7,
+      "target": 10,
+      "label": "False"
+    },
+    {
+      "id": 7,
+      "source": 10,
+      "target": 11,
+      "label": "True"
+    },
+    {
+      "id": 8,
+      "source": 10,
+      "target": 12,
+      "label": "False"
+    },
+    {
+      "id": 9,
+      "source": 12,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 9,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 6,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 3,
+      "target": 13,
+      "label": ""
+    }
+  ]
+}

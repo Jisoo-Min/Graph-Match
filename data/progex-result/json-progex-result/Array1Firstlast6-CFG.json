@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array1Firstlast6.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array1Firstlast6.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "boolean firstLast6(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "return nums[0] == 6 || nums[nums.length - 1] == 6;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

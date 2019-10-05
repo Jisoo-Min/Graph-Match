@@ -1,0 +1,74 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Logic1Sortasum.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Logic1Sortasum.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "int sortaSum(int a, int b)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "int sum = a + b"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "if (10 <= sum && sum <= 19)"
+    },
+    {
+      "id": 3,
+      "line": 9,
+      "label": "return 20;"
+    },
+    {
+      "id": 4,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 5,
+      "line": 11,
+      "label": "return sum;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": "True"
+    },
+    {
+      "id": 3,
+      "source": 2,
+      "target": 4,
+      "label": "False"
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Logic1Teensum.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Logic1Teensum.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "int teenSum(int a, int b)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "if ((13 <= a && a <= 19) || (13 <= b && b <= 19))"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "return 19;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "return a + b;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    }
+  ]
+}

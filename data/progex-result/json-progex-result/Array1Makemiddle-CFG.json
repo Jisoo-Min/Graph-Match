@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array1Makemiddle.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array1Makemiddle.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "int[] makeMiddle(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "return new int[] {nums[nums.length / 2 - 1], nums[nums.length / 2]};"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

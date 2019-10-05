@@ -1,0 +1,152 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String2Plusout.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String2Plusout.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "String plusOut(String str, String word)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "StringBuffer result = new StringBuffer()"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "int i = 0"
+    },
+    {
+      "id": 3,
+      "line": 10,
+      "label": "while (i < str.length())"
+    },
+    {
+      "id": 4,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 5,
+      "line": 11,
+      "label": "if (i <= str.length() - word.length() && str.substring(i, i + word.length()).equals(word))"
+    },
+    {
+      "id": 6,
+      "line": 13,
+      "label": "result.append(word)"
+    },
+    {
+      "id": 7,
+      "line": 14,
+      "label": "i += word.length()"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 9,
+      "line": 16,
+      "label": "result.append('+')"
+    },
+    {
+      "id": 10,
+      "line": 17,
+      "label": "i++"
+    },
+    {
+      "id": 11,
+      "line": 21,
+      "label": "return result.toString();"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": "False"
+    },
+    {
+      "id": 4,
+      "source": 3,
+      "target": 5,
+      "label": "True"
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 6,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 7,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 5,
+      "target": 9,
+      "label": "False"
+    },
+    {
+      "id": 9,
+      "source": 9,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 10,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 8,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 4,
+      "target": 11,
+      "label": ""
+    }
+  ]
+}

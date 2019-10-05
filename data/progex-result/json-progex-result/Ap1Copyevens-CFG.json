@@ -1,0 +1,152 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Ap1Copyevens.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Ap1Copyevens.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "int[] copyEvens(int[] nums, int count)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "int[] arr = new int[count]"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "int index = 0"
+    },
+    {
+      "id": 3,
+      "line": 10,
+      "label": "int i = 0"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "for (index < count)"
+    },
+    {
+      "id": 5,
+      "line": 10,
+      "label": "i++"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 7,
+      "line": 11,
+      "label": "if (nums[i] % 2 == 0)"
+    },
+    {
+      "id": 8,
+      "line": 12,
+      "label": "arr[index] = nums[i]"
+    },
+    {
+      "id": 9,
+      "line": 13,
+      "label": "index++"
+    },
+    {
+      "id": 10,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 11,
+      "line": 17,
+      "label": "return arr;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 5,
+      "source": 4,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 7,
+      "target": 8,
+      "label": "True"
+    },
+    {
+      "id": 7,
+      "source": 8,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 9,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 7,
+      "target": 10,
+      "label": "False"
+    },
+    {
+      "id": 10,
+      "source": 10,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 5,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 6,
+      "target": 11,
+      "label": ""
+    }
+  ]
+}

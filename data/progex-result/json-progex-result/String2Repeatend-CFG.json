@@ -1,0 +1,113 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String2Repeatend.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String2Repeatend.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "String repeatEnd(String str, int n)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "StringBuffer result = new StringBuffer()"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "String end = str.substring(str.length() - n)"
+    },
+    {
+      "id": 3,
+      "line": 10,
+      "label": "int i = 0"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "for (i < n)"
+    },
+    {
+      "id": 5,
+      "line": 10,
+      "label": "i++"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 7,
+      "line": 11,
+      "label": "result.append(end)"
+    },
+    {
+      "id": 8,
+      "line": 13,
+      "label": "return result.toString();"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 5,
+      "source": 4,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 7,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 5,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 6,
+      "target": 8,
+      "label": ""
+    }
+  ]
+}

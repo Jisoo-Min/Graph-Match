@@ -1,0 +1,169 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array1Frontpiece.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array1Frontpiece.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "int[] frontPiece(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "int[] arr"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "if (nums.length < 2)"
+    },
+    {
+      "id": 3,
+      "line": 9,
+      "label": "arr = new int[nums.length]"
+    },
+    {
+      "id": 4,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 5,
+      "line": 11,
+      "label": "arr = new int[2]"
+    },
+    {
+      "id": 6,
+      "line": 13,
+      "label": "if (nums.length > 0)"
+    },
+    {
+      "id": 7,
+      "line": 14,
+      "label": "arr[0] = nums[0]"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 9,
+      "line": 16,
+      "label": "if (nums.length > 1)"
+    },
+    {
+      "id": 10,
+      "line": 17,
+      "label": "arr[1] = nums[1]"
+    },
+    {
+      "id": 11,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 12,
+      "line": 19,
+      "label": "return arr;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": "True"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 2,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 6,
+      "source": 4,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 6,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 8,
+      "source": 7,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 6,
+      "target": 8,
+      "label": "False"
+    },
+    {
+      "id": 10,
+      "source": 8,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 9,
+      "target": 10,
+      "label": "True"
+    },
+    {
+      "id": 12,
+      "source": 10,
+      "target": 11,
+      "label": ""
+    },
+    {
+      "id": 13,
+      "source": 9,
+      "target": 11,
+      "label": "False"
+    },
+    {
+      "id": 14,
+      "source": 11,
+      "target": 12,
+      "label": ""
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Left2.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Left2.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "String left2(String str)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "return str.substring(2) + str.substring(0, 2);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

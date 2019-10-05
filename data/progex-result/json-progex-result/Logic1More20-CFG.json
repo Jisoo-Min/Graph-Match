@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Logic1More20.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Logic1More20.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "boolean more20(int n)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "return n % 20 == 1 || n % 20 == 2;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

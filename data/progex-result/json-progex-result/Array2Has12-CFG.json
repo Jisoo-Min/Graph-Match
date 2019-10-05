@@ -1,0 +1,163 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array2Has12.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array2Has12.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "boolean has12(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "boolean found1 = false"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "int i = 0"
+    },
+    {
+      "id": 3,
+      "line": 8,
+      "label": "for (i < nums.length)"
+    },
+    {
+      "id": 4,
+      "line": 8,
+      "label": "i++"
+    },
+    {
+      "id": 5,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 6,
+      "line": 9,
+      "label": "if (nums[i] == 1)"
+    },
+    {
+      "id": 7,
+      "line": 10,
+      "label": "found1 = true"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 9,
+      "line": 12,
+      "label": "if (found1 && nums[i] == 2)"
+    },
+    {
+      "id": 10,
+      "line": 13,
+      "label": "return true;"
+    },
+    {
+      "id": 11,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 12,
+      "line": 16,
+      "label": "return false;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 4,
+      "source": 3,
+      "target": 6,
+      "label": "True"
+    },
+    {
+      "id": 5,
+      "source": 6,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 7,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 6,
+      "target": 8,
+      "label": "False"
+    },
+    {
+      "id": 8,
+      "source": 8,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 9,
+      "target": 10,
+      "label": "True"
+    },
+    {
+      "id": 10,
+      "source": 9,
+      "target": 11,
+      "label": "False"
+    },
+    {
+      "id": 11,
+      "source": 11,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 4,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 13,
+      "source": 5,
+      "target": 12,
+      "label": ""
+    }
+  ]
+}

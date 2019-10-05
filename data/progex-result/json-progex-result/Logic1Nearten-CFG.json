@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Logic1Nearten.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Logic1Nearten.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "boolean nearTen(int num)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "return num % 10 <= 2 || num % 10 >= 8;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

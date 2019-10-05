@@ -1,0 +1,146 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array2Shiftleft.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array2Shiftleft.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "int[] shiftLeft(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "if (nums.length < 1)"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "return nums;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "int first = nums[0]"
+    },
+    {
+      "id": 5,
+      "line": 12,
+      "label": "int i = 1"
+    },
+    {
+      "id": 6,
+      "line": 12,
+      "label": "for (i < nums.length)"
+    },
+    {
+      "id": 7,
+      "line": 12,
+      "label": "i++"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 9,
+      "line": 13,
+      "label": "nums[i - 1] = nums[i]"
+    },
+    {
+      "id": 10,
+      "line": 15,
+      "label": "nums[nums.length - 1] = first"
+    },
+    {
+      "id": 11,
+      "line": 17,
+      "label": "return nums;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 8,
+      "label": "False"
+    },
+    {
+      "id": 7,
+      "source": 6,
+      "target": 9,
+      "label": "True"
+    },
+    {
+      "id": 8,
+      "source": 9,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 7,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 8,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 10,
+      "target": 11,
+      "label": ""
+    }
+  ]
+}

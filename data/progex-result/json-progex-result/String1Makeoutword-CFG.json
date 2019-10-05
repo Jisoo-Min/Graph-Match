@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Makeoutword.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Makeoutword.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 7,
+      "label": "String makeOutWord(String out, String word)"
+    },
+    {
+      "id": 1,
+      "line": 8,
+      "label": "return out.substring(0, 2) + word + out.substring(2);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

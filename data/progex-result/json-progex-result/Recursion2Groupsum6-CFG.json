@@ -1,0 +1,162 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Recursion2Groupsum6.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Recursion2Groupsum6.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 7,
+      "label": "boolean groupSum6(int start, int[] nums, int target)"
+    },
+    {
+      "id": 1,
+      "line": 8,
+      "label": "if (start >= nums.length)"
+    },
+    {
+      "id": 2,
+      "line": 9,
+      "label": "return target == 0;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 11,
+      "label": "if (nums[start] == 6)"
+    },
+    {
+      "id": 5,
+      "line": 12,
+      "label": "return groupSum6(start+1, nums, target - 6);"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 7,
+      "line": 14,
+      "label": "if (groupSum6(start+1, nums, target - nums[start]))"
+    },
+    {
+      "id": 8,
+      "line": 15,
+      "label": "return true;"
+    },
+    {
+      "id": 9,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 10,
+      "line": 17,
+      "label": "if (groupSum6(start+1, nums, target))"
+    },
+    {
+      "id": 11,
+      "line": 18,
+      "label": "return true;"
+    },
+    {
+      "id": 12,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 13,
+      "line": 20,
+      "label": "return false;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": "True"
+    },
+    {
+      "id": 5,
+      "source": 4,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 7,
+      "target": 8,
+      "label": "True"
+    },
+    {
+      "id": 8,
+      "source": 7,
+      "target": 9,
+      "label": "False"
+    },
+    {
+      "id": 9,
+      "source": 9,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 10,
+      "target": 11,
+      "label": "True"
+    },
+    {
+      "id": 11,
+      "source": 10,
+      "target": 12,
+      "label": "False"
+    },
+    {
+      "id": 12,
+      "source": 12,
+      "target": 13,
+      "label": ""
+    }
+  ]
+}

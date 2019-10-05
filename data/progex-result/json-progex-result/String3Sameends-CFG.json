@@ -1,0 +1,157 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String3Sameends.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String3Sameends.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "String sameEnds(String string)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "int start = (int) Math.ceil((double) string.length() / 2)"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "int end = string.length() / 2"
+    },
+    {
+      "id": 3,
+      "line": 10,
+      "label": "int i = 0"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "for (i < string.length() / 2)"
+    },
+    {
+      "id": 5,
+      "line": 10,
+      "label": "i++"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 7,
+      "line": 11,
+      "label": "if (string.substring(0, end).equals(string.substring(start)))"
+    },
+    {
+      "id": 8,
+      "line": 12,
+      "label": "return string.substring(0, end);"
+    },
+    {
+      "id": 9,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 10,
+      "line": 14,
+      "label": "start++"
+    },
+    {
+      "id": 11,
+      "line": 15,
+      "label": "end--"
+    },
+    {
+      "id": 12,
+      "line": 19,
+      "label": "return '';"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 5,
+      "source": 4,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 7,
+      "target": 8,
+      "label": "True"
+    },
+    {
+      "id": 7,
+      "source": 7,
+      "target": 10,
+      "label": "False"
+    },
+    {
+      "id": 8,
+      "source": 10,
+      "target": 11,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 11,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 9,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 5,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 6,
+      "target": 12,
+      "label": ""
+    }
+  ]
+}

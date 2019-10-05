@@ -1,0 +1,152 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array2Pre4.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array2Pre4.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 7,
+      "label": "int[] pre4(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 8,
+      "label": "int i = 0"
+    },
+    {
+      "id": 2,
+      "line": 10,
+      "label": "while (nums[i] != 4)"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 4,
+      "line": 11,
+      "label": "i++"
+    },
+    {
+      "id": 5,
+      "line": 13,
+      "label": "int[] arr = new int[i]"
+    },
+    {
+      "id": 6,
+      "line": 15,
+      "label": "int j = 0"
+    },
+    {
+      "id": 7,
+      "line": 15,
+      "label": "for (j < i)"
+    },
+    {
+      "id": 8,
+      "line": 15,
+      "label": "j++"
+    },
+    {
+      "id": 9,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 10,
+      "line": 16,
+      "label": "arr[j] = nums[j]"
+    },
+    {
+      "id": 11,
+      "line": 18,
+      "label": "return arr;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 2,
+      "target": 4,
+      "label": "True"
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 3,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 6,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 6,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 7,
+      "target": 9,
+      "label": "False"
+    },
+    {
+      "id": 9,
+      "source": 7,
+      "target": 10,
+      "label": "True"
+    },
+    {
+      "id": 10,
+      "source": 10,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 8,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 9,
+      "target": 11,
+      "label": ""
+    }
+  ]
+}

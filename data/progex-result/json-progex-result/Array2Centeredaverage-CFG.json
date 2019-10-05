@@ -1,0 +1,146 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array2Centeredaverage.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array2Centeredaverage.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 9,
+      "label": "int centeredAverage(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 10,
+      "label": "int sum = 0"
+    },
+    {
+      "id": 2,
+      "line": 11,
+      "label": "int min = nums[0]"
+    },
+    {
+      "id": 3,
+      "line": 12,
+      "label": "int max = nums[0]"
+    },
+    {
+      "id": 4,
+      "line": 14,
+      "label": "int i = 0"
+    },
+    {
+      "id": 5,
+      "line": 14,
+      "label": "for (i < nums.length)"
+    },
+    {
+      "id": 6,
+      "line": 14,
+      "label": "i++"
+    },
+    {
+      "id": 7,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 8,
+      "line": 15,
+      "label": "sum += nums[i]"
+    },
+    {
+      "id": 9,
+      "line": 16,
+      "label": "min = Math.min(min, nums[i])"
+    },
+    {
+      "id": 10,
+      "line": 17,
+      "label": "max = Math.max(max, nums[i])"
+    },
+    {
+      "id": 11,
+      "line": 20,
+      "label": "return (sum - min - max) / (nums.length - 2);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 7,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 5,
+      "target": 8,
+      "label": "True"
+    },
+    {
+      "id": 7,
+      "source": 8,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 9,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 10,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 6,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 7,
+      "target": 11,
+      "label": ""
+    }
+  ]
+}

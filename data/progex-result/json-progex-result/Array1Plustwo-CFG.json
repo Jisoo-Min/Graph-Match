@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array1Plustwo.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array1Plustwo.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "int[] plusTwo(int[] a, int[] b)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "return new int[] {a[0], a[1], b[0], b[1]};"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

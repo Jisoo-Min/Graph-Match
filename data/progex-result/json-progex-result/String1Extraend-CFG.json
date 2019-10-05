@@ -1,0 +1,41 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Extraend.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Extraend.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "String extraEnd(String str)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "String last = str.substring(str.length() - 2)"
+    },
+    {
+      "id": 2,
+      "line": 7,
+      "label": "return last + last + last;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Logic2Lonesum.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Logic2Lonesum.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "int loneSum(int a, int b, int c)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "int sum = 0"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "if (a != b && a != c)"
+    },
+    {
+      "id": 3,
+      "line": 9,
+      "label": "sum += a"
+    },
+    {
+      "id": 4,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 5,
+      "line": 11,
+      "label": "if (b != a && b != c)"
+    },
+    {
+      "id": 6,
+      "line": 12,
+      "label": "sum += b"
+    },
+    {
+      "id": 7,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 8,
+      "line": 14,
+      "label": "if (c != a && c != b)"
+    },
+    {
+      "id": 9,
+      "line": 15,
+      "label": "sum += c"
+    },
+    {
+      "id": 10,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 11,
+      "line": 17,
+      "label": "return sum;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": "True"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 2,
+      "target": 4,
+      "label": "False"
+    },
+    {
+      "id": 5,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 6,
+      "source": 5,
+      "target": 6,
+      "label": "True"
+    },
+    {
+      "id": 7,
+      "source": 6,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 5,
+      "target": 7,
+      "label": "False"
+    },
+    {
+      "id": 9,
+      "source": 7,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 8,
+      "target": 9,
+      "label": "True"
+    },
+    {
+      "id": 11,
+      "source": 9,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 8,
+      "target": 10,
+      "label": "False"
+    },
+    {
+      "id": 13,
+      "source": 10,
+      "target": 11,
+      "label": ""
+    }
+  ]
+}

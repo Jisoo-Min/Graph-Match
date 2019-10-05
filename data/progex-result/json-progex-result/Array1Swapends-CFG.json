@@ -1,0 +1,63 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array1Swapends.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array1Swapends.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "int[] swapEnds(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "int temp = nums[0]"
+    },
+    {
+      "id": 2,
+      "line": 7,
+      "label": "nums[0] = nums[nums.length - 1]"
+    },
+    {
+      "id": 3,
+      "line": 8,
+      "label": "nums[nums.length - 1] = temp"
+    },
+    {
+      "id": 4,
+      "line": 9,
+      "label": "return nums;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    }
+  ]
+}

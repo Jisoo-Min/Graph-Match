@@ -1,0 +1,63 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Logic1Cigarparty.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Logic1Cigarparty.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 8,
+      "label": "boolean cigarParty(int cigars, boolean isWeekend)"
+    },
+    {
+      "id": 1,
+      "line": 9,
+      "label": "if (isWeekend)"
+    },
+    {
+      "id": 2,
+      "line": 10,
+      "label": "return 40 <= cigars;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 12,
+      "label": "return 40 <= cigars && cigars <= 60;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Warmup1Close10.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Warmup1Close10.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "int close10(int a, int b)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "int distA = Math.abs(a - 10)"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "int distB = Math.abs(b - 10)"
+    },
+    {
+      "id": 3,
+      "line": 10,
+      "label": "if (distA == distB)"
+    },
+    {
+      "id": 4,
+      "line": 11,
+      "label": "return 0;"
+    },
+    {
+      "id": 5,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 6,
+      "line": 13,
+      "label": "return distA < distB ? a : b;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": "True"
+    },
+    {
+      "id": 4,
+      "source": 3,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    }
+  ]
+}

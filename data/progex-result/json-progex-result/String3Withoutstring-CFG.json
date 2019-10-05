@@ -1,0 +1,224 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String3Withoutstring.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String3Withoutstring.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 8,
+      "label": "String withoutString(String base, String remove)"
+    },
+    {
+      "id": 1,
+      "line": 9,
+      "label": "char[] arr = new char[base.length()]"
+    },
+    {
+      "id": 2,
+      "line": 10,
+      "label": "int count = 0"
+    },
+    {
+      "id": 3,
+      "line": 11,
+      "label": "int i = 0"
+    },
+    {
+      "id": 4,
+      "line": 13,
+      "label": "while (i <= base.length() - remove.length())"
+    },
+    {
+      "id": 5,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 6,
+      "line": 14,
+      "label": "if (base.substring(i, i + remove.length()).toLowerCase().equals(remove.toLowerCase()))"
+    },
+    {
+      "id": 7,
+      "line": 16,
+      "label": "i += remove.length()"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 9,
+      "line": 18,
+      "label": "arr[count] = base.charAt(i)"
+    },
+    {
+      "id": 10,
+      "line": 19,
+      "label": "count++"
+    },
+    {
+      "id": 11,
+      "line": 20,
+      "label": "i++"
+    },
+    {
+      "id": 12,
+      "line": 24,
+      "label": "while (i < base.length())"
+    },
+    {
+      "id": 13,
+      "line": 0,
+      "label": "endwhile"
+    },
+    {
+      "id": 14,
+      "line": 25,
+      "label": "arr[count] = base.charAt(i)"
+    },
+    {
+      "id": 15,
+      "line": 26,
+      "label": "count++"
+    },
+    {
+      "id": 16,
+      "line": 27,
+      "label": "i++"
+    },
+    {
+      "id": 17,
+      "line": 30,
+      "label": "return new String(arr, 0, count);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 5,
+      "source": 4,
+      "target": 6,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 7,
+      "source": 7,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 6,
+      "target": 9,
+      "label": "False"
+    },
+    {
+      "id": 9,
+      "source": 9,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 10,
+      "target": 11,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 11,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 8,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 13,
+      "source": 5,
+      "target": 12,
+      "label": ""
+    },
+    {
+      "id": 14,
+      "source": 12,
+      "target": 13,
+      "label": "False"
+    },
+    {
+      "id": 15,
+      "source": 12,
+      "target": 14,
+      "label": "True"
+    },
+    {
+      "id": 16,
+      "source": 14,
+      "target": 15,
+      "label": ""
+    },
+    {
+      "id": 17,
+      "source": 15,
+      "target": 16,
+      "label": ""
+    },
+    {
+      "id": 18,
+      "source": 16,
+      "target": 12,
+      "label": ""
+    },
+    {
+      "id": 19,
+      "source": 13,
+      "target": 17,
+      "label": ""
+    }
+  ]
+}

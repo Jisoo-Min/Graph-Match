@@ -1,0 +1,63 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Warmup1Endup.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Warmup1Endup.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 7,
+      "label": "String endUp(String str)"
+    },
+    {
+      "id": 1,
+      "line": 8,
+      "label": "if (str.length() < 3)"
+    },
+    {
+      "id": 2,
+      "line": 9,
+      "label": "return str.toUpperCase();"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 11,
+      "label": "return str.substring(0, str.length() - 3) + str.substring(str.length() - 3).toUpperCase();"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Recursion1Sumdigits.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Recursion1Sumdigits.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "int sumDigits(int n)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "if (n == 0)"
+    },
+    {
+      "id": 2,
+      "line": 7,
+      "label": "return 0;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 9,
+      "label": "return n % 10 + sumDigits(n / 10);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    }
+  ]
+}

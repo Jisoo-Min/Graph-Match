@@ -1,0 +1,211 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Recursion2Split53.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Recursion2Split53.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 8,
+      "label": "boolean split53(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 9,
+      "label": "return split53Helper(0, nums, 0, 0);"
+    },
+    {
+      "id": 2,
+      "line": 12,
+      "label": "boolean split53Helper(int start, int[] nums, int mult5, int mult3)"
+    },
+    {
+      "id": 3,
+      "line": 13,
+      "label": "if (start >= nums.length)"
+    },
+    {
+      "id": 4,
+      "line": 14,
+      "label": "return mult5 == mult3;"
+    },
+    {
+      "id": 5,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 6,
+      "line": 16,
+      "label": "if (nums[start] % 5 == 0)"
+    },
+    {
+      "id": 7,
+      "line": 17,
+      "label": "return split53Helper(start+1, nums, mult5 + nums[start], mult3);"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 9,
+      "line": 19,
+      "label": "if (nums[start] % 3 == 0)"
+    },
+    {
+      "id": 10,
+      "line": 20,
+      "label": "return split53Helper(start+1, nums, mult5, mult3 + nums[start]);"
+    },
+    {
+      "id": 11,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 12,
+      "line": 22,
+      "label": "if (split53Helper(start+1, nums, mult5 + nums[start], mult3))"
+    },
+    {
+      "id": 13,
+      "line": 23,
+      "label": "return true;"
+    },
+    {
+      "id": 14,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 15,
+      "line": 25,
+      "label": "if (split53Helper(start+1, nums, mult5, mult3 + nums[start]))"
+    },
+    {
+      "id": 16,
+      "line": 26,
+      "label": "return true;"
+    },
+    {
+      "id": 17,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 18,
+      "line": 28,
+      "label": "return false;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 3,
+      "target": 4,
+      "label": "True"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 4,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 6,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 8,
+      "label": "False"
+    },
+    {
+      "id": 7,
+      "source": 8,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 9,
+      "target": 10,
+      "label": "True"
+    },
+    {
+      "id": 9,
+      "source": 9,
+      "target": 11,
+      "label": "False"
+    },
+    {
+      "id": 10,
+      "source": 11,
+      "target": 12,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 12,
+      "target": 13,
+      "label": "True"
+    },
+    {
+      "id": 12,
+      "source": 12,
+      "target": 14,
+      "label": "False"
+    },
+    {
+      "id": 13,
+      "source": 14,
+      "target": 15,
+      "label": ""
+    },
+    {
+      "id": 14,
+      "source": 15,
+      "target": 16,
+      "label": "True"
+    },
+    {
+      "id": 15,
+      "source": 15,
+      "target": 17,
+      "label": "False"
+    },
+    {
+      "id": 16,
+      "source": 17,
+      "target": 18,
+      "label": ""
+    }
+  ]
+}

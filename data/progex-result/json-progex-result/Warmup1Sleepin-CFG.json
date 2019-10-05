@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Warmup1Sleepin.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Warmup1Sleepin.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "boolean sleepIn(boolean weekday, boolean vacation)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "return !weekday || vacation;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

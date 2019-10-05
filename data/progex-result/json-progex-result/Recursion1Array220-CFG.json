@@ -1,0 +1,63 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Recursion1Array220.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Recursion1Array220.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 8,
+      "label": "boolean array220(int[] nums, int index)"
+    },
+    {
+      "id": 1,
+      "line": 9,
+      "label": "if (index >= nums.length - 1)"
+    },
+    {
+      "id": 2,
+      "line": 10,
+      "label": "return false;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 12,
+      "label": "return nums[index+1] == 10 * nums[index] || array220(nums, index + 1);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    }
+  ]
+}

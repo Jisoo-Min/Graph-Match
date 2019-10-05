@@ -1,0 +1,246 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Ap1Mergetwo.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Ap1Mergetwo.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 10,
+      "label": "String[] mergeTwo(String[] a, String[] b, int n)"
+    },
+    {
+      "id": 1,
+      "line": 11,
+      "label": "String[] arr = new String[n]"
+    },
+    {
+      "id": 2,
+      "line": 12,
+      "label": "int aIndex = 0"
+    },
+    {
+      "id": 3,
+      "line": 13,
+      "label": "int bIndex = 0"
+    },
+    {
+      "id": 4,
+      "line": 15,
+      "label": "int index = 0"
+    },
+    {
+      "id": 5,
+      "line": 15,
+      "label": "for (index < n)"
+    },
+    {
+      "id": 6,
+      "line": 15,
+      "label": "index++"
+    },
+    {
+      "id": 7,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 8,
+      "line": 16,
+      "label": "if (a[aIndex].compareTo(b[bIndex]) < 0)"
+    },
+    {
+      "id": 9,
+      "line": 17,
+      "label": "arr[index] = a[aIndex]"
+    },
+    {
+      "id": 10,
+      "line": 18,
+      "label": "aIndex++"
+    },
+    {
+      "id": 11,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 12,
+      "line": 19,
+      "label": "if (a[aIndex].compareTo(b[bIndex]) > 0)"
+    },
+    {
+      "id": 13,
+      "line": 20,
+      "label": "arr[index] = b[bIndex]"
+    },
+    {
+      "id": 14,
+      "line": 21,
+      "label": "bIndex++"
+    },
+    {
+      "id": 15,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 16,
+      "line": 23,
+      "label": "arr[index] = a[aIndex]"
+    },
+    {
+      "id": 17,
+      "line": 24,
+      "label": "aIndex++"
+    },
+    {
+      "id": 18,
+      "line": 25,
+      "label": "bIndex++"
+    },
+    {
+      "id": 19,
+      "line": 29,
+      "label": "return arr;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 5,
+      "target": 7,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 5,
+      "target": 8,
+      "label": "True"
+    },
+    {
+      "id": 7,
+      "source": 8,
+      "target": 9,
+      "label": "True"
+    },
+    {
+      "id": 8,
+      "source": 9,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 10,
+      "target": 11,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 8,
+      "target": 12,
+      "label": "False"
+    },
+    {
+      "id": 11,
+      "source": 12,
+      "target": 13,
+      "label": "True"
+    },
+    {
+      "id": 12,
+      "source": 13,
+      "target": 14,
+      "label": ""
+    },
+    {
+      "id": 13,
+      "source": 14,
+      "target": 15,
+      "label": ""
+    },
+    {
+      "id": 14,
+      "source": 12,
+      "target": 16,
+      "label": "False"
+    },
+    {
+      "id": 15,
+      "source": 16,
+      "target": 17,
+      "label": ""
+    },
+    {
+      "id": 16,
+      "source": 17,
+      "target": 18,
+      "label": ""
+    },
+    {
+      "id": 17,
+      "source": 18,
+      "target": 15,
+      "label": ""
+    },
+    {
+      "id": 18,
+      "source": 15,
+      "target": 11,
+      "label": ""
+    },
+    {
+      "id": 19,
+      "source": 11,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 20,
+      "source": 6,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 21,
+      "source": 7,
+      "target": 19,
+      "label": ""
+    }
+  ]
+}

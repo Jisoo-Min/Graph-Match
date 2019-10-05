@@ -1,0 +1,169 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Ap1Scoreup.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Ap1Scoreup.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 9,
+      "label": "int scoreUp(String[] key, String[] answers)"
+    },
+    {
+      "id": 1,
+      "line": 10,
+      "label": "int score = 0"
+    },
+    {
+      "id": 2,
+      "line": 12,
+      "label": "int i = 0"
+    },
+    {
+      "id": 3,
+      "line": 12,
+      "label": "for (i < key.length)"
+    },
+    {
+      "id": 4,
+      "line": 12,
+      "label": "i++"
+    },
+    {
+      "id": 5,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 6,
+      "line": 13,
+      "label": "if (key[i].charAt(0) == answers[i].charAt(0))"
+    },
+    {
+      "id": 7,
+      "line": 14,
+      "label": "score += 4"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 9,
+      "line": 15,
+      "label": "if (answers[i].charAt(0) != '?')"
+    },
+    {
+      "id": 10,
+      "line": 16,
+      "label": "score -= 1"
+    },
+    {
+      "id": 11,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 12,
+      "line": 20,
+      "label": "return score;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 4,
+      "source": 3,
+      "target": 6,
+      "label": "True"
+    },
+    {
+      "id": 5,
+      "source": 6,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 7,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 6,
+      "target": 9,
+      "label": "False"
+    },
+    {
+      "id": 8,
+      "source": 9,
+      "target": 10,
+      "label": "True"
+    },
+    {
+      "id": 9,
+      "source": 10,
+      "target": 11,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 9,
+      "target": 11,
+      "label": "False"
+    },
+    {
+      "id": 11,
+      "source": 11,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 8,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 13,
+      "source": 4,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 14,
+      "source": 5,
+      "target": 12,
+      "label": ""
+    }
+  ]
+}

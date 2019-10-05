@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Nonstart.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Nonstart.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "String nonStart(String a, String b)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "return a.substring(1) + b.substring(1);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

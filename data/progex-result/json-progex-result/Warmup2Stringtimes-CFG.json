@@ -1,0 +1,174 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Warmup2Stringtimes.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Warmup2Stringtimes.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "String stringTimes(String str, int n)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "char[] nCopy = new char[n * str.length()]"
+    },
+    {
+      "id": 2,
+      "line": 7,
+      "label": "int index = 0"
+    },
+    {
+      "id": 3,
+      "line": 9,
+      "label": "int i = 0"
+    },
+    {
+      "id": 4,
+      "line": 9,
+      "label": "for (i < n)"
+    },
+    {
+      "id": 5,
+      "line": 9,
+      "label": "i++"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 7,
+      "line": 10,
+      "label": "int j = 0"
+    },
+    {
+      "id": 8,
+      "line": 10,
+      "label": "for (j < str.length())"
+    },
+    {
+      "id": 9,
+      "line": 10,
+      "label": "j++"
+    },
+    {
+      "id": 10,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 11,
+      "line": 11,
+      "label": "nCopy[index] = str.charAt(j)"
+    },
+    {
+      "id": 12,
+      "line": 12,
+      "label": "index++"
+    },
+    {
+      "id": 13,
+      "line": 16,
+      "label": "return new String(nCopy);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 5,
+      "source": 4,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 7,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 8,
+      "target": 10,
+      "label": "False"
+    },
+    {
+      "id": 8,
+      "source": 8,
+      "target": 11,
+      "label": "True"
+    },
+    {
+      "id": 9,
+      "source": 11,
+      "target": 12,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 12,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 9,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 10,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 13,
+      "source": 5,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 14,
+      "source": 6,
+      "target": 13,
+      "label": ""
+    }
+  ]
+}

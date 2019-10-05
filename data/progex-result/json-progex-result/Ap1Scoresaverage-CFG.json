@@ -1,0 +1,140 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Ap1Scoresaverage.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Ap1Scoresaverage.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 10,
+      "label": "int scoresAverage(int[] scores)"
+    },
+    {
+      "id": 1,
+      "line": 11,
+      "label": "int first = average(scores, 0, scores.length / 2)"
+    },
+    {
+      "id": 2,
+      "line": 12,
+      "label": "int second = average(scores, scores.length / 2, scores.length)"
+    },
+    {
+      "id": 3,
+      "line": 13,
+      "label": "return Math.max(first, second);"
+    },
+    {
+      "id": 4,
+      "line": 16,
+      "label": "int average(int[] scores, int start, int end)"
+    },
+    {
+      "id": 5,
+      "line": 17,
+      "label": "int sum = 0"
+    },
+    {
+      "id": 6,
+      "line": 19,
+      "label": "int i = start"
+    },
+    {
+      "id": 7,
+      "line": 19,
+      "label": "for (i < end)"
+    },
+    {
+      "id": 8,
+      "line": 19,
+      "label": "i++"
+    },
+    {
+      "id": 9,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 10,
+      "line": 20,
+      "label": "sum += scores[i]"
+    },
+    {
+      "id": 11,
+      "line": 22,
+      "label": "return sum / (end - start);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 6,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 6,
+      "source": 7,
+      "target": 9,
+      "label": "False"
+    },
+    {
+      "id": 7,
+      "source": 7,
+      "target": 10,
+      "label": "True"
+    },
+    {
+      "id": 8,
+      "source": 10,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 8,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 9,
+      "target": 11,
+      "label": ""
+    }
+  ]
+}

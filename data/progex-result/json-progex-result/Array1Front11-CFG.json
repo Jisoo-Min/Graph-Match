@@ -1,0 +1,129 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array1Front11.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array1Front11.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 5,
+      "label": "int[] front11(int[] a, int[] b)"
+    },
+    {
+      "id": 1,
+      "line": 6,
+      "label": "if (a.length > 0 && b.length > 0)"
+    },
+    {
+      "id": 2,
+      "line": 7,
+      "label": "return new int[] {a[0], b[0]};"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 8,
+      "label": "if (a.length > 0)"
+    },
+    {
+      "id": 5,
+      "line": 9,
+      "label": "return new int[] {a[0]};"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 7,
+      "line": 10,
+      "label": "if (b.length > 0)"
+    },
+    {
+      "id": 8,
+      "line": 11,
+      "label": "return new int[] {b[0]};"
+    },
+    {
+      "id": 9,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 10,
+      "line": 14,
+      "label": "return new int[0];"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 4,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 4,
+      "target": 5,
+      "label": "True"
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 7,
+      "label": "False"
+    },
+    {
+      "id": 5,
+      "source": 7,
+      "target": 8,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 7,
+      "target": 9,
+      "label": "False"
+    },
+    {
+      "id": 7,
+      "source": 9,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 6,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 3,
+      "target": 10,
+      "label": ""
+    }
+  ]
+}

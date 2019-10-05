@@ -1,0 +1,74 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Array1Maxend3.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Array1Maxend3.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "int[] maxEnd3(int[] nums)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "int max = nums[0] > nums[2] ? nums[0] : nums[2]"
+    },
+    {
+      "id": 2,
+      "line": 9,
+      "label": "nums[0] = max"
+    },
+    {
+      "id": 3,
+      "line": 10,
+      "label": "nums[1] = max"
+    },
+    {
+      "id": 4,
+      "line": 11,
+      "label": "nums[2] = max"
+    },
+    {
+      "id": 5,
+      "line": 13,
+      "label": "return nums;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    }
+  ]
+}

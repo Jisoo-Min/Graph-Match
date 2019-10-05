@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Maketags.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Maketags.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 7,
+      "label": "String makeTags(String tag, String word)"
+    },
+    {
+      "id": 1,
+      "line": 8,
+      "label": "return '<' + tag + '>' + word + '</' + tag + '>';"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    }
+  ]
+}

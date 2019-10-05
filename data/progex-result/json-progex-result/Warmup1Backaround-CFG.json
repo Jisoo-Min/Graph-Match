@@ -1,0 +1,41 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Warmup1Backaround.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Warmup1Backaround.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "String backAround(String str)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "char last = str.charAt(str.length() - 1)"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "return last + str + last;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    }
+  ]
+}

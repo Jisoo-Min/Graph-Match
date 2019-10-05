@@ -1,0 +1,130 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Ap1Bigheights.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Ap1Bigheights.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 8,
+      "label": "int bigHeights(int[] heights, int start, int end)"
+    },
+    {
+      "id": 1,
+      "line": 9,
+      "label": "int count = 0"
+    },
+    {
+      "id": 2,
+      "line": 11,
+      "label": "int i = start"
+    },
+    {
+      "id": 3,
+      "line": 11,
+      "label": "for (i < end)"
+    },
+    {
+      "id": 4,
+      "line": 11,
+      "label": "i++"
+    },
+    {
+      "id": 5,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 6,
+      "line": 12,
+      "label": "if (Math.abs(heights[i] - heights[i+1]) >= 5)"
+    },
+    {
+      "id": 7,
+      "line": 13,
+      "label": "count++"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 9,
+      "line": 16,
+      "label": "return count;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 4,
+      "source": 3,
+      "target": 6,
+      "label": "True"
+    },
+    {
+      "id": 5,
+      "source": 6,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 7,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 6,
+      "target": 8,
+      "label": "False"
+    },
+    {
+      "id": 8,
+      "source": 8,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 4,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 10,
+      "source": 5,
+      "target": 9,
+      "label": ""
+    }
+  ]
+}

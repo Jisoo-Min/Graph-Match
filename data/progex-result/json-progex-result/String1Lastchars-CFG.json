@@ -1,0 +1,130 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String1Lastchars.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String1Lastchars.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "String lastChars(String a, String b)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "String first = '@'"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "String last = '@'"
+    },
+    {
+      "id": 3,
+      "line": 10,
+      "label": "if (a.length() > 0)"
+    },
+    {
+      "id": 4,
+      "line": 11,
+      "label": "first = a.substring(0,1)"
+    },
+    {
+      "id": 5,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 6,
+      "line": 13,
+      "label": "if (b.length() > 0)"
+    },
+    {
+      "id": 7,
+      "line": 14,
+      "label": "last = b.substring(b.length() - 1)"
+    },
+    {
+      "id": 8,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 9,
+      "line": 16,
+      "label": "return first + last;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": "True"
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 3,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 6,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 8,
+      "source": 7,
+      "target": 8,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 6,
+      "target": 8,
+      "label": "False"
+    },
+    {
+      "id": 10,
+      "source": 8,
+      "target": 9,
+      "label": ""
+    }
+  ]
+}

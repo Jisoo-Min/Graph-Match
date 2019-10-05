@@ -1,0 +1,129 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Recursion1Counthi2.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Recursion1Counthi2.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "int countHi2(String str)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "if (str.length() <= 1)"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "return 0;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "if (str.length() > 2 && str.substring(0, 3).equals('xhi'))"
+    },
+    {
+      "id": 5,
+      "line": 11,
+      "label": "return countHi2(str.substring(3));"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 7,
+      "line": 13,
+      "label": "if (str.substring(0, 2).equals('hi'))"
+    },
+    {
+      "id": 8,
+      "line": 14,
+      "label": "return 1 + countHi2(str.substring(2));"
+    },
+    {
+      "id": 9,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 10,
+      "line": 16,
+      "label": "return countHi2(str.substring(1));"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": "True"
+    },
+    {
+      "id": 5,
+      "source": 4,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 7,
+      "label": ""
+    },
+    {
+      "id": 7,
+      "source": 7,
+      "target": 8,
+      "label": "True"
+    },
+    {
+      "id": 8,
+      "source": 7,
+      "target": 9,
+      "label": "False"
+    },
+    {
+      "id": 9,
+      "source": 9,
+      "target": 10,
+      "label": ""
+    }
+  ]
+}

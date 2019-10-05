@@ -1,0 +1,96 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Logic1Answercell.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Logic1Answercell.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "if (isAsleep)"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "return false;"
+    },
+    {
+      "id": 3,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "if (isMorning && !isMom)"
+    },
+    {
+      "id": 5,
+      "line": 11,
+      "label": "return false;"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 7,
+      "line": 13,
+      "label": "return true;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 1,
+      "target": 3,
+      "label": "False"
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": "True"
+    },
+    {
+      "id": 5,
+      "source": 4,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 6,
+      "target": 7,
+      "label": ""
+    }
+  ]
+}

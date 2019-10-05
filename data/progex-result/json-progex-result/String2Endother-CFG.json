@@ -1,0 +1,91 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of String2Endother.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "String2Endother.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 6,
+      "label": "boolean endOther(String a, String b)"
+    },
+    {
+      "id": 1,
+      "line": 7,
+      "label": "if (a.length() < b.length())"
+    },
+    {
+      "id": 2,
+      "line": 8,
+      "label": "String temp = a"
+    },
+    {
+      "id": 3,
+      "line": 9,
+      "label": "a = b.toLowerCase()"
+    },
+    {
+      "id": 4,
+      "line": 10,
+      "label": "b = temp.toLowerCase()"
+    },
+    {
+      "id": 5,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 6,
+      "line": 13,
+      "label": "return a.substring(a.length() - b.length()).equals(b);"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": "True"
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 5,
+      "source": 1,
+      "target": 5,
+      "label": "False"
+    },
+    {
+      "id": 6,
+      "source": 5,
+      "target": 6,
+      "label": ""
+    }
+  ]
+}

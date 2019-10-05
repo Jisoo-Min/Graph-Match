@@ -1,0 +1,168 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "label": "CFG of Ap1Copyendy.java",
+  "type": "Control Flow Graph (CFG)",
+  "file": "Ap1Copyendy.java",
+  "package": "",
+
+  "nodes": [
+    {
+      "id": 0,
+      "line": 9,
+      "label": "int[] copyEndy(int[] nums, int count)"
+    },
+    {
+      "id": 1,
+      "line": 10,
+      "label": "int[] arr = new int[count]"
+    },
+    {
+      "id": 2,
+      "line": 11,
+      "label": "int index = 0"
+    },
+    {
+      "id": 3,
+      "line": 13,
+      "label": "int i = 0"
+    },
+    {
+      "id": 4,
+      "line": 13,
+      "label": "for (index < count)"
+    },
+    {
+      "id": 5,
+      "line": 13,
+      "label": "i++"
+    },
+    {
+      "id": 6,
+      "line": 0,
+      "label": "endfor"
+    },
+    {
+      "id": 7,
+      "line": 14,
+      "label": "if (isEndy(nums[i]))"
+    },
+    {
+      "id": 8,
+      "line": 15,
+      "label": "arr[index] = nums[i]"
+    },
+    {
+      "id": 9,
+      "line": 16,
+      "label": "index++"
+    },
+    {
+      "id": 10,
+      "line": 0,
+      "label": "endif"
+    },
+    {
+      "id": 11,
+      "line": 20,
+      "label": "return arr;"
+    },
+    {
+      "id": 12,
+      "line": 23,
+      "label": "boolean isEndy(int n)"
+    },
+    {
+      "id": 13,
+      "line": 24,
+      "label": "return 0 <= n && n <= 10 || 90 <= n && n <= 100;"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": 0,
+      "source": 0,
+      "target": 1,
+      "label": ""
+    },
+    {
+      "id": 1,
+      "source": 1,
+      "target": 2,
+      "label": ""
+    },
+    {
+      "id": 2,
+      "source": 2,
+      "target": 3,
+      "label": ""
+    },
+    {
+      "id": 3,
+      "source": 3,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 4,
+      "source": 4,
+      "target": 6,
+      "label": "False"
+    },
+    {
+      "id": 5,
+      "source": 4,
+      "target": 7,
+      "label": "True"
+    },
+    {
+      "id": 6,
+      "source": 7,
+      "target": 8,
+      "label": "True"
+    },
+    {
+      "id": 7,
+      "source": 8,
+      "target": 9,
+      "label": ""
+    },
+    {
+      "id": 8,
+      "source": 9,
+      "target": 10,
+      "label": ""
+    },
+    {
+      "id": 9,
+      "source": 7,
+      "target": 10,
+      "label": "False"
+    },
+    {
+      "id": 10,
+      "source": 10,
+      "target": 5,
+      "label": ""
+    },
+    {
+      "id": 11,
+      "source": 5,
+      "target": 4,
+      "label": ""
+    },
+    {
+      "id": 12,
+      "source": 6,
+      "target": 11,
+      "label": ""
+    },
+    {
+      "id": 13,
+      "source": 12,
+      "target": 13,
+      "label": ""
+    }
+  ]
+}
