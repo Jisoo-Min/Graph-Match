@@ -95,8 +95,8 @@ def make_basic_blocks(input_file, output_type):
 					# Create new node (merged node), and insert it in nodes
 					new_node = {
 						'id': ('a' + str(alternative_node)),
-						'line': tmp_node['line'] + "-"  + tmp_child['line'],
-						'code': tmp_node['code'] + "\t" + tmp_child['code'],
+						'line': str(tmp_node['line']) + "-"  + str(tmp_child['line']),
+						'label': tmp_node['label'] + "\t" + tmp_child['label'],
 						}
 					nodes.insert(pointer, new_node)
 
@@ -142,7 +142,7 @@ def json_writer(file_name, nodes, edges):
 
 	result_file = open('./basic_blocks/' + file_name[:-5] + ".json", "w+")
 	data = {
-		'file' : file_name[:-5] + "java",
+		'file' : file_name[:-5] + ".java",
 		'nodes': nodes,
 		'edges': edges
 	}
@@ -158,7 +158,7 @@ def dot_writer(file_name, nodes, edges):
                   "// graph-vertices\n")
     for n in nodes:
         node_id = n['id']
-        node_label = n['line'] + ":  " + n['code']
+        node_label = n['line'] + ":  " + n['label']
         
         node_label = node_label.replace("\"", "'")
         result_file.write("  " + node_id + "  [label=\"" +  node_label + "\"]; \n")
