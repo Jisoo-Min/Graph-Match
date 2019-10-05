@@ -1,0 +1,11 @@
+{
+    "file": "String1Withoutend-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "String withoutEnd(String str)\treturn str.substring(1, str.length() - 1);"
+        }
+    ],
+    "edges": []
+}

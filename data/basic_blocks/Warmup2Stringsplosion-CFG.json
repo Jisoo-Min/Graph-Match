@@ -1,0 +1,101 @@
+{
+    "file": "Warmup2Stringsplosion-CFG.java",
+    "nodes": [
+        {
+            "id": "a4",
+            "line": "4-5-6-8-9",
+            "label": "String stringSplosion(String str)\tint size = (str.length() * (str.length() + 1)) / 2\tchar[] result = new char[size]\tint index = 0\tint i = 0"
+        },
+        {
+            "id": 5,
+            "line": 9,
+            "label": "for (i < str.length())"
+        },
+        {
+            "id": "a5",
+            "line": "0-16",
+            "label": "endfor\treturn new String(result);"
+        },
+        {
+            "id": 8,
+            "line": 10,
+            "label": "int j = 0"
+        },
+        {
+            "id": 9,
+            "line": 10,
+            "label": "for (j <= i)"
+        },
+        {
+            "id": 12,
+            "line": 11,
+            "label": "result[index] = str.charAt(j)"
+        },
+        {
+            "id": "a6",
+            "line": "0-9",
+            "label": "endfor\ti++"
+        },
+        {
+            "id": "a7",
+            "line": "12-10",
+            "label": "index++\tj++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 4,
+            "source": "a4",
+            "target": 5,
+            "label": ""
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 6,
+            "source": 5,
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 8,
+            "target": 9,
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": 9,
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": 9,
+            "target": 12,
+            "label": "True"
+        },
+        {
+            "id": 10,
+            "source": 12,
+            "target": "a7",
+            "label": ""
+        },
+        {
+            "id": 12,
+            "source": "a7",
+            "target": 9,
+            "label": ""
+        },
+        {
+            "id": 14,
+            "source": "a6",
+            "target": 5,
+            "label": ""
+        }
+    ]
+}

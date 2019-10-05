@@ -1,0 +1,34 @@
+{
+    "file": "Recursion1Triangle-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "int triangle(int rows)\tif (rows == 0)"
+        },
+        {
+            "id": 2,
+            "line": 9,
+            "label": "return 0;"
+        },
+        {
+            "id": "a2",
+            "line": "0-11",
+            "label": "endif\treturn rows + triangle(rows-1);"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        }
+    ]
+}

@@ -1,0 +1,223 @@
+{
+    "file": "String2Starout-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "String starOut(String str)\tif (str.length() < 1)"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "return '';"
+        },
+        {
+            "id": "a2",
+            "line": "0-10",
+            "label": "endif\tif (str.length() == 1)"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "if (str.charAt(0) == '*')"
+        },
+        {
+            "id": 6,
+            "line": 12,
+            "label": "return '';"
+        },
+        {
+            "id": 7,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 8,
+            "line": 14,
+            "label": "return str;"
+        },
+        {
+            "id": "a5",
+            "line": "0-17-18-21",
+            "label": "endif\tchar[] arr = new char[str.length()]\tint count = 0\tif (str.charAt(0) != '*' && str.charAt(1) != '*')"
+        },
+        {
+            "id": "a6",
+            "line": "22-23",
+            "label": "arr[count] = str.charAt(0)\tcount++"
+        },
+        {
+            "id": "a7",
+            "line": "0-26",
+            "label": "endif\tint i = 1"
+        },
+        {
+            "id": 17,
+            "line": 26,
+            "label": "for (i < str.length() - 1)"
+        },
+        {
+            "id": "a8",
+            "line": "0-34",
+            "label": "endfor\tif (str.charAt(str.length()-1) != '*' && str.charAt(str.length()-2) != '*')"
+        },
+        {
+            "id": 20,
+            "line": 27,
+            "label": "if (str.charAt(i-1)!='*' && str.charAt(i) != '*' && str.charAt(i+1) != '*')"
+        },
+        {
+            "id": "a9",
+            "line": "29-30",
+            "label": "arr[count] = str.charAt(i)\tcount++"
+        },
+        {
+            "id": 25,
+            "line": 36,
+            "label": "arr[count] = str.charAt(str.length() - 1)"
+        },
+        {
+            "id": "a10",
+            "line": "0-26",
+            "label": "endif\ti++"
+        },
+        {
+            "id": 26,
+            "line": 37,
+            "label": "count++"
+        },
+        {
+            "id": "a11",
+            "line": "0-40",
+            "label": "endif\treturn new String(arr, 0, count);"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 5,
+            "target": 8,
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": 7,
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": "a2",
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 12,
+            "source": "a5",
+            "target": "a6",
+            "label": "True"
+        },
+        {
+            "id": 14,
+            "source": "a6",
+            "target": "a7",
+            "label": ""
+        },
+        {
+            "id": 15,
+            "source": "a5",
+            "target": "a7",
+            "label": "False"
+        },
+        {
+            "id": 17,
+            "source": "a7",
+            "target": 17,
+            "label": ""
+        },
+        {
+            "id": 18,
+            "source": 17,
+            "target": "a8",
+            "label": "False"
+        },
+        {
+            "id": 19,
+            "source": 17,
+            "target": 20,
+            "label": "True"
+        },
+        {
+            "id": 20,
+            "source": 20,
+            "target": "a9",
+            "label": "True"
+        },
+        {
+            "id": 22,
+            "source": "a9",
+            "target": "a10",
+            "label": ""
+        },
+        {
+            "id": 23,
+            "source": 20,
+            "target": "a10",
+            "label": "False"
+        },
+        {
+            "id": 25,
+            "source": "a10",
+            "target": 17,
+            "label": ""
+        },
+        {
+            "id": 27,
+            "source": "a8",
+            "target": 25,
+            "label": "True"
+        },
+        {
+            "id": 28,
+            "source": 25,
+            "target": 26,
+            "label": ""
+        },
+        {
+            "id": 29,
+            "source": 26,
+            "target": "a11",
+            "label": ""
+        },
+        {
+            "id": 30,
+            "source": "a8",
+            "target": "a11",
+            "label": "False"
+        }
+    ]
+}

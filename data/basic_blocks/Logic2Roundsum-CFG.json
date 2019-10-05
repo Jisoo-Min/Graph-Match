@@ -1,0 +1,39 @@
+{
+    "file": "Logic2Roundsum-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "10-11",
+            "label": "int roundSum(int a, int b, int c)\treturn round10(a) + round10(b) + round10(c);"
+        },
+        {
+            "id": "a3",
+            "line": "14-15-17",
+            "label": "int round10(int num)\tint rd = num % 10\tif (rd >= 5)"
+        },
+        {
+            "id": 5,
+            "line": 18,
+            "label": "return num + 10 - rd;"
+        },
+        {
+            "id": "a4",
+            "line": "0-20",
+            "label": "endif\treturn num - rd;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        }
+    ]
+}

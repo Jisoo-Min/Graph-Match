@@ -1,0 +1,11 @@
+{
+    "file": "String1Makeoutword-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "String makeOutWord(String out, String word)\treturn out.substring(0, 2) + word + out.substring(2);"
+        }
+    ],
+    "edges": []
+}

@@ -1,0 +1,78 @@
+{
+    "file": "Recursion1Counthi2-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "int countHi2(String str)\tif (str.length() <= 1)"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "return 0;"
+        },
+        {
+            "id": "a2",
+            "line": "0-10",
+            "label": "endif\tif (str.length() > 2 && str.substring(0, 3).equals('xhi'))"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "return countHi2(str.substring(3));"
+        },
+        {
+            "id": "a3",
+            "line": "0-13",
+            "label": "endif\tif (str.substring(0, 2).equals('hi'))"
+        },
+        {
+            "id": 8,
+            "line": 14,
+            "label": "return 1 + countHi2(str.substring(2));"
+        },
+        {
+            "id": "a4",
+            "line": "0-16",
+            "label": "endif\treturn countHi2(str.substring(1));"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        }
+    ]
+}

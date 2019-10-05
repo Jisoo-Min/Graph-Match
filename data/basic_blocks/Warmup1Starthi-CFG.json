@@ -1,0 +1,11 @@
+{
+    "file": "Warmup1Starthi-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "boolean startHi(String str)\treturn str.length() >= 2 && str.substring(0, 2).equals('hi');"
+        }
+    ],
+    "edges": []
+}

@@ -1,0 +1,68 @@
+{
+    "file": "String1Lastchars-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "6-7-8-10",
+            "label": "String lastChars(String a, String b)\tString first = '@'\tString last = '@'\tif (a.length() > 0)"
+        },
+        {
+            "id": 4,
+            "line": 11,
+            "label": "first = a.substring(0,1)"
+        },
+        {
+            "id": "a4",
+            "line": "0-13",
+            "label": "endif\tif (b.length() > 0)"
+        },
+        {
+            "id": 7,
+            "line": 14,
+            "label": "last = b.substring(b.length() - 1)"
+        },
+        {
+            "id": "a5",
+            "line": "0-16",
+            "label": "endif\treturn first + last;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 5,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a4",
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": 7,
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 9,
+            "source": "a4",
+            "target": "a5",
+            "label": "False"
+        }
+    ]
+}

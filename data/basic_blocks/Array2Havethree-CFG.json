@@ -1,0 +1,129 @@
+{
+    "file": "Array2Havethree-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "5-6-8",
+            "label": "boolean haveThree(int[] nums)\tint count = 0\tif (nums.length >= 1 && nums[0] == 3)"
+        },
+        {
+            "id": 3,
+            "line": 9,
+            "label": "count++"
+        },
+        {
+            "id": "a3",
+            "line": "0-11",
+            "label": "endif\tint i = 1"
+        },
+        {
+            "id": 6,
+            "line": 11,
+            "label": "for (i < nums.length)"
+        },
+        {
+            "id": "a4",
+            "line": "0-19",
+            "label": "endfor\treturn count == 3;"
+        },
+        {
+            "id": 9,
+            "line": 12,
+            "label": "if (nums[i - 1] == 3 && nums[i] == 3)"
+        },
+        {
+            "id": 10,
+            "line": 13,
+            "label": "return false;"
+        },
+        {
+            "id": "a5",
+            "line": "0-15",
+            "label": "endif\tif (nums[i] == 3)"
+        },
+        {
+            "id": 13,
+            "line": 16,
+            "label": "count++"
+        },
+        {
+            "id": "a6",
+            "line": "0-11",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 6,
+            "source": "a3",
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": 6,
+            "target": 9,
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": 9,
+            "target": 10,
+            "label": "True"
+        },
+        {
+            "id": 10,
+            "source": 9,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 12,
+            "source": "a5",
+            "target": 13,
+            "label": "True"
+        },
+        {
+            "id": 13,
+            "source": 13,
+            "target": "a6",
+            "label": ""
+        },
+        {
+            "id": 14,
+            "source": "a5",
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 16,
+            "source": "a6",
+            "target": 6,
+            "label": ""
+        }
+    ]
+}

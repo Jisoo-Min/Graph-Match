@@ -1,0 +1,56 @@
+{
+    "file": "Recursion1Changepi-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "String changePi(String str)\tif (str.length() <= 1)"
+        },
+        {
+            "id": 2,
+            "line": 7,
+            "label": "return str;"
+        },
+        {
+            "id": "a2",
+            "line": "0-9",
+            "label": "endif\tif (str.substring(0, 2).equals('pi'))"
+        },
+        {
+            "id": 5,
+            "line": 10,
+            "label": "return '3.14' + changePi(str.substring(2));"
+        },
+        {
+            "id": "a3",
+            "line": "0-12",
+            "label": "endif\treturn str.charAt(0) + changePi(str.substring(1));"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        }
+    ]
+}

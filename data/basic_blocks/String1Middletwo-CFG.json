@@ -1,0 +1,11 @@
+{
+    "file": "String1Middletwo-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "String middleTwo(String str)\treturn str.substring(str.length() / 2 - 1, str.length() / 2 + 1);"
+        }
+    ],
+    "edges": []
+}

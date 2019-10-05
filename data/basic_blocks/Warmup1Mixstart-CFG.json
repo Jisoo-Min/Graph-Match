@@ -1,0 +1,11 @@
+{
+    "file": "Warmup1Mixstart-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "boolean mixStart(String str)\treturn str.length() >= 3 && str.substring(1, 3).equals('ix');"
+        }
+    ],
+    "edges": []
+}

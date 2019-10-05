@@ -1,0 +1,96 @@
+{
+    "file": "Logic2Lonesum-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "5-6-8",
+            "label": "int loneSum(int a, int b, int c)\tint sum = 0\tif (a != b && a != c)"
+        },
+        {
+            "id": 3,
+            "line": 9,
+            "label": "sum += a"
+        },
+        {
+            "id": "a3",
+            "line": "0-11",
+            "label": "endif\tif (b != a && b != c)"
+        },
+        {
+            "id": 6,
+            "line": 12,
+            "label": "sum += b"
+        },
+        {
+            "id": "a4",
+            "line": "0-14",
+            "label": "endif\tif (c != a && c != b)"
+        },
+        {
+            "id": 9,
+            "line": 15,
+            "label": "sum += c"
+        },
+        {
+            "id": "a5",
+            "line": "0-17",
+            "label": "endif\treturn sum;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 6,
+            "source": "a3",
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 10,
+            "source": "a4",
+            "target": 9,
+            "label": "True"
+        },
+        {
+            "id": 11,
+            "source": 9,
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 12,
+            "source": "a4",
+            "target": "a5",
+            "label": "False"
+        }
+    ]
+}

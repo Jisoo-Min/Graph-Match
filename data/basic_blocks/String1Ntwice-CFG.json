@@ -1,0 +1,11 @@
+{
+    "file": "String1Ntwice-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "String nTwice(String str, int n)\treturn str.substring(0, n) + str.substring(str.length() - n);"
+        }
+    ],
+    "edges": []
+}

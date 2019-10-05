@@ -1,0 +1,51 @@
+{
+    "file": "String2Repeatend-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "6-7-8-10",
+            "label": "String repeatEnd(String str, int n)\tStringBuffer result = new StringBuffer()\tString end = str.substring(str.length() - n)\tint i = 0"
+        },
+        {
+            "id": 4,
+            "line": 10,
+            "label": "for (i < n)"
+        },
+        {
+            "id": "a4",
+            "line": "0-13",
+            "label": "endfor\treturn result.toString();"
+        },
+        {
+            "id": "a5",
+            "line": "11-10",
+            "label": "result.append(end)\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 4,
+            "target": "a5",
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": "a5",
+            "target": 4,
+            "label": ""
+        }
+    ]
+}

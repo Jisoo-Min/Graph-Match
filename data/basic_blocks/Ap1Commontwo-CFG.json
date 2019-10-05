@@ -1,0 +1,246 @@
+{
+    "file": "Ap1Commontwo-CFG.java",
+    "nodes": [
+        {
+            "id": "a4",
+            "line": "8-9-10-11-13",
+            "label": "int commonTwo(String[] a, String[] b)\tint count = 0\tint aIndex = 0\tint bIndex = 0\tif (a[0].equals(b[0]))"
+        },
+        {
+            "id": "a6",
+            "line": "14-15-16",
+            "label": "count++\taIndex++\tbIndex++"
+        },
+        {
+            "id": 8,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 9,
+            "line": 17,
+            "label": "if (a[0].compareTo(b[0]) < 0)"
+        },
+        {
+            "id": 10,
+            "line": 18,
+            "label": "aIndex++"
+        },
+        {
+            "id": 11,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 12,
+            "line": 20,
+            "label": "bIndex++"
+        },
+        {
+            "id": 13,
+            "line": 23,
+            "label": "while (aIndex < a.length && bIndex < b.length)"
+        },
+        {
+            "id": "a7",
+            "line": "0-37",
+            "label": "endwhile\treturn count;"
+        },
+        {
+            "id": 15,
+            "line": 24,
+            "label": "if (aIndex > 0 && a[aIndex-1].equals(a[aIndex]))"
+        },
+        {
+            "id": 16,
+            "line": 25,
+            "label": "aIndex++"
+        },
+        {
+            "id": 17,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 18,
+            "line": 26,
+            "label": "if (a[aIndex].equals(b[bIndex]))"
+        },
+        {
+            "id": "a9",
+            "line": "27-28-29",
+            "label": "count++\taIndex++\tbIndex++"
+        },
+        {
+            "id": 22,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 23,
+            "line": 30,
+            "label": "if (a[aIndex].compareTo(b[bIndex]) < 0)"
+        },
+        {
+            "id": 24,
+            "line": 31,
+            "label": "aIndex++"
+        },
+        {
+            "id": 25,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 26,
+            "line": 33,
+            "label": "bIndex++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 4,
+            "source": "a4",
+            "target": "a6",
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": "a6",
+            "target": 8,
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": "a4",
+            "target": 9,
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": 9,
+            "target": 10,
+            "label": "True"
+        },
+        {
+            "id": 10,
+            "source": 10,
+            "target": 11,
+            "label": ""
+        },
+        {
+            "id": 11,
+            "source": 9,
+            "target": 12,
+            "label": "False"
+        },
+        {
+            "id": 12,
+            "source": 12,
+            "target": 11,
+            "label": ""
+        },
+        {
+            "id": 13,
+            "source": 11,
+            "target": 8,
+            "label": ""
+        },
+        {
+            "id": 14,
+            "source": 8,
+            "target": 13,
+            "label": ""
+        },
+        {
+            "id": 15,
+            "source": 13,
+            "target": "a7",
+            "label": "False"
+        },
+        {
+            "id": 16,
+            "source": 13,
+            "target": 15,
+            "label": "True"
+        },
+        {
+            "id": 17,
+            "source": 15,
+            "target": 16,
+            "label": "True"
+        },
+        {
+            "id": 18,
+            "source": 16,
+            "target": 17,
+            "label": ""
+        },
+        {
+            "id": 19,
+            "source": 15,
+            "target": 18,
+            "label": "False"
+        },
+        {
+            "id": 20,
+            "source": 18,
+            "target": "a9",
+            "label": "True"
+        },
+        {
+            "id": 23,
+            "source": "a9",
+            "target": 22,
+            "label": ""
+        },
+        {
+            "id": 24,
+            "source": 18,
+            "target": 23,
+            "label": "False"
+        },
+        {
+            "id": 25,
+            "source": 23,
+            "target": 24,
+            "label": "True"
+        },
+        {
+            "id": 26,
+            "source": 24,
+            "target": 25,
+            "label": ""
+        },
+        {
+            "id": 27,
+            "source": 23,
+            "target": 26,
+            "label": "False"
+        },
+        {
+            "id": 28,
+            "source": 26,
+            "target": 25,
+            "label": ""
+        },
+        {
+            "id": 29,
+            "source": 25,
+            "target": 22,
+            "label": ""
+        },
+        {
+            "id": 30,
+            "source": 22,
+            "target": 17,
+            "label": ""
+        },
+        {
+            "id": 31,
+            "source": 17,
+            "target": 13,
+            "label": ""
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "file": "Logic1Greenticket-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "int greenTicket(int a, int b, int c)\tif (a == b && b == c)"
+        },
+        {
+            "id": 2,
+            "line": 9,
+            "label": "return 20;"
+        },
+        {
+            "id": "a2",
+            "line": "0-11",
+            "label": "endif\tif (a == b || a == c || b == c)"
+        },
+        {
+            "id": 5,
+            "line": 12,
+            "label": "return 10;"
+        },
+        {
+            "id": "a3",
+            "line": "0-14",
+            "label": "endif\treturn 0;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        }
+    ]
+}

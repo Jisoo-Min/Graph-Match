@@ -1,0 +1,11 @@
+{
+    "file": "String1Maketags-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "String makeTags(String tag, String word)\treturn '<' + tag + '>' + word + '</' + tag + '>';"
+        }
+    ],
+    "edges": []
+}

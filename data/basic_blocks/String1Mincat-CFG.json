@@ -1,0 +1,11 @@
+{
+    "file": "String1Mincat-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "7-8-10",
+            "label": "String minCat(String a, String b)\tint min = Math.min(a.length(), b.length())\treturn a.substring(a.length() - min) + b.substring(b.length() - min);"
+        }
+    ],
+    "edges": []
+}

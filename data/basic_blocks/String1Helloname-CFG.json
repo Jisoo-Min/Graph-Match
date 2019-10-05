@@ -1,0 +1,11 @@
+{
+    "file": "String1Helloname-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "4-5",
+            "label": "String helloName(String name)\treturn 'Hello ' + name + '!';"
+        }
+    ],
+    "edges": []
+}

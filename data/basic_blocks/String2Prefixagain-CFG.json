@@ -1,0 +1,73 @@
+{
+    "file": "String2Prefixagain-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "7-8-10",
+            "label": "boolean prefixAgain(String str, int n)\tString prefix = str.substring(0, n)\tint i = n"
+        },
+        {
+            "id": 3,
+            "line": 10,
+            "label": "for (i <= str.length() - n)"
+        },
+        {
+            "id": "a3",
+            "line": "0-15",
+            "label": "endfor\treturn false;"
+        },
+        {
+            "id": 6,
+            "line": 11,
+            "label": "if (str.substring(i, i + n).equals(prefix))"
+        },
+        {
+            "id": 7,
+            "line": 12,
+            "label": "return true;"
+        },
+        {
+            "id": "a4",
+            "line": "0-10",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 6,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 6,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": "a4",
+            "target": 3,
+            "label": ""
+        }
+    ]
+}

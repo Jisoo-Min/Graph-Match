@@ -1,0 +1,11 @@
+{
+    "file": "Array1Swapends-CFG.java",
+    "nodes": [
+        {
+            "id": "a4",
+            "line": "5-6-7-8-9",
+            "label": "int[] swapEnds(int[] nums)\tint temp = nums[0]\tnums[0] = nums[nums.length - 1]\tnums[nums.length - 1] = temp\treturn nums;"
+        }
+    ],
+    "edges": []
+}

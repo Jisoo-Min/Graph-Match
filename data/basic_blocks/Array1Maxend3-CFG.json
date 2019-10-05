@@ -1,0 +1,11 @@
+{
+    "file": "Array1Maxend3-CFG.java",
+    "nodes": [
+        {
+            "id": "a5",
+            "line": "6-7-9-10-11-13",
+            "label": "int[] maxEnd3(int[] nums)\tint max = nums[0] > nums[2] ? nums[0] : nums[2]\tnums[0] = max\tnums[1] = max\tnums[2] = max\treturn nums;"
+        }
+    ],
+    "edges": []
+}

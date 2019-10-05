@@ -1,0 +1,73 @@
+{
+    "file": "Array1Has23-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "4-5",
+            "label": "boolean has23(int[] nums)\tint i = 0"
+        },
+        {
+            "id": 2,
+            "line": 5,
+            "label": "for (i < nums.length)"
+        },
+        {
+            "id": "a2",
+            "line": "0-10",
+            "label": "endfor\treturn false;"
+        },
+        {
+            "id": 5,
+            "line": 6,
+            "label": "if (nums[i] == 2 || nums[i] == 3)"
+        },
+        {
+            "id": 6,
+            "line": 7,
+            "label": "return true;"
+        },
+        {
+            "id": "a3",
+            "line": "0-5",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": ""
+        },
+        {
+            "id": 2,
+            "source": 2,
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 3,
+            "source": 2,
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": 5,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 2,
+            "label": ""
+        }
+    ]
+}

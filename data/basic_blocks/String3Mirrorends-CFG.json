@@ -1,0 +1,79 @@
+{
+    "file": "String3Mirrorends-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "8-9-11",
+            "label": "String mirrorEnds(String string)\tStringBuilder result = new StringBuilder()\tint i = 0"
+        },
+        {
+            "id": 3,
+            "line": 11,
+            "label": "for (i < string.length())"
+        },
+        {
+            "id": "a3",
+            "line": "0-18",
+            "label": "endfor\treturn result.toString();"
+        },
+        {
+            "id": 6,
+            "line": 12,
+            "label": "if (string.charAt(i) == string.charAt(string.length() - i - 1))"
+        },
+        {
+            "id": 9,
+            "line": 15,
+            "label": "break;"
+        },
+        {
+            "id": "a5",
+            "line": "13-0-11",
+            "label": "result.append(string.charAt(i))\tendif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 6,
+            "target": "a5",
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": 9,
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": 9,
+            "target": "a3",
+            "label": ""
+        },
+        {
+            "id": 10,
+            "source": "a5",
+            "target": 3,
+            "label": ""
+        }
+    ]
+}

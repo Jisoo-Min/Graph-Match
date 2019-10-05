@@ -1,0 +1,157 @@
+{
+    "file": "Array2Withoutten-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "8-9",
+            "label": "int[] withoutTen(int[] nums)\tint i = 0"
+        },
+        {
+            "id": 2,
+            "line": 11,
+            "label": "while (i < nums.length && nums[i] != 10)"
+        },
+        {
+            "id": "a2",
+            "line": "0-14",
+            "label": "endwhile\tint j = i + 1"
+        },
+        {
+            "id": 4,
+            "line": 12,
+            "label": "i++"
+        },
+        {
+            "id": 6,
+            "line": 14,
+            "label": "for (j < nums.length)"
+        },
+        {
+            "id": 8,
+            "line": 0,
+            "label": "endfor"
+        },
+        {
+            "id": 9,
+            "line": 15,
+            "label": "if (nums[j] != 10)"
+        },
+        {
+            "id": "a4",
+            "line": "16-17-18",
+            "label": "nums[i] = nums[j]\tnums[j] = 10\ti++"
+        },
+        {
+            "id": 14,
+            "line": 22,
+            "label": "for (i < nums.length)"
+        },
+        {
+            "id": "a5",
+            "line": "0-14",
+            "label": "endif\tj++"
+        },
+        {
+            "id": "a6",
+            "line": "0-25",
+            "label": "endfor\treturn nums;"
+        },
+        {
+            "id": "a7",
+            "line": "23-22",
+            "label": "nums[i] = 0\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": ""
+        },
+        {
+            "id": 2,
+            "source": 2,
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 3,
+            "source": 2,
+            "target": 4,
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": 2,
+            "label": ""
+        },
+        {
+            "id": 6,
+            "source": "a2",
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": 8,
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": 6,
+            "target": 9,
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": 9,
+            "target": "a4",
+            "label": "True"
+        },
+        {
+            "id": 12,
+            "source": "a4",
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 13,
+            "source": 9,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 15,
+            "source": "a5",
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 16,
+            "source": 8,
+            "target": 14,
+            "label": ""
+        },
+        {
+            "id": 17,
+            "source": 14,
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 18,
+            "source": 14,
+            "target": "a7",
+            "label": "True"
+        },
+        {
+            "id": 20,
+            "source": "a7",
+            "target": 14,
+            "label": ""
+        }
+    ]
+}

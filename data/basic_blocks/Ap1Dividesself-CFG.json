@@ -1,0 +1,73 @@
+{
+    "file": "Ap1Dividesself-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-9",
+            "label": "boolean dividesSelf(int n)\tint val = n"
+        },
+        {
+            "id": 2,
+            "line": 9,
+            "label": "for (val != 0)"
+        },
+        {
+            "id": "a2",
+            "line": "0-15",
+            "label": "endfor\treturn true;"
+        },
+        {
+            "id": "a3",
+            "line": "10-11",
+            "label": "int digit = val % 10\tif (digit == 0 || n % digit != 0)"
+        },
+        {
+            "id": 7,
+            "line": 12,
+            "label": "return false;"
+        },
+        {
+            "id": "a4",
+            "line": "0-9",
+            "label": "endif\tval /= 10"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": ""
+        },
+        {
+            "id": 2,
+            "source": 2,
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 3,
+            "source": 2,
+            "target": "a3",
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a3",
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": "a4",
+            "target": 2,
+            "label": ""
+        }
+    ]
+}

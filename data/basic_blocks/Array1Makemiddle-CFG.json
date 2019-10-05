@@ -1,0 +1,11 @@
+{
+    "file": "Array1Makemiddle-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "int[] makeMiddle(int[] nums)\treturn new int[] {nums[nums.length / 2 - 1], nums[nums.length / 2]};"
+        }
+    ],
+    "edges": []
+}

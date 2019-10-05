@@ -1,0 +1,78 @@
+{
+    "file": "Recursion1Strcopies-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "boolean strCopies(String str, String sub, int n)\tif (n == 0)"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "return true;"
+        },
+        {
+            "id": "a2",
+            "line": "0-10",
+            "label": "endif\tif (str.length() < sub.length())"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "return false;"
+        },
+        {
+            "id": "a3",
+            "line": "0-13",
+            "label": "endif\tif (str.substring(0, sub.length()).equals(sub))"
+        },
+        {
+            "id": 8,
+            "line": 14,
+            "label": "return strCopies(str.substring(1), sub, n-1);"
+        },
+        {
+            "id": "a4",
+            "line": "0-16",
+            "label": "endif\treturn strCopies(str.substring(1), sub, n);"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        }
+    ]
+}

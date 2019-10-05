@@ -1,0 +1,90 @@
+{
+    "file": "Array2Post4-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "int[] post4(int[] nums)\tint i = nums.length - 1"
+        },
+        {
+            "id": 2,
+            "line": 10,
+            "label": "while (nums[i] != 4)"
+        },
+        {
+            "id": "a3",
+            "line": "0-13-15",
+            "label": "endwhile\tint[] arr = new int[nums.length - i - 1]\tint j = 0"
+        },
+        {
+            "id": 4,
+            "line": 11,
+            "label": "i--"
+        },
+        {
+            "id": 7,
+            "line": 15,
+            "label": "for (j < arr.length)"
+        },
+        {
+            "id": "a4",
+            "line": "0-18",
+            "label": "endfor\treturn arr;"
+        },
+        {
+            "id": "a5",
+            "line": "16-15",
+            "label": "arr[j] = nums[i + j + 1]\tj++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": ""
+        },
+        {
+            "id": 2,
+            "source": 2,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 3,
+            "source": 2,
+            "target": 4,
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": 2,
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 7,
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": 7,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": 7,
+            "target": "a5",
+            "label": "True"
+        },
+        {
+            "id": 11,
+            "source": "a5",
+            "target": 7,
+            "label": ""
+        }
+    ]
+}

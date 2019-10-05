@@ -1,0 +1,11 @@
+{
+    "file": "Array1Makelast-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "7-8-9-10",
+            "label": "int[] makeLast(int[] nums)\tint[] arr = new int[2 * nums.length]\tarr[arr.length - 1] = nums[nums.length - 1]\treturn arr;"
+        }
+    ],
+    "edges": []
+}

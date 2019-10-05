@@ -1,0 +1,78 @@
+{
+    "file": "Logic1Fizzstring2-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "String fizzString2(int n)\tif (n % 15 == 0)"
+        },
+        {
+            "id": 2,
+            "line": 9,
+            "label": "return 'FizzBuzz!';"
+        },
+        {
+            "id": "a2",
+            "line": "0-11",
+            "label": "endif\tif (n % 3 == 0)"
+        },
+        {
+            "id": 5,
+            "line": 12,
+            "label": "return 'Fizz!';"
+        },
+        {
+            "id": "a3",
+            "line": "0-14",
+            "label": "endif\tif (n % 5 == 0)"
+        },
+        {
+            "id": 8,
+            "line": 15,
+            "label": "return 'Buzz!';"
+        },
+        {
+            "id": "a4",
+            "line": "0-17",
+            "label": "endif\treturn n + '!';"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        }
+    ]
+}

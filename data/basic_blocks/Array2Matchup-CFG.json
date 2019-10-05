@@ -1,0 +1,79 @@
+{
+    "file": "Array2Matchup-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "7-8-10",
+            "label": "int matchUp(int[] nums1, int[] nums2)\tint count = 0\tint i = 0"
+        },
+        {
+            "id": 3,
+            "line": 10,
+            "label": "for (i < nums1.length)"
+        },
+        {
+            "id": "a3",
+            "line": "0-15",
+            "label": "endfor\treturn count;"
+        },
+        {
+            "id": 6,
+            "line": 11,
+            "label": "if (Math.abs(nums1[i] - nums2[i]) <= 2 && nums1[i] != nums2[i])"
+        },
+        {
+            "id": 7,
+            "line": 12,
+            "label": "count++"
+        },
+        {
+            "id": "a4",
+            "line": "0-10",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 6,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": "a4",
+            "target": 3,
+            "label": ""
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "file": "Logic2Makechocolate-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "7-8-10",
+            "label": "int makeChocolate(int small, int big, int goal)\tint remainder = goal >= 5 * big ? goal - (5 * big) : goal % 5\treturn remainder <= small ? remainder : -1;"
+        }
+    ],
+    "edges": []
+}

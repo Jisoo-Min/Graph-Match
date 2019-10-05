@@ -1,0 +1,73 @@
+{
+    "file": "Ap1Scoresincreasing-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "boolean scoresIncreasing(int[] scores)\tint i = 1"
+        },
+        {
+            "id": 2,
+            "line": 6,
+            "label": "for (i < scores.length)"
+        },
+        {
+            "id": "a2",
+            "line": "0-11",
+            "label": "endfor\treturn true;"
+        },
+        {
+            "id": 5,
+            "line": 7,
+            "label": "if (scores[i] < scores[i-1])"
+        },
+        {
+            "id": 6,
+            "line": 8,
+            "label": "return false;"
+        },
+        {
+            "id": "a3",
+            "line": "0-6",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": ""
+        },
+        {
+            "id": 2,
+            "source": 2,
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 3,
+            "source": 2,
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": 5,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 2,
+            "label": ""
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+{
+    "file": "Recursion2Groupsum5-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "8-9",
+            "label": "boolean groupSum5(int start, int[] nums, int target)\tif (start >= nums.length)"
+        },
+        {
+            "id": 2,
+            "line": 10,
+            "label": "return target == 0;"
+        },
+        {
+            "id": "a2",
+            "line": "0-12",
+            "label": "endif\tif (nums[start] % 5 == 0)"
+        },
+        {
+            "id": 5,
+            "line": 13,
+            "label": "if (start <= nums.length - 2 && nums[start+1] == 1)"
+        },
+        {
+            "id": 6,
+            "line": 14,
+            "label": "return groupSum5(start+2, nums, target - nums[start]);"
+        },
+        {
+            "id": "a3",
+            "line": "0-16",
+            "label": "endif\treturn groupSum5(start+1, nums, target - nums[start]);"
+        },
+        {
+            "id": "a4",
+            "line": "0-19",
+            "label": "endif\tif (groupSum5(start+1, nums, target - nums[start]))"
+        },
+        {
+            "id": 11,
+            "line": 20,
+            "label": "return true;"
+        },
+        {
+            "id": "a5",
+            "line": "0-22",
+            "label": "endif\tif (groupSum5(start+1, nums, target))"
+        },
+        {
+            "id": 14,
+            "line": 23,
+            "label": "return true;"
+        },
+        {
+            "id": "a6",
+            "line": "0-25",
+            "label": "endif\treturn false;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 5,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": "a2",
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 10,
+            "source": "a4",
+            "target": 11,
+            "label": "True"
+        },
+        {
+            "id": 11,
+            "source": "a4",
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 13,
+            "source": "a5",
+            "target": 14,
+            "label": "True"
+        },
+        {
+            "id": 14,
+            "source": "a5",
+            "target": "a6",
+            "label": "False"
+        }
+    ]
+}

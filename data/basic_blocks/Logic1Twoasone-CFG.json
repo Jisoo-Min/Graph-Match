@@ -1,0 +1,11 @@
+{
+    "file": "Logic1Twoasone-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "boolean twoAsOne(int a, int b, int c)\treturn a + b == c || a + c == b || b + c == a;"
+        }
+    ],
+    "edges": []
+}

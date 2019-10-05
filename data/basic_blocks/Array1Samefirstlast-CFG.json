@@ -1,0 +1,11 @@
+{
+    "file": "Array1Samefirstlast-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "boolean sameFirstLast(int[] nums)\treturn nums.length > 0 && nums[0] == nums[nums.length - 1];"
+        }
+    ],
+    "edges": []
+}

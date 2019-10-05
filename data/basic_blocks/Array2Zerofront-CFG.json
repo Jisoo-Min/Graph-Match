@@ -1,0 +1,140 @@
+{
+    "file": "Array2Zerofront-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "int[] zeroFront(int[] nums)\tif (nums.length == 0)"
+        },
+        {
+            "id": 2,
+            "line": 9,
+            "label": "return nums;"
+        },
+        {
+            "id": "a2",
+            "line": "0-11",
+            "label": "endif\tint i = 0"
+        },
+        {
+            "id": 5,
+            "line": 13,
+            "label": "while (nums[i] == 0)"
+        },
+        {
+            "id": "a3",
+            "line": "0-16",
+            "label": "endwhile\tint j = i + 1"
+        },
+        {
+            "id": 7,
+            "line": 14,
+            "label": "i++"
+        },
+        {
+            "id": 9,
+            "line": 16,
+            "label": "for (j < nums.length)"
+        },
+        {
+            "id": "a4",
+            "line": "0-25",
+            "label": "endfor\treturn nums;"
+        },
+        {
+            "id": 12,
+            "line": 17,
+            "label": "if (nums[j] == 0)"
+        },
+        {
+            "id": "a7",
+            "line": "18-19-20-21",
+            "label": "int temp = nums[i]\tnums[i] = nums[j]\tnums[j] = temp\ti++"
+        },
+        {
+            "id": "a8",
+            "line": "0-16",
+            "label": "endif\tj++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": ""
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 6,
+            "source": 5,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 7,
+            "target": 5,
+            "label": ""
+        },
+        {
+            "id": 9,
+            "source": "a3",
+            "target": 9,
+            "label": ""
+        },
+        {
+            "id": 10,
+            "source": 9,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 11,
+            "source": 9,
+            "target": 12,
+            "label": "True"
+        },
+        {
+            "id": 12,
+            "source": 12,
+            "target": "a7",
+            "label": "True"
+        },
+        {
+            "id": 16,
+            "source": "a7",
+            "target": "a8",
+            "label": ""
+        },
+        {
+            "id": 17,
+            "source": 12,
+            "target": "a8",
+            "label": "False"
+        },
+        {
+            "id": 19,
+            "source": "a8",
+            "target": 9,
+            "label": ""
+        }
+    ]
+}

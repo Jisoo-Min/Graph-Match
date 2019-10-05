@@ -1,0 +1,34 @@
+{
+    "file": "String1Frontagain-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "boolean frontAgain(String str)\tif (str.length() < 2)"
+        },
+        {
+            "id": 2,
+            "line": 7,
+            "label": "return false;"
+        },
+        {
+            "id": "a2",
+            "line": "0-8",
+            "label": "endif\treturn str.substring(0, 2).equals(str.substring(str.length() - 2));"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "file": "Logic1Teensum-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "int teenSum(int a, int b)\tif ((13 <= a && a <= 19) || (13 <= b && b <= 19))"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "return 19;"
+        },
+        {
+            "id": "a2",
+            "line": "0-10",
+            "label": "endif\treturn a + b;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        }
+    ]
+}

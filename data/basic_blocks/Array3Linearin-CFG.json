@@ -1,0 +1,134 @@
+{
+    "file": "Array3Linearin-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "7-8-9",
+            "label": "boolean linearIn(int[] outer, int[] inner)\tint i = 0\tint j = 0"
+        },
+        {
+            "id": 3,
+            "line": 11,
+            "label": "while (i < inner.length && j < outer.length)"
+        },
+        {
+            "id": "a3",
+            "line": "0-21",
+            "label": "endwhile\tif (i != inner.length)"
+        },
+        {
+            "id": 5,
+            "line": 12,
+            "label": "if (inner[i] > outer[j])"
+        },
+        {
+            "id": 6,
+            "line": 13,
+            "label": "j++"
+        },
+        {
+            "id": 7,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 8,
+            "line": 14,
+            "label": "if (inner[i] < outer[j])"
+        },
+        {
+            "id": 9,
+            "line": 15,
+            "label": "return false;"
+        },
+        {
+            "id": 13,
+            "line": 22,
+            "label": "return false;"
+        },
+        {
+            "id": "a4",
+            "line": "17-0",
+            "label": "i++\tendif"
+        },
+        {
+            "id": "a5",
+            "line": "0-24",
+            "label": "endif\treturn true;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 6,
+            "target": 7,
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 5,
+            "target": 8,
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": 8,
+            "target": 9,
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": 8,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 11,
+            "source": "a4",
+            "target": 7,
+            "label": ""
+        },
+        {
+            "id": 12,
+            "source": 7,
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 14,
+            "source": "a3",
+            "target": 13,
+            "label": "True"
+        },
+        {
+            "id": 15,
+            "source": "a3",
+            "target": "a5",
+            "label": "False"
+        }
+    ]
+}

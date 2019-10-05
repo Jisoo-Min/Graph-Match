@@ -1,0 +1,11 @@
+{
+    "file": "Array1Middleway-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "int[] middleWay(int[] a, int[] b)\treturn new int[] {a[1], b[1]};"
+        }
+    ],
+    "edges": []
+}

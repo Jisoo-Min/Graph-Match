@@ -1,0 +1,51 @@
+{
+    "file": "Warmup1Front3-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "6-7-8",
+            "label": "String front3(String str)\tString front\tif (str.length() < 3)"
+        },
+        {
+            "id": 3,
+            "line": 9,
+            "label": "front = str"
+        },
+        {
+            "id": "a3",
+            "line": "0-13",
+            "label": "endif\treturn front + front + front;"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "front = str.substring(0, 3)"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a3",
+            "label": ""
+        }
+    ]
+}

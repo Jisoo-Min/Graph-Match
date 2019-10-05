@@ -1,0 +1,101 @@
+{
+    "file": "Warmup2Stringyak-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "6-7-8-10",
+            "label": "String stringYak(String str)\tchar[] result = new char[str.length()]\tint count = 0\tint i = 0"
+        },
+        {
+            "id": 4,
+            "line": 10,
+            "label": "for (i < str.length())"
+        },
+        {
+            "id": "a4",
+            "line": "0-21",
+            "label": "endfor\treturn new String(result, 0, count);"
+        },
+        {
+            "id": 7,
+            "line": 11,
+            "label": "if (i < str.length() - 2 && str.charAt(i) == 'y' && str.charAt(i + 2) == 'k')"
+        },
+        {
+            "id": 8,
+            "line": 13,
+            "label": "i += 3"
+        },
+        {
+            "id": 10,
+            "line": 15,
+            "label": "result[count] = str.charAt(i)"
+        },
+        {
+            "id": "a5",
+            "line": "0-10",
+            "label": "endif\t ; "
+        },
+        {
+            "id": "a6",
+            "line": "16-17",
+            "label": "count++\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 4,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 8,
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": 7,
+            "target": 10,
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": 10,
+            "target": "a6",
+            "label": ""
+        },
+        {
+            "id": 11,
+            "source": "a6",
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 13,
+            "source": "a5",
+            "target": 4,
+            "label": ""
+        }
+    ]
+}

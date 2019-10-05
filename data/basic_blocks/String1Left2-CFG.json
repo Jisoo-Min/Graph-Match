@@ -1,0 +1,11 @@
+{
+    "file": "String1Left2-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "String left2(String str)\treturn str.substring(2) + str.substring(0, 2);"
+        }
+    ],
+    "edges": []
+}

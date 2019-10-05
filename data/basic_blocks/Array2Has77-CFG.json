@@ -1,0 +1,95 @@
+{
+    "file": "Array2Has77-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "boolean has77(int[] nums)\tint i = 0"
+        },
+        {
+            "id": 2,
+            "line": 7,
+            "label": "for (i < nums.length - 1)"
+        },
+        {
+            "id": "a2",
+            "line": "0-15",
+            "label": "endfor\treturn false;"
+        },
+        {
+            "id": 5,
+            "line": 8,
+            "label": "if (nums[i] == 7 && nums[i+1] == 7)"
+        },
+        {
+            "id": 6,
+            "line": 9,
+            "label": "return true;"
+        },
+        {
+            "id": "a3",
+            "line": "0-11",
+            "label": "endif\tif (i <= nums.length - 3 && nums[i] == 7 && nums[i+2] == 7)"
+        },
+        {
+            "id": 9,
+            "line": 12,
+            "label": "return true;"
+        },
+        {
+            "id": "a4",
+            "line": "0-7",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": ""
+        },
+        {
+            "id": 2,
+            "source": 2,
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 3,
+            "source": 2,
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": 5,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 9,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 10,
+            "source": "a4",
+            "target": 2,
+            "label": ""
+        }
+    ]
+}

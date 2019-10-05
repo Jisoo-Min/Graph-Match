@@ -1,0 +1,107 @@
+{
+    "file": "Array2No14-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "5-6-7-8",
+            "label": "boolean no14(int[] nums)\tboolean has1 = false\tboolean has4 = false\tint i = 0"
+        },
+        {
+            "id": 4,
+            "line": 8,
+            "label": "for (i < nums.length)"
+        },
+        {
+            "id": "a4",
+            "line": "0-16",
+            "label": "endfor\treturn !has1 || !has4;"
+        },
+        {
+            "id": 7,
+            "line": 9,
+            "label": "if (nums[i] == 1)"
+        },
+        {
+            "id": 8,
+            "line": 10,
+            "label": "has1 = true"
+        },
+        {
+            "id": "a5",
+            "line": "0-12",
+            "label": "endif\tif (nums[i] == 4)"
+        },
+        {
+            "id": 11,
+            "line": 13,
+            "label": "has4 = true"
+        },
+        {
+            "id": "a6",
+            "line": "0-8",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 4,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 8,
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": 7,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 10,
+            "source": "a5",
+            "target": 11,
+            "label": "True"
+        },
+        {
+            "id": 11,
+            "source": 11,
+            "target": "a6",
+            "label": ""
+        },
+        {
+            "id": 12,
+            "source": "a5",
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 14,
+            "source": "a6",
+            "target": 4,
+            "label": ""
+        }
+    ]
+}

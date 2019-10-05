@@ -1,0 +1,56 @@
+{
+    "file": "Logic1Maxmod5-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "int maxMod5(int a, int b)\tif (a == b)"
+        },
+        {
+            "id": 2,
+            "line": 9,
+            "label": "return 0;"
+        },
+        {
+            "id": "a2",
+            "line": "0-11",
+            "label": "endif\tif (a % 5 == b % 5)"
+        },
+        {
+            "id": 5,
+            "line": 12,
+            "label": "return a < b ? a : b;"
+        },
+        {
+            "id": "a3",
+            "line": "0-14",
+            "label": "endif\treturn a > b ? a : b;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        }
+    ]
+}

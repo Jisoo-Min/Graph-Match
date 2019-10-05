@@ -1,0 +1,73 @@
+{
+    "file": "Array2Shiftleft-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "int[] shiftLeft(int[] nums)\tif (nums.length < 1)"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "return nums;"
+        },
+        {
+            "id": "a3",
+            "line": "0-10-12",
+            "label": "endif\tint first = nums[0]\tint i = 1"
+        },
+        {
+            "id": 6,
+            "line": 12,
+            "label": "for (i < nums.length)"
+        },
+        {
+            "id": "a5",
+            "line": "0-15-17",
+            "label": "endfor\tnums[nums.length - 1] = first\treturn nums;"
+        },
+        {
+            "id": "a6",
+            "line": "13-12",
+            "label": "nums[i - 1] = nums[i]\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": "a3",
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 6,
+            "source": 6,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a6",
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": "a6",
+            "target": 6,
+            "label": ""
+        }
+    ]
+}

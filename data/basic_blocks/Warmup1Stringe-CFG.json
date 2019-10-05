@@ -1,0 +1,79 @@
+{
+    "file": "Warmup1Stringe-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "4-5-6",
+            "label": "boolean stringE(String str)\tint num = 0\tint i = 0"
+        },
+        {
+            "id": 3,
+            "line": 6,
+            "label": "for (i < str.length())"
+        },
+        {
+            "id": "a3",
+            "line": "0-10",
+            "label": "endfor\treturn 1 <= num && num <= 3;"
+        },
+        {
+            "id": 6,
+            "line": 7,
+            "label": "if (str.charAt(i) == 'e')"
+        },
+        {
+            "id": 7,
+            "line": 8,
+            "label": "num++"
+        },
+        {
+            "id": "a4",
+            "line": "0-6",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 6,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": "a4",
+            "target": 3,
+            "label": ""
+        }
+    ]
+}

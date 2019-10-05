@@ -1,0 +1,39 @@
+{
+    "file": "Logic2Noteensum-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "10-11",
+            "label": "int noTeenSum(int a, int b, int c)\treturn fixTeen(a) + fixTeen(b) + fixTeen(c);"
+        },
+        {
+            "id": "a2",
+            "line": "14-15",
+            "label": "int fixTeen(int n)\tif (13 <= n && n <= 19 && n != 15 && n != 16)"
+        },
+        {
+            "id": 4,
+            "line": 16,
+            "label": "return 0;"
+        },
+        {
+            "id": "a3",
+            "line": "0-18",
+            "label": "endif\treturn n;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 4,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        }
+    ]
+}

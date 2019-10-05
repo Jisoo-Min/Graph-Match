@@ -1,0 +1,78 @@
+{
+    "file": "Logic1Redticket-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "int redTicket(int a, int b, int c)\tif (a == 2 && b == 2 && c == 2)"
+        },
+        {
+            "id": 2,
+            "line": 9,
+            "label": "return 10;"
+        },
+        {
+            "id": "a2",
+            "line": "0-11",
+            "label": "endif\tif (a == b && b == c)"
+        },
+        {
+            "id": 5,
+            "line": 12,
+            "label": "return 5;"
+        },
+        {
+            "id": "a3",
+            "line": "0-14",
+            "label": "endif\tif (a != b && a != c)"
+        },
+        {
+            "id": 8,
+            "line": 15,
+            "label": "return 1;"
+        },
+        {
+            "id": "a4",
+            "line": "0-17",
+            "label": "endif\treturn 0;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        }
+    ]
+}

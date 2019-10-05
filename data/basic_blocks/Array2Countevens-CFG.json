@@ -1,0 +1,79 @@
+{
+    "file": "Array2Countevens-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "4-5-7",
+            "label": "int countEvens(int[] nums)\tint count = 0\tint i = 0"
+        },
+        {
+            "id": 3,
+            "line": 7,
+            "label": "for (i < nums.length)"
+        },
+        {
+            "id": "a3",
+            "line": "0-12",
+            "label": "endfor\treturn count;"
+        },
+        {
+            "id": 6,
+            "line": 8,
+            "label": "if (nums[i] % 2 == 0)"
+        },
+        {
+            "id": 7,
+            "line": 9,
+            "label": "count++"
+        },
+        {
+            "id": "a4",
+            "line": "0-7",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 6,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": "a4",
+            "target": 3,
+            "label": ""
+        }
+    ]
+}

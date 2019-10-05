@@ -1,0 +1,79 @@
+{
+    "file": "Warmup2Stringmatch-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "7-8-9-11",
+            "label": "int stringMatch(String a, String b)\tint min = Math.min(a.length(), b.length())\tint count = 0\tint i = 0"
+        },
+        {
+            "id": 4,
+            "line": 11,
+            "label": "for (i < min - 1)"
+        },
+        {
+            "id": "a4",
+            "line": "0-16",
+            "label": "endfor\treturn count;"
+        },
+        {
+            "id": 7,
+            "line": 12,
+            "label": "if (a.substring(i, i + 2).equals(b.substring(i, i + 2)))"
+        },
+        {
+            "id": 8,
+            "line": 13,
+            "label": "count++"
+        },
+        {
+            "id": "a5",
+            "line": "0-11",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 4,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 8,
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": 7,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 10,
+            "source": "a5",
+            "target": 4,
+            "label": ""
+        }
+    ]
+}

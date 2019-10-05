@@ -1,0 +1,34 @@
+{
+    "file": "Recursion1Powern-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "int powerN(int base, int n)\tif (n <= 1)"
+        },
+        {
+            "id": 2,
+            "line": 7,
+            "label": "return base;"
+        },
+        {
+            "id": "a2",
+            "line": "0-9",
+            "label": "endif\treturn base * powerN(base, n - 1);"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        }
+    ]
+}

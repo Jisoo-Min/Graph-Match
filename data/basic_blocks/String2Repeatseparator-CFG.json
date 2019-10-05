@@ -1,0 +1,73 @@
+{
+    "file": "String2Repeatseparator-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "String repeatSeparator(String word, String sep, int count)\tif (count == 0)"
+        },
+        {
+            "id": 2,
+            "line": 7,
+            "label": "return '';"
+        },
+        {
+            "id": "a3",
+            "line": "0-9-11",
+            "label": "endif\tStringBuffer result = new StringBuffer()\tint i = 0"
+        },
+        {
+            "id": 6,
+            "line": 11,
+            "label": "for (i < count - 1)"
+        },
+        {
+            "id": "a4",
+            "line": "0-16",
+            "label": "endfor\treturn result.append(word).toString();"
+        },
+        {
+            "id": "a6",
+            "line": "12-13-11",
+            "label": "result.append(word)\tresult.append(sep)\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": "a3",
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 6,
+            "source": 6,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a6",
+            "label": "True"
+        },
+        {
+            "id": 10,
+            "source": "a6",
+            "target": 6,
+            "label": ""
+        }
+    ]
+}

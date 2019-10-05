@@ -1,0 +1,129 @@
+{
+    "file": "String3Withoutstring-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "8-9-10-11",
+            "label": "String withoutString(String base, String remove)\tchar[] arr = new char[base.length()]\tint count = 0\tint i = 0"
+        },
+        {
+            "id": 4,
+            "line": 13,
+            "label": "while (i <= base.length() - remove.length())"
+        },
+        {
+            "id": 5,
+            "line": 0,
+            "label": "endwhile"
+        },
+        {
+            "id": 6,
+            "line": 14,
+            "label": "if (base.substring(i, i + remove.length()).toLowerCase().equals(remove.toLowerCase()))"
+        },
+        {
+            "id": 7,
+            "line": 16,
+            "label": "i += remove.length()"
+        },
+        {
+            "id": 8,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": "a5",
+            "line": "18-19-20",
+            "label": "arr[count] = base.charAt(i)\tcount++\ti++"
+        },
+        {
+            "id": 12,
+            "line": 24,
+            "label": "while (i < base.length())"
+        },
+        {
+            "id": "a6",
+            "line": "0-30",
+            "label": "endwhile\treturn new String(arr, 0, count);"
+        },
+        {
+            "id": "a8",
+            "line": "25-26-27",
+            "label": "arr[count] = base.charAt(i)\tcount++\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": 5,
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 4,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 6,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 7,
+            "target": 8,
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": 6,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 11,
+            "source": "a5",
+            "target": 8,
+            "label": ""
+        },
+        {
+            "id": 12,
+            "source": 8,
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 13,
+            "source": 5,
+            "target": 12,
+            "label": ""
+        },
+        {
+            "id": 14,
+            "source": 12,
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 15,
+            "source": 12,
+            "target": "a8",
+            "label": "True"
+        },
+        {
+            "id": 18,
+            "source": "a8",
+            "target": 12,
+            "label": ""
+        }
+    ]
+}

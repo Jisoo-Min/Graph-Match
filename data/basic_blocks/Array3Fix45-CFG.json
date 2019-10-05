@@ -1,0 +1,157 @@
+{
+    "file": "Array3Fix45-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "8-9-10",
+            "label": "int[] fix45(int[] nums)\tint i = 0\tint j = 0"
+        },
+        {
+            "id": 3,
+            "line": 12,
+            "label": "while (j < nums.length && nums[j] != 5)"
+        },
+        {
+            "id": 4,
+            "line": 0,
+            "label": "endwhile"
+        },
+        {
+            "id": 5,
+            "line": 13,
+            "label": "j++"
+        },
+        {
+            "id": 6,
+            "line": 15,
+            "label": "while (i < nums.length)"
+        },
+        {
+            "id": "a3",
+            "line": "0-27",
+            "label": "endwhile\treturn nums;"
+        },
+        {
+            "id": 8,
+            "line": 16,
+            "label": "if (nums[i] == 4)"
+        },
+        {
+            "id": "a5",
+            "line": "17-18-19",
+            "label": "int temp = nums[i+1]\tnums[i+1] = nums[j]\tnums[j] = temp"
+        },
+        {
+            "id": 12,
+            "line": 21,
+            "label": "while ((j < nums.length && nums[j] != 5) || j == i + 1)"
+        },
+        {
+            "id": 13,
+            "line": 0,
+            "label": "endwhile"
+        },
+        {
+            "id": 14,
+            "line": 22,
+            "label": "j++"
+        },
+        {
+            "id": "a6",
+            "line": "0-24",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": 4,
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 6,
+            "source": 4,
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": 6,
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": 8,
+            "target": "a5",
+            "label": "True"
+        },
+        {
+            "id": 12,
+            "source": "a5",
+            "target": 12,
+            "label": ""
+        },
+        {
+            "id": 13,
+            "source": 12,
+            "target": 13,
+            "label": "False"
+        },
+        {
+            "id": 14,
+            "source": 12,
+            "target": 14,
+            "label": "True"
+        },
+        {
+            "id": 15,
+            "source": 14,
+            "target": 12,
+            "label": ""
+        },
+        {
+            "id": 16,
+            "source": 13,
+            "target": "a6",
+            "label": ""
+        },
+        {
+            "id": 17,
+            "source": 8,
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 19,
+            "source": "a6",
+            "target": 6,
+            "label": ""
+        }
+    ]
+}

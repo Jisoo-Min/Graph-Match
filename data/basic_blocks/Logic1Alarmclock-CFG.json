@@ -1,0 +1,89 @@
+{
+    "file": "Logic1Alarmclock-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "9-10",
+            "label": "String alarmClock(int day, boolean vacation)\tif (vacation)"
+        },
+        {
+            "id": 2,
+            "line": 11,
+            "label": "if (day == 0 || day == 6)"
+        },
+        {
+            "id": 3,
+            "line": 12,
+            "label": "return 'off';"
+        },
+        {
+            "id": 4,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 5,
+            "line": 14,
+            "label": "return '10:00';"
+        },
+        {
+            "id": "a2",
+            "line": "0-17",
+            "label": "endif\tif (day == 0 || day == 6)"
+        },
+        {
+            "id": 8,
+            "line": 18,
+            "label": "return '10:00';"
+        },
+        {
+            "id": "a3",
+            "line": "0-20",
+            "label": "endif\treturn '7:00';"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": 2,
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": 2,
+            "target": 5,
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a2",
+            "label": ""
+        },
+        {
+            "id": 5,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a2",
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        }
+    ]
+}

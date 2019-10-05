@@ -1,0 +1,101 @@
+{
+    "file": "Array3Seriesup-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "6-7-9-11",
+            "label": "int[] seriesUp(int n)\tint[] arr = new int[n*(n+1)/2]\tint index = 0\tint i = 1"
+        },
+        {
+            "id": 4,
+            "line": 11,
+            "label": "for (i <= n)"
+        },
+        {
+            "id": "a4",
+            "line": "0-18",
+            "label": "endfor\treturn arr;"
+        },
+        {
+            "id": 7,
+            "line": 12,
+            "label": "int j = 0"
+        },
+        {
+            "id": 8,
+            "line": 12,
+            "label": "for (j < i)"
+        },
+        {
+            "id": 9,
+            "line": 12,
+            "label": "j++"
+        },
+        {
+            "id": 11,
+            "line": 13,
+            "label": "arr[index + j] = j + 1"
+        },
+        {
+            "id": "a6",
+            "line": "0-15-11",
+            "label": "endfor\tindex += i\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 4,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": 8,
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 8,
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": 8,
+            "target": 11,
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": 11,
+            "target": 9,
+            "label": ""
+        },
+        {
+            "id": 10,
+            "source": 9,
+            "target": 8,
+            "label": ""
+        },
+        {
+            "id": 13,
+            "source": "a6",
+            "target": 4,
+            "label": ""
+        }
+    ]
+}

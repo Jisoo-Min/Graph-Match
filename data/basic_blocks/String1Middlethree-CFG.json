@@ -1,0 +1,11 @@
+{
+    "file": "String1Middlethree-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "5-6-7",
+            "label": "String middleThree(String str)\tint mid = str.length() / 2\treturn str.substring(mid - 1, mid + 2);"
+        }
+    ],
+    "edges": []
+}

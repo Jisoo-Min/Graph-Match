@@ -1,0 +1,90 @@
+{
+    "file": "String2Plusout-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "6-7-8",
+            "label": "String plusOut(String str, String word)\tStringBuffer result = new StringBuffer()\tint i = 0"
+        },
+        {
+            "id": 3,
+            "line": 10,
+            "label": "while (i < str.length())"
+        },
+        {
+            "id": "a3",
+            "line": "0-21",
+            "label": "endwhile\treturn result.toString();"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "if (i <= str.length() - word.length() && str.substring(i, i + word.length()).equals(word))"
+        },
+        {
+            "id": "a4",
+            "line": "13-14",
+            "label": "result.append(word)\ti += word.length()"
+        },
+        {
+            "id": 8,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": "a5",
+            "line": "16-17",
+            "label": "result.append('+')\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a4",
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": "a4",
+            "target": 8,
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": 5,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 10,
+            "source": "a5",
+            "target": 8,
+            "label": ""
+        },
+        {
+            "id": 11,
+            "source": 8,
+            "target": 3,
+            "label": ""
+        }
+    ]
+}

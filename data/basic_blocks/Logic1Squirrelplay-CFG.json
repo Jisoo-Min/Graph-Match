@@ -1,0 +1,56 @@
+{
+    "file": "Logic1Squirrelplay-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "8-9",
+            "label": "boolean squirrelPlay(int temp, boolean isSummer)\tif (isSummer && 60 <= temp && temp <= 100)"
+        },
+        {
+            "id": 2,
+            "line": 10,
+            "label": "return true;"
+        },
+        {
+            "id": "a2",
+            "line": "0-12",
+            "label": "endif\tif (!isSummer && 60 <= temp && temp <= 90)"
+        },
+        {
+            "id": 5,
+            "line": 13,
+            "label": "return true;"
+        },
+        {
+            "id": "a3",
+            "line": "0-15",
+            "label": "endif\treturn false;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        }
+    ]
+}

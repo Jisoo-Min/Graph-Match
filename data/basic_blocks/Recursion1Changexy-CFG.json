@@ -1,0 +1,56 @@
+{
+    "file": "Recursion1Changexy-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "String changeXY(String str)\tif (str.length() == 0)"
+        },
+        {
+            "id": 2,
+            "line": 7,
+            "label": "return str;"
+        },
+        {
+            "id": "a2",
+            "line": "0-9",
+            "label": "endif\tif (str.charAt(0) == 'x')"
+        },
+        {
+            "id": 5,
+            "line": 10,
+            "label": "return 'y' + changeXY(str.substring(1));"
+        },
+        {
+            "id": "a3",
+            "line": "0-12",
+            "label": "endif\treturn str.charAt(0) + changeXY(str.substring(1));"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        }
+    ]
+}

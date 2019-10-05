@@ -1,0 +1,101 @@
+{
+    "file": "String2Xybalance-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "7-8-9",
+            "label": "boolean xyBalance(String str)\tboolean y = false\tint i = str.length() - 1"
+        },
+        {
+            "id": 3,
+            "line": 9,
+            "label": "for (i >= 0)"
+        },
+        {
+            "id": "a3",
+            "line": "0-17",
+            "label": "endfor\treturn true;"
+        },
+        {
+            "id": 6,
+            "line": 10,
+            "label": "if (str.charAt(i) == 'y')"
+        },
+        {
+            "id": 7,
+            "line": 11,
+            "label": "y = true"
+        },
+        {
+            "id": "a4",
+            "line": "0-13",
+            "label": "endif\tif (str.charAt(i) == 'x' && !y)"
+        },
+        {
+            "id": 10,
+            "line": 14,
+            "label": "return false;"
+        },
+        {
+            "id": "a5",
+            "line": "0-9",
+            "label": "endif\ti--"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 6,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": "a4",
+            "target": 10,
+            "label": "True"
+        },
+        {
+            "id": 10,
+            "source": "a4",
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 12,
+            "source": "a5",
+            "target": 3,
+            "label": ""
+        }
+    ]
+}

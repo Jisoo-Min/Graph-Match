@@ -1,0 +1,95 @@
+{
+    "file": "String2Xyzthere-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "boolean xyzThere(String str)\tif (str.length() >= 3 && str.substring(0, 3).equals('xyz'))"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "return true;"
+        },
+        {
+            "id": "a2",
+            "line": "0-10",
+            "label": "endif\tint i = 1"
+        },
+        {
+            "id": 5,
+            "line": 10,
+            "label": "for (i < str.length() - 2)"
+        },
+        {
+            "id": "a3",
+            "line": "0-15",
+            "label": "endfor\treturn false;"
+        },
+        {
+            "id": 8,
+            "line": 11,
+            "label": "if (str.charAt(i - 1) != '.' && str.substring(i, i + 3).equals('xyz'))"
+        },
+        {
+            "id": 9,
+            "line": 12,
+            "label": "return true;"
+        },
+        {
+            "id": "a4",
+            "line": "0-10",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": ""
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 6,
+            "source": 5,
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 8,
+            "target": 9,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": 8,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 10,
+            "source": "a4",
+            "target": 5,
+            "label": ""
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "file": "Recursion2Groupnoadj-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "8-9",
+            "label": "boolean groupNoAdj(int start, int[] nums, int target)\tif (start >= nums.length)"
+        },
+        {
+            "id": 2,
+            "line": 10,
+            "label": "return target == 0;"
+        },
+        {
+            "id": "a2",
+            "line": "0-12",
+            "label": "endif\tif (groupNoAdj(start+2, nums, target - nums[start]))"
+        },
+        {
+            "id": 5,
+            "line": 13,
+            "label": "return true;"
+        },
+        {
+            "id": "a3",
+            "line": "0-15",
+            "label": "endif\tif (groupNoAdj(start+1, nums, target))"
+        },
+        {
+            "id": 8,
+            "line": 16,
+            "label": "return true;"
+        },
+        {
+            "id": "a4",
+            "line": "0-18",
+            "label": "endif\treturn false;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        }
+    ]
+}

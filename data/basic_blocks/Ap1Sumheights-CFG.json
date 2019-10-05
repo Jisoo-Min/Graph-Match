@@ -1,0 +1,51 @@
+{
+    "file": "Ap1Sumheights-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "9-10-12",
+            "label": "int sumHeights(int[] heights, int start, int end)\tint sum = 0\tint i = start"
+        },
+        {
+            "id": 3,
+            "line": 12,
+            "label": "for (i < end)"
+        },
+        {
+            "id": "a3",
+            "line": "0-15",
+            "label": "endfor\treturn sum;"
+        },
+        {
+            "id": "a4",
+            "line": "13-12",
+            "label": "sum += Math.abs(heights[i] - heights[i+1])\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": "a4",
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": "a4",
+            "target": 3,
+            "label": ""
+        }
+    ]
+}

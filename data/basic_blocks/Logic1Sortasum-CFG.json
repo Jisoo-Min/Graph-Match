@@ -1,0 +1,34 @@
+{
+    "file": "Logic1Sortasum-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "5-6-8",
+            "label": "int sortaSum(int a, int b)\tint sum = a + b\tif (10 <= sum && sum <= 19)"
+        },
+        {
+            "id": 3,
+            "line": 9,
+            "label": "return 20;"
+        },
+        {
+            "id": "a3",
+            "line": "0-11",
+            "label": "endif\treturn sum;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        }
+    ]
+}

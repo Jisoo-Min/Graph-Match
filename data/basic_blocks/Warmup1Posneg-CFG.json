@@ -1,0 +1,39 @@
+{
+    "file": "Warmup1Posneg-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "boolean posNeg(int a, int b, boolean negative)\tif (negative)"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "return a < 0 && b < 0;"
+        },
+        {
+            "id": 3,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 4,
+            "line": 10,
+            "label": "return a * b < 0;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": 4,
+            "label": "False"
+        }
+    ]
+}

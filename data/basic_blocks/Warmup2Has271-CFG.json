@@ -1,0 +1,73 @@
+{
+    "file": "Warmup2Has271-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "boolean has271(int[] nums)\tint i = 0"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "for (i < nums.length - 2)"
+        },
+        {
+            "id": "a2",
+            "line": "0-14",
+            "label": "endfor\treturn false;"
+        },
+        {
+            "id": 5,
+            "line": 9,
+            "label": "if ((nums[i+1] == nums[i] + 5) && (Math.abs(nums[i+2] - (nums[i] - 1)) <= 2))"
+        },
+        {
+            "id": 6,
+            "line": 11,
+            "label": "return true;"
+        },
+        {
+            "id": "a3",
+            "line": "0-8",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": ""
+        },
+        {
+            "id": 2,
+            "source": 2,
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 3,
+            "source": 2,
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": 5,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 2,
+            "label": ""
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "file": "Warmup1Nearhundred-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "boolean nearHundred(int n)\treturn Math.abs(n - 100) <= 10 || Math.abs(n - 200) <= 10;"
+        }
+    ],
+    "edges": []
+}

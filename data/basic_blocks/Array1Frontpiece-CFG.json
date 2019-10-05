@@ -1,0 +1,107 @@
+{
+    "file": "Array1Frontpiece-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "6-7-8",
+            "label": "int[] frontPiece(int[] nums)\tint[] arr\tif (nums.length < 2)"
+        },
+        {
+            "id": 3,
+            "line": 9,
+            "label": "arr = new int[nums.length]"
+        },
+        {
+            "id": "a3",
+            "line": "0-13",
+            "label": "endif\tif (nums.length > 0)"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "arr = new int[2]"
+        },
+        {
+            "id": 7,
+            "line": 14,
+            "label": "arr[0] = nums[0]"
+        },
+        {
+            "id": "a4",
+            "line": "0-16",
+            "label": "endif\tif (nums.length > 1)"
+        },
+        {
+            "id": 10,
+            "line": 17,
+            "label": "arr[1] = nums[1]"
+        },
+        {
+            "id": "a5",
+            "line": "0-19",
+            "label": "endif\treturn arr;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a3",
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": 7,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 9,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 11,
+            "source": "a4",
+            "target": 10,
+            "label": "True"
+        },
+        {
+            "id": 12,
+            "source": 10,
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 13,
+            "source": "a4",
+            "target": "a5",
+            "label": "False"
+        }
+    ]
+}

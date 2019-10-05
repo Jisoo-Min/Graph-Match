@@ -1,0 +1,34 @@
+{
+    "file": "String1Without2-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "String without2(String str)\tif (str.length () >= 2 && str.substring(0, 2).equals(str.substring(str.length() - 2)))"
+        },
+        {
+            "id": 2,
+            "line": 10,
+            "label": "return str.substring(2);"
+        },
+        {
+            "id": "a2",
+            "line": "0-12",
+            "label": "endif\treturn str;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        }
+    ]
+}

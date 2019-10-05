@@ -1,0 +1,34 @@
+{
+    "file": "String1Startword-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "9-10",
+            "label": "String startWord(String str, String word)\tif (str.length() >= word.length() && str.substring(1, word.length()).equals(word.substring(1)))"
+        },
+        {
+            "id": 2,
+            "line": 12,
+            "label": "return str.substring(0, word.length());"
+        },
+        {
+            "id": "a2",
+            "line": "0-14",
+            "label": "endif\treturn '';"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        }
+    ]
+}

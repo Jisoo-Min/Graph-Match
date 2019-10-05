@@ -1,0 +1,34 @@
+{
+    "file": "Logic1Cigarparty-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "8-9",
+            "label": "boolean cigarParty(int cigars, boolean isWeekend)\tif (isWeekend)"
+        },
+        {
+            "id": 2,
+            "line": 10,
+            "label": "return 40 <= cigars;"
+        },
+        {
+            "id": "a2",
+            "line": "0-12",
+            "label": "endif\treturn 40 <= cigars && cigars <= 60;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        }
+    ]
+}

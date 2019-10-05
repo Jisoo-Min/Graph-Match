@@ -1,0 +1,56 @@
+{
+    "file": "Logic1Blueticket-CFG.java",
+    "nodes": [
+        {
+            "id": "a4",
+            "line": "8-9-10-11-13",
+            "label": "int blueTicket(int a, int b, int c)\tint ab = a + b\tint bc = b + c\tint ac = a + c\tif (ab == 10 || bc == 10 || ac == 10)"
+        },
+        {
+            "id": 5,
+            "line": 14,
+            "label": "return 10;"
+        },
+        {
+            "id": "a5",
+            "line": "0-16",
+            "label": "endif\tif (ab == bc + 10 || ab == ac + 10)"
+        },
+        {
+            "id": 8,
+            "line": 17,
+            "label": "return 5;"
+        },
+        {
+            "id": "a6",
+            "line": "0-19",
+            "label": "endif\treturn 0;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 4,
+            "source": "a4",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a4",
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a5",
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": "a5",
+            "target": "a6",
+            "label": "False"
+        }
+    ]
+}

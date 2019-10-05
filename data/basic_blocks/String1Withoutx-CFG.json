@@ -1,0 +1,68 @@
+{
+    "file": "String1Withoutx-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "5-6-7-9",
+            "label": "String withoutX(String str)\tint begin = 0\tint end = str.length()\tif (str.length() > 0 && str.charAt(0) == 'x')"
+        },
+        {
+            "id": 4,
+            "line": 10,
+            "label": "begin = 1"
+        },
+        {
+            "id": "a4",
+            "line": "0-12",
+            "label": "endif\tif (str.length() > 1 && str.charAt(str.length() - 1) == 'x')"
+        },
+        {
+            "id": 7,
+            "line": 13,
+            "label": "end--"
+        },
+        {
+            "id": "a5",
+            "line": "0-15",
+            "label": "endif\treturn str.substring(begin, end);"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 5,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a4",
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": 7,
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 9,
+            "source": "a4",
+            "target": "a5",
+            "label": "False"
+        }
+    ]
+}

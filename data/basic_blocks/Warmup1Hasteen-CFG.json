@@ -1,0 +1,11 @@
+{
+    "file": "Warmup1Hasteen-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "boolean hasTeen(int a, int b, int c)\treturn 13 <= a && a <= 19 || 13 <= b && b <= 19 || 13 <= c && c <= 19;"
+        }
+    ],
+    "edges": []
+}

@@ -1,0 +1,146 @@
+{
+    "file": "Array2Zeromax-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "int[] zeroMax(int[] nums)\tint i = nums.length - 1"
+        },
+        {
+            "id": 2,
+            "line": 9,
+            "label": "while (i >= 0 && nums[i] % 2 == 0)"
+        },
+        {
+            "id": "a2",
+            "line": "0-12",
+            "label": "endwhile\tint j = i - 1"
+        },
+        {
+            "id": 4,
+            "line": 10,
+            "label": "i--"
+        },
+        {
+            "id": 6,
+            "line": 12,
+            "label": "for (j >= 0)"
+        },
+        {
+            "id": "a3",
+            "line": "0-20",
+            "label": "endfor\treturn nums;"
+        },
+        {
+            "id": 9,
+            "line": 13,
+            "label": "if (nums[j] == 0)"
+        },
+        {
+            "id": 10,
+            "line": 14,
+            "label": "nums[j] = nums[i]"
+        },
+        {
+            "id": "a4",
+            "line": "0-16",
+            "label": "endif\tif (nums[j] % 2 == 1 && nums[j] > nums[i])"
+        },
+        {
+            "id": 13,
+            "line": 17,
+            "label": "i = j"
+        },
+        {
+            "id": "a5",
+            "line": "0-12",
+            "label": "endif\tj--"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": ""
+        },
+        {
+            "id": 2,
+            "source": 2,
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 3,
+            "source": 2,
+            "target": 4,
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": 2,
+            "label": ""
+        },
+        {
+            "id": 6,
+            "source": "a2",
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": 6,
+            "target": 9,
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": 9,
+            "target": 10,
+            "label": "True"
+        },
+        {
+            "id": 10,
+            "source": 10,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 11,
+            "source": 9,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 13,
+            "source": "a4",
+            "target": 13,
+            "label": "True"
+        },
+        {
+            "id": 14,
+            "source": 13,
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 15,
+            "source": "a4",
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 17,
+            "source": "a5",
+            "target": 6,
+            "label": ""
+        }
+    ]
+}

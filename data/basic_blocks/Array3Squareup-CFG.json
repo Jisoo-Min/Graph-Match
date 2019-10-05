@@ -1,0 +1,123 @@
+{
+    "file": "Array3Squareup-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "5-6-8",
+            "label": "int[] squareUp(int n)\tint[] arr = new int[n*n]\tif (n == 0)"
+        },
+        {
+            "id": 3,
+            "line": 9,
+            "label": "return arr;"
+        },
+        {
+            "id": "a3",
+            "line": "0-11",
+            "label": "endif\tint i = n - 1"
+        },
+        {
+            "id": 6,
+            "line": 11,
+            "label": "for (i < arr.length)"
+        },
+        {
+            "id": "a4",
+            "line": "0-16",
+            "label": "endfor\treturn arr;"
+        },
+        {
+            "id": 9,
+            "line": 12,
+            "label": "int j = i"
+        },
+        {
+            "id": 10,
+            "line": 12,
+            "label": "for (j >= i - i / n)"
+        },
+        {
+            "id": 11,
+            "line": 12,
+            "label": "j--"
+        },
+        {
+            "id": 13,
+            "line": 13,
+            "label": "arr[j] = i - j + 1"
+        },
+        {
+            "id": "a5",
+            "line": "0-11",
+            "label": "endfor\ti += n"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": "a3",
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 6,
+            "source": 6,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": 9,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": 9,
+            "target": 10,
+            "label": ""
+        },
+        {
+            "id": 9,
+            "source": 10,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 10,
+            "source": 10,
+            "target": 13,
+            "label": "True"
+        },
+        {
+            "id": 11,
+            "source": 13,
+            "target": 11,
+            "label": ""
+        },
+        {
+            "id": 12,
+            "source": 11,
+            "target": 10,
+            "label": ""
+        },
+        {
+            "id": 14,
+            "source": "a5",
+            "target": 6,
+            "label": ""
+        }
+    ]
+}

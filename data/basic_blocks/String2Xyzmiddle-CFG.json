@@ -1,0 +1,56 @@
+{
+    "file": "String2Xyzmiddle-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "boolean xyzMiddle(String str)\tif (str.length() < 3)"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "return false;"
+        },
+        {
+            "id": "a4",
+            "line": "0-10-11-13",
+            "label": "endif\tint start1 = str.length() / 2 - 2\tint start2 = str.length() / 2 - 1\tif (str.length() % 2 == 0)"
+        },
+        {
+            "id": 7,
+            "line": 14,
+            "label": "return str.substring(start1, start1 + 3).equals('xyz') || str.substring(start2, start2 + 3).equals('xyz');"
+        },
+        {
+            "id": "a5",
+            "line": "0-18",
+            "label": "endif\treturn str.substring(start2, start2 + 3).equals('xyz');"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 6,
+            "source": "a4",
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": "a4",
+            "target": "a5",
+            "label": "False"
+        }
+    ]
+}

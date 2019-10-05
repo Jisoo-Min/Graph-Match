@@ -1,0 +1,112 @@
+{
+    "file": "Array3Canbalance-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "6-7-8-10",
+            "label": "boolean canBalance(int[] nums)\tint first = 0\tint second = 0\tint i = 0"
+        },
+        {
+            "id": 4,
+            "line": 10,
+            "label": "for (i < nums.length)"
+        },
+        {
+            "id": "a4",
+            "line": "0-13",
+            "label": "endfor\tint i = 0"
+        },
+        {
+            "id": 9,
+            "line": 13,
+            "label": "for (i <= nums.length - 2)"
+        },
+        {
+            "id": "a5",
+            "line": "11-10",
+            "label": "second += nums[i]\ti++"
+        },
+        {
+            "id": "a6",
+            "line": "0-21",
+            "label": "endfor\treturn false;"
+        },
+        {
+            "id": "a8",
+            "line": "14-15-17",
+            "label": "first += nums[i]\tsecond -= nums[i]\tif (first == second)"
+        },
+        {
+            "id": 15,
+            "line": 18,
+            "label": "return true;"
+        },
+        {
+            "id": "a9",
+            "line": "0-13",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 4,
+            "target": "a5",
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": "a5",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 9,
+            "source": "a4",
+            "target": 9,
+            "label": ""
+        },
+        {
+            "id": 10,
+            "source": 9,
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 11,
+            "source": 9,
+            "target": "a8",
+            "label": "True"
+        },
+        {
+            "id": 14,
+            "source": "a8",
+            "target": 15,
+            "label": "True"
+        },
+        {
+            "id": 15,
+            "source": "a8",
+            "target": "a9",
+            "label": "False"
+        },
+        {
+            "id": 17,
+            "source": "a9",
+            "target": 9,
+            "label": ""
+        }
+    ]
+}

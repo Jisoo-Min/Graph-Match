@@ -1,0 +1,168 @@
+{
+    "file": "Array2Fizzbuzz-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "15-16-18",
+            "label": "String[] fizzBuzz(int start, int end)\tString[] arr = new String[end - start]\tint i = start"
+        },
+        {
+            "id": 3,
+            "line": 18,
+            "label": "for (i < end)"
+        },
+        {
+            "id": "a3",
+            "line": "0-30",
+            "label": "endfor\treturn arr;"
+        },
+        {
+            "id": 6,
+            "line": 19,
+            "label": "if (i % 15 == 0)"
+        },
+        {
+            "id": 7,
+            "line": 20,
+            "label": "arr[i - start] = 'FizzBuzz'"
+        },
+        {
+            "id": 9,
+            "line": 21,
+            "label": "if (i % 3 == 0)"
+        },
+        {
+            "id": "a4",
+            "line": "0-18",
+            "label": "endif\ti++"
+        },
+        {
+            "id": 10,
+            "line": 22,
+            "label": "arr[i - start] = 'Fizz'"
+        },
+        {
+            "id": 11,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 12,
+            "line": 23,
+            "label": "if (i % 5 == 0)"
+        },
+        {
+            "id": 13,
+            "line": 24,
+            "label": "arr[i - start] = 'Buzz'"
+        },
+        {
+            "id": 14,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 15,
+            "line": 26,
+            "label": "arr[i - start] = String.valueOf(i)"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 6,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": 9,
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": 9,
+            "target": 10,
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": 10,
+            "target": 11,
+            "label": ""
+        },
+        {
+            "id": 10,
+            "source": 9,
+            "target": 12,
+            "label": "False"
+        },
+        {
+            "id": 11,
+            "source": 12,
+            "target": 13,
+            "label": "True"
+        },
+        {
+            "id": 12,
+            "source": 13,
+            "target": 14,
+            "label": ""
+        },
+        {
+            "id": 13,
+            "source": 12,
+            "target": 15,
+            "label": "False"
+        },
+        {
+            "id": 14,
+            "source": 15,
+            "target": 14,
+            "label": ""
+        },
+        {
+            "id": 15,
+            "source": 14,
+            "target": 11,
+            "label": ""
+        },
+        {
+            "id": 16,
+            "source": 11,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 18,
+            "source": "a4",
+            "target": 3,
+            "label": ""
+        }
+    ]
+}

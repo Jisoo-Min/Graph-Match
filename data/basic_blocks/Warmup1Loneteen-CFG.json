@@ -1,0 +1,11 @@
+{
+    "file": "Warmup1Loneteen-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "5-6-7-9",
+            "label": "boolean loneTeen(int a, int b)\tboolean aTeen = 13 <= a && a <= 19\tboolean bTeen = 13 <= b && b <= 19\treturn aTeen != bTeen;"
+        }
+    ],
+    "edges": []
+}

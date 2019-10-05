@@ -1,0 +1,79 @@
+{
+    "file": "String2Counthi-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "5-6-8",
+            "label": "int countHi(String str)\tint count = 0\tint i = 0"
+        },
+        {
+            "id": 3,
+            "line": 8,
+            "label": "for (i < str.length() - 1)"
+        },
+        {
+            "id": "a3",
+            "line": "0-13",
+            "label": "endfor\treturn count;"
+        },
+        {
+            "id": 6,
+            "line": 9,
+            "label": "if (str.substring(i, i + 2).equals('hi'))"
+        },
+        {
+            "id": 7,
+            "line": 10,
+            "label": "count++"
+        },
+        {
+            "id": "a4",
+            "line": "0-8",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 6,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": "a4",
+            "target": 3,
+            "label": ""
+        }
+    ]
+}

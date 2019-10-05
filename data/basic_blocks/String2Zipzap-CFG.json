@@ -1,0 +1,90 @@
+{
+    "file": "String2Zipzap-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "6-7-8-10",
+            "label": "String zipZap(String str)\tchar[] arr = new char[str.length()]\tint count = 0\tint i = 0"
+        },
+        {
+            "id": 4,
+            "line": 11,
+            "label": "while (i < str.length())"
+        },
+        {
+            "id": "a4",
+            "line": "0-26",
+            "label": "endwhile\treturn new String(arr, 0, count);"
+        },
+        {
+            "id": 6,
+            "line": 12,
+            "label": "if (i < str.length() - 2 && str.charAt(i) == 'z' && str.charAt(i + 2) == 'p')"
+        },
+        {
+            "id": "a8",
+            "line": "14-15-16-17-18",
+            "label": "arr[count] = 'z'\tcount++\tarr[count] = 'p'\tcount++\ti += 3"
+        },
+        {
+            "id": 12,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": "a10",
+            "line": "20-21-22",
+            "label": "arr[count] = str.charAt(i)\tcount++\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 4,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 6,
+            "target": "a8",
+            "label": "True"
+        },
+        {
+            "id": 11,
+            "source": "a8",
+            "target": 12,
+            "label": ""
+        },
+        {
+            "id": 12,
+            "source": 6,
+            "target": "a10",
+            "label": "False"
+        },
+        {
+            "id": 15,
+            "source": "a10",
+            "target": 12,
+            "label": ""
+        },
+        {
+            "id": 16,
+            "source": 12,
+            "target": 4,
+            "label": ""
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "file": "Logic2Makebricks-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "6-7-9",
+            "label": "boolean makeBricks(int small, int big, int goal)\tint remainder = goal >= (5 * big) ? goal - (5 * big) : goal % 5\treturn small >= remainder;"
+        }
+    ],
+    "edges": []
+}

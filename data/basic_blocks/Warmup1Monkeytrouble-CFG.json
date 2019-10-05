@@ -1,0 +1,11 @@
+{
+    "file": "Warmup1Monkeytrouble-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "boolean monkeyTrouble(boolean aSmile, boolean bSmile)\treturn aSmile == bSmile;"
+        }
+    ],
+    "edges": []
+}

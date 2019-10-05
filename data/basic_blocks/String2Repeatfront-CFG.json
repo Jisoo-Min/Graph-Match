@@ -1,0 +1,51 @@
+{
+    "file": "String2Repeatfront-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "7-8-10",
+            "label": "String repeatFront(String str, int n)\tStringBuffer result = new StringBuffer()\tint i = n"
+        },
+        {
+            "id": 3,
+            "line": 10,
+            "label": "for (i > 0)"
+        },
+        {
+            "id": "a3",
+            "line": "0-13",
+            "label": "endfor\treturn result.toString();"
+        },
+        {
+            "id": "a4",
+            "line": "11-10",
+            "label": "result.append(str.substring(0, i))\ti--"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": "a4",
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": "a4",
+            "target": 3,
+            "label": ""
+        }
+    ]
+}

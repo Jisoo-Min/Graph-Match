@@ -1,0 +1,11 @@
+{
+    "file": "Warmup1Icyhot-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "boolean icyHot(int temp1, int temp2)\treturn (temp1 * temp2 < 0) && Math.abs(temp1 - temp2) >= 102;"
+        }
+    ],
+    "edges": []
+}

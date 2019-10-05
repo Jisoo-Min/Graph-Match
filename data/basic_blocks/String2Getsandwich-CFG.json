@@ -1,0 +1,168 @@
+{
+    "file": "String2Getsandwich-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "7-8-9-11",
+            "label": "String getSandwich(String str)\tint first = -1\tint last = -1\tint i = 0"
+        },
+        {
+            "id": 4,
+            "line": 11,
+            "label": "for (i < str.length() - 5)"
+        },
+        {
+            "id": "a4",
+            "line": "0-18",
+            "label": "endfor\tint i = str.length() - 5"
+        },
+        {
+            "id": 7,
+            "line": 12,
+            "label": "if (str.substring(i, i + 5).equals('bread'))"
+        },
+        {
+            "id": "a5",
+            "line": "13-14",
+            "label": "first = i\tbreak;"
+        },
+        {
+            "id": 12,
+            "line": 18,
+            "label": "for (i >= 0)"
+        },
+        {
+            "id": "a6",
+            "line": "0-11",
+            "label": "endif\ti++"
+        },
+        {
+            "id": "a7",
+            "line": "0-25",
+            "label": "endfor\tif (first != -1 && last != -1 && first != last)"
+        },
+        {
+            "id": 15,
+            "line": 19,
+            "label": "if (str.substring(i, i + 5).equals('bread'))"
+        },
+        {
+            "id": "a8",
+            "line": "20-21",
+            "label": "last = i\tbreak;"
+        },
+        {
+            "id": 20,
+            "line": 26,
+            "label": "return str.substring(first + 5, last);"
+        },
+        {
+            "id": "a9",
+            "line": "0-18",
+            "label": "endif\ti--"
+        },
+        {
+            "id": "a10",
+            "line": "0-28",
+            "label": "endif\treturn '';"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 4,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": "a5",
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": "a5",
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 9,
+            "source": 7,
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 11,
+            "source": "a6",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 13,
+            "source": "a4",
+            "target": 12,
+            "label": ""
+        },
+        {
+            "id": 14,
+            "source": 12,
+            "target": "a7",
+            "label": "False"
+        },
+        {
+            "id": 15,
+            "source": 12,
+            "target": 15,
+            "label": "True"
+        },
+        {
+            "id": 16,
+            "source": 15,
+            "target": "a8",
+            "label": "True"
+        },
+        {
+            "id": 18,
+            "source": "a8",
+            "target": "a7",
+            "label": ""
+        },
+        {
+            "id": 19,
+            "source": 15,
+            "target": "a9",
+            "label": "False"
+        },
+        {
+            "id": 21,
+            "source": "a9",
+            "target": 12,
+            "label": ""
+        },
+        {
+            "id": 23,
+            "source": "a7",
+            "target": 20,
+            "label": "True"
+        },
+        {
+            "id": 24,
+            "source": "a7",
+            "target": "a10",
+            "label": "False"
+        }
+    ]
+}

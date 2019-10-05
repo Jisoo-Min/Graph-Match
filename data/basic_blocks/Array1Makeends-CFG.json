@@ -1,0 +1,11 @@
+{
+    "file": "Array1Makeends-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "int[] makeEnds(int[] nums)\treturn new int[] {nums[0], nums[nums.length - 1]};"
+        }
+    ],
+    "edges": []
+}

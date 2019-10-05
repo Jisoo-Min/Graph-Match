@@ -1,0 +1,73 @@
+{
+    "file": "Ap1Hasone-CFG.java",
+    "nodes": [
+        {
+            "id": 0,
+            "line": 4,
+            "label": "boolean hasOne(int n)"
+        },
+        {
+            "id": 1,
+            "line": 5,
+            "label": "while (n != 0)"
+        },
+        {
+            "id": "a1",
+            "line": "0-12",
+            "label": "endwhile\treturn false;"
+        },
+        {
+            "id": 3,
+            "line": 6,
+            "label": "if (n % 10 == 1)"
+        },
+        {
+            "id": 4,
+            "line": 7,
+            "label": "return true;"
+        },
+        {
+            "id": "a2",
+            "line": "0-9",
+            "label": "endif\tn /= 10"
+        }
+    ],
+    "edges": [
+        {
+            "id": 0,
+            "source": 0,
+            "target": 1,
+            "label": ""
+        },
+        {
+            "id": 1,
+            "source": 1,
+            "target": "a1",
+            "label": "False"
+        },
+        {
+            "id": 2,
+            "source": 1,
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": 4,
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 6,
+            "source": "a2",
+            "target": 1,
+            "label": ""
+        }
+    ]
+}

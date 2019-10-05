@@ -1,0 +1,56 @@
+{
+    "file": "Logic1Answercell-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)\tif (isAsleep)"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "return false;"
+        },
+        {
+            "id": "a2",
+            "line": "0-10",
+            "label": "endif\tif (isMorning && !isMom)"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "return false;"
+        },
+        {
+            "id": "a3",
+            "line": "0-13",
+            "label": "endif\treturn true;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        }
+    ]
+}

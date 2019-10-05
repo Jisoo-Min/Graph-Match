@@ -1,0 +1,51 @@
+{
+    "file": "String2Doublechar-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "5-6-7-9",
+            "label": "String doubleChar(String str)\tchar[] arr = new char[2 * str.length()]\tint count = 0\tint i = 0"
+        },
+        {
+            "id": 4,
+            "line": 9,
+            "label": "for (i < str.length())"
+        },
+        {
+            "id": "a4",
+            "line": "0-16",
+            "label": "endfor\treturn new String(arr);"
+        },
+        {
+            "id": "a8",
+            "line": "10-11-12-13-9",
+            "label": "arr[count] = str.charAt(i)\tcount++\tarr[count] = str.charAt(i)\tcount++\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 4,
+            "target": "a8",
+            "label": "True"
+        },
+        {
+            "id": 10,
+            "source": "a8",
+            "target": 4,
+            "label": ""
+        }
+    ]
+}

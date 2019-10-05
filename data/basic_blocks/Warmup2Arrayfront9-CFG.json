@@ -1,0 +1,73 @@
+{
+    "file": "Warmup2Arrayfront9-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "boolean arrayFront9(int[] nums)\tint i = 0"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "while (i < nums.length && i < 4)"
+        },
+        {
+            "id": "a2",
+            "line": "0-15",
+            "label": "endwhile\treturn false;"
+        },
+        {
+            "id": 4,
+            "line": 9,
+            "label": "if (nums[i] == 9)"
+        },
+        {
+            "id": 5,
+            "line": 10,
+            "label": "return true;"
+        },
+        {
+            "id": "a3",
+            "line": "0-12",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": ""
+        },
+        {
+            "id": 2,
+            "source": 2,
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 3,
+            "source": 2,
+            "target": 4,
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 4,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 2,
+            "label": ""
+        }
+    ]
+}

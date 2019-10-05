@@ -1,0 +1,56 @@
+{
+    "file": "Recursion1Pairstar-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "String pairStar(String str)\tif (str.length() <= 1)"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "return str;"
+        },
+        {
+            "id": "a2",
+            "line": "0-10",
+            "label": "endif\tif (str.charAt(0) == str.charAt(1))"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "return str.charAt(0) + '*' + pairStar(str.substring(1));"
+        },
+        {
+            "id": "a3",
+            "line": "0-13",
+            "label": "endif\treturn str.charAt(0) + pairStar(str.substring(1));"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        }
+    ]
+}

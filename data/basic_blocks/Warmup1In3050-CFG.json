@@ -1,0 +1,11 @@
+{
+    "file": "Warmup1In3050-CFG.java",
+    "nodes": [
+        {
+            "id": "a5",
+            "line": "5-6-7-8-9-11",
+            "label": "boolean in3050(int a, int b)\tboolean aRange1 = 30 <= a && a <= 40\tboolean aRange2 = 40 <= a && a <= 50\tboolean bRange1 = 30 <= b && b <= 40\tboolean bRange2 = 40 <= b && b <= 50\treturn aRange1 && bRange1 || aRange2 && bRange2;"
+        }
+    ],
+    "edges": []
+}

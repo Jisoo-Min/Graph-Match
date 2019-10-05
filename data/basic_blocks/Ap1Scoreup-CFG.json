@@ -1,0 +1,118 @@
+{
+    "file": "Ap1Scoreup-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "9-10-12",
+            "label": "int scoreUp(String[] key, String[] answers)\tint score = 0\tint i = 0"
+        },
+        {
+            "id": 3,
+            "line": 12,
+            "label": "for (i < key.length)"
+        },
+        {
+            "id": "a3",
+            "line": "0-20",
+            "label": "endfor\treturn score;"
+        },
+        {
+            "id": 6,
+            "line": 13,
+            "label": "if (key[i].charAt(0) == answers[i].charAt(0))"
+        },
+        {
+            "id": 7,
+            "line": 14,
+            "label": "score += 4"
+        },
+        {
+            "id": 9,
+            "line": 15,
+            "label": "if (answers[i].charAt(0) != '?')"
+        },
+        {
+            "id": "a4",
+            "line": "0-12",
+            "label": "endif\ti++"
+        },
+        {
+            "id": 10,
+            "line": 16,
+            "label": "score -= 1"
+        },
+        {
+            "id": 11,
+            "line": 0,
+            "label": "endif"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 6,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": 9,
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": 9,
+            "target": 10,
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": 10,
+            "target": 11,
+            "label": ""
+        },
+        {
+            "id": 10,
+            "source": 9,
+            "target": 11,
+            "label": "False"
+        },
+        {
+            "id": 11,
+            "source": 11,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 13,
+            "source": "a4",
+            "target": 3,
+            "label": ""
+        }
+    ]
+}

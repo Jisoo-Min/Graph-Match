@@ -1,0 +1,11 @@
+{
+    "file": "String1Extraend-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "5-6-7",
+            "label": "String extraEnd(String str)\tString last = str.substring(str.length() - 2)\treturn last + last + last;"
+        }
+    ],
+    "edges": []
+}

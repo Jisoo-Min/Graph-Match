@@ -1,0 +1,11 @@
+{
+    "file": "Logic1Specialeleven-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "boolean specialEleven(int n)\treturn (n % 11) == 0 || (n % 11) == 1;"
+        }
+    ],
+    "edges": []
+}

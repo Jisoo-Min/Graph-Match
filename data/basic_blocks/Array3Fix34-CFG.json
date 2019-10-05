@@ -1,0 +1,196 @@
+{
+    "file": "Array3Fix34-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "8-9",
+            "label": "int[] fix34(int[] nums)\tint i = 0"
+        },
+        {
+            "id": 2,
+            "line": 11,
+            "label": "while (i < nums.length && nums[i] != 3)"
+        },
+        {
+            "id": "a2",
+            "line": "0-14",
+            "label": "endwhile\tint j = i + 1"
+        },
+        {
+            "id": 4,
+            "line": 12,
+            "label": "i++"
+        },
+        {
+            "id": 6,
+            "line": 16,
+            "label": "while (j < nums.length && nums[j] != 4)"
+        },
+        {
+            "id": 7,
+            "line": 0,
+            "label": "endwhile"
+        },
+        {
+            "id": 8,
+            "line": 17,
+            "label": "j++"
+        },
+        {
+            "id": 9,
+            "line": 19,
+            "label": "while (i < nums.length)"
+        },
+        {
+            "id": "a3",
+            "line": "0-31",
+            "label": "endwhile\treturn nums;"
+        },
+        {
+            "id": 11,
+            "line": 20,
+            "label": "if (nums[i] == 3)"
+        },
+        {
+            "id": "a5",
+            "line": "21-22-23",
+            "label": "int temp = nums[i+1]\tnums[i+1] = nums[j]\tnums[j] = temp"
+        },
+        {
+            "id": 15,
+            "line": 25,
+            "label": "while (j < nums.length && nums[j] != 4)"
+        },
+        {
+            "id": 16,
+            "line": 0,
+            "label": "endwhile"
+        },
+        {
+            "id": 17,
+            "line": 26,
+            "label": "j++"
+        },
+        {
+            "id": "a6",
+            "line": "0-28",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": ""
+        },
+        {
+            "id": 2,
+            "source": 2,
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 3,
+            "source": 2,
+            "target": 4,
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": 2,
+            "label": ""
+        },
+        {
+            "id": 6,
+            "source": "a2",
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": 7,
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": 6,
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": 8,
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 10,
+            "source": 7,
+            "target": 9,
+            "label": ""
+        },
+        {
+            "id": 11,
+            "source": 9,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 12,
+            "source": 9,
+            "target": 11,
+            "label": "True"
+        },
+        {
+            "id": 13,
+            "source": 11,
+            "target": "a5",
+            "label": "True"
+        },
+        {
+            "id": 16,
+            "source": "a5",
+            "target": 15,
+            "label": ""
+        },
+        {
+            "id": 17,
+            "source": 15,
+            "target": 16,
+            "label": "False"
+        },
+        {
+            "id": 18,
+            "source": 15,
+            "target": 17,
+            "label": "True"
+        },
+        {
+            "id": 19,
+            "source": 17,
+            "target": 15,
+            "label": ""
+        },
+        {
+            "id": 20,
+            "source": 16,
+            "target": "a6",
+            "label": ""
+        },
+        {
+            "id": 21,
+            "source": 11,
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 23,
+            "source": "a6",
+            "target": 9,
+            "label": ""
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "file": "Array1Commonend-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "boolean commonEnd(int[] a, int[] b)\treturn a[0] == b[0] || a[a.length - 1] == b[b.length - 1];"
+        }
+    ],
+    "edges": []
+}

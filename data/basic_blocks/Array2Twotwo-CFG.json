@@ -1,0 +1,117 @@
+{
+    "file": "Array2Twotwo-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "boolean twoTwo(int[] nums)\tif (nums.length == 1 && nums[0] == 2)"
+        },
+        {
+            "id": 2,
+            "line": 7,
+            "label": "return false;"
+        },
+        {
+            "id": "a2",
+            "line": "0-9",
+            "label": "endif\tif (nums.length >= 2 && ((nums[0] == 2 && nums[1] != 2) || (nums[nums.length-1] == 2 && nums[nums.length-2] != 2)))"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "return false;"
+        },
+        {
+            "id": "a3",
+            "line": "0-13",
+            "label": "endif\tint i = 1"
+        },
+        {
+            "id": 8,
+            "line": 13,
+            "label": "for (i <= nums.length - 2)"
+        },
+        {
+            "id": "a4",
+            "line": "0-18",
+            "label": "endfor\treturn true;"
+        },
+        {
+            "id": 11,
+            "line": 14,
+            "label": "if (nums[i] == 2 && nums[i-1] != 2 && nums[i+1] != 2)"
+        },
+        {
+            "id": 12,
+            "line": 15,
+            "label": "return false;"
+        },
+        {
+            "id": "a5",
+            "line": "0-13",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 8,
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": 8,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": 8,
+            "target": 11,
+            "label": "True"
+        },
+        {
+            "id": 10,
+            "source": 11,
+            "target": 12,
+            "label": "True"
+        },
+        {
+            "id": 11,
+            "source": 11,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 13,
+            "source": "a5",
+            "target": 8,
+            "label": ""
+        }
+    ]
+}

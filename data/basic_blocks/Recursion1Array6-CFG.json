@@ -1,0 +1,34 @@
+{
+    "file": "Recursion1Array6-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "boolean array6(int[] nums, int index)\tif (index >= nums.length)"
+        },
+        {
+            "id": 2,
+            "line": 9,
+            "label": "return false;"
+        },
+        {
+            "id": "a2",
+            "line": "0-11",
+            "label": "endif\treturn nums[index] == 6 || array6(nums, index + 1);"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        }
+    ]
+}

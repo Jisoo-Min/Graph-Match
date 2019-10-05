@@ -1,0 +1,84 @@
+{
+    "file": "Ap1Scoresspecial-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "8-9",
+            "label": "int scoresSpecial(int[] a, int[] b)\treturn largestSpecial(a) + largestSpecial(b);"
+        },
+        {
+            "id": "a3",
+            "line": "12-13-15",
+            "label": "int largestSpecial(int[] a)\tint largest = 0\tint i = 0"
+        },
+        {
+            "id": 5,
+            "line": 15,
+            "label": "for (i < a.length)"
+        },
+        {
+            "id": "a4",
+            "line": "0-20",
+            "label": "endfor\treturn largest;"
+        },
+        {
+            "id": 8,
+            "line": 16,
+            "label": "if (a[i] % 10 == 0 && a[i] > largest)"
+        },
+        {
+            "id": 9,
+            "line": 17,
+            "label": "largest = a[i]"
+        },
+        {
+            "id": "a5",
+            "line": "0-15",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 5,
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": 5,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 8,
+            "target": 9,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 9,
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": 8,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 10,
+            "source": "a5",
+            "target": 5,
+            "label": ""
+        }
+    ]
+}

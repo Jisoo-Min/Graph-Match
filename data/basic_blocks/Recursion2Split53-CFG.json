@@ -1,0 +1,127 @@
+{
+    "file": "Recursion2Split53-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "8-9",
+            "label": "boolean split53(int[] nums)\treturn split53Helper(0, nums, 0, 0);"
+        },
+        {
+            "id": "a2",
+            "line": "12-13",
+            "label": "boolean split53Helper(int start, int[] nums, int mult5, int mult3)\tif (start >= nums.length)"
+        },
+        {
+            "id": 4,
+            "line": 14,
+            "label": "return mult5 == mult3;"
+        },
+        {
+            "id": "a3",
+            "line": "0-16",
+            "label": "endif\tif (nums[start] % 5 == 0)"
+        },
+        {
+            "id": 7,
+            "line": 17,
+            "label": "return split53Helper(start+1, nums, mult5 + nums[start], mult3);"
+        },
+        {
+            "id": "a4",
+            "line": "0-19",
+            "label": "endif\tif (nums[start] % 3 == 0)"
+        },
+        {
+            "id": 10,
+            "line": 20,
+            "label": "return split53Helper(start+1, nums, mult5, mult3 + nums[start]);"
+        },
+        {
+            "id": "a5",
+            "line": "0-22",
+            "label": "endif\tif (split53Helper(start+1, nums, mult5 + nums[start], mult3))"
+        },
+        {
+            "id": 13,
+            "line": 23,
+            "label": "return true;"
+        },
+        {
+            "id": "a6",
+            "line": "0-25",
+            "label": "endif\tif (split53Helper(start+1, nums, mult5, mult3 + nums[start]))"
+        },
+        {
+            "id": 16,
+            "line": 26,
+            "label": "return true;"
+        },
+        {
+            "id": "a7",
+            "line": "0-28",
+            "label": "endif\treturn false;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 4,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": "a3",
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": "a4",
+            "target": 10,
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": "a4",
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 11,
+            "source": "a5",
+            "target": 13,
+            "label": "True"
+        },
+        {
+            "id": 12,
+            "source": "a5",
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 14,
+            "source": "a6",
+            "target": 16,
+            "label": "True"
+        },
+        {
+            "id": 15,
+            "source": "a6",
+            "target": "a7",
+            "label": "False"
+        }
+    ]
+}

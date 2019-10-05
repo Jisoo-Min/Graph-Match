@@ -1,0 +1,146 @@
+{
+    "file": "String3Equalisnot-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "6-7-8-10",
+            "label": "boolean equalIsNot(String str)\tint is = 0\tint not = 0\tint i = 0"
+        },
+        {
+            "id": 4,
+            "line": 10,
+            "label": "for (i <= str.length() - 3)"
+        },
+        {
+            "id": "a4",
+            "line": "0-18",
+            "label": "endfor\tif (str.length() >= 2 && str.substring(str.length() - 2).equals('is'))"
+        },
+        {
+            "id": 7,
+            "line": 11,
+            "label": "if (str.substring(i, i + 2).equals('is'))"
+        },
+        {
+            "id": 8,
+            "line": 12,
+            "label": "is++"
+        },
+        {
+            "id": 10,
+            "line": 13,
+            "label": "if (str.substring(i, i + 3).equals('not'))"
+        },
+        {
+            "id": "a5",
+            "line": "0-10",
+            "label": "endif\ti++"
+        },
+        {
+            "id": 11,
+            "line": 14,
+            "label": "not++"
+        },
+        {
+            "id": 12,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 14,
+            "line": 19,
+            "label": "is++"
+        },
+        {
+            "id": "a6",
+            "line": "0-21",
+            "label": "endif\treturn is == not;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 4,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 8,
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": 7,
+            "target": 10,
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": 10,
+            "target": 11,
+            "label": "True"
+        },
+        {
+            "id": 10,
+            "source": 11,
+            "target": 12,
+            "label": ""
+        },
+        {
+            "id": 11,
+            "source": 10,
+            "target": 12,
+            "label": "False"
+        },
+        {
+            "id": 12,
+            "source": 12,
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 14,
+            "source": "a5",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 16,
+            "source": "a4",
+            "target": 14,
+            "label": "True"
+        },
+        {
+            "id": 17,
+            "source": 14,
+            "target": "a6",
+            "label": ""
+        },
+        {
+            "id": 18,
+            "source": "a4",
+            "target": "a6",
+            "label": "False"
+        }
+    ]
+}

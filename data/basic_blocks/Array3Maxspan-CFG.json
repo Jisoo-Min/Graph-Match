@@ -1,0 +1,118 @@
+{
+    "file": "Array3Maxspan-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "7-8-10",
+            "label": "int maxSpan(int[] nums)\tint max = 0\tint i = 0"
+        },
+        {
+            "id": 3,
+            "line": 10,
+            "label": "for (i < nums.length)"
+        },
+        {
+            "id": "a3",
+            "line": "0-22",
+            "label": "endfor\treturn max;"
+        },
+        {
+            "id": 6,
+            "line": 11,
+            "label": "int j = nums.length - 1"
+        },
+        {
+            "id": 7,
+            "line": 13,
+            "label": "while (nums[i] != nums[j])"
+        },
+        {
+            "id": "a5",
+            "line": "0-16-18",
+            "label": "endwhile\tint span = j - i + 1\tif (span > max)"
+        },
+        {
+            "id": 9,
+            "line": 14,
+            "label": "j--"
+        },
+        {
+            "id": 12,
+            "line": 19,
+            "label": "max = span"
+        },
+        {
+            "id": "a6",
+            "line": "0-10",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 6,
+            "target": 7,
+            "label": ""
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": 7,
+            "target": 9,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": 9,
+            "target": 7,
+            "label": ""
+        },
+        {
+            "id": 11,
+            "source": "a5",
+            "target": 12,
+            "label": "True"
+        },
+        {
+            "id": 12,
+            "source": 12,
+            "target": "a6",
+            "label": ""
+        },
+        {
+            "id": 13,
+            "source": "a5",
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 15,
+            "source": "a6",
+            "target": 3,
+            "label": ""
+        }
+    ]
+}

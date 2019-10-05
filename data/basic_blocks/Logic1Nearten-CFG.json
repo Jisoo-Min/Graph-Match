@@ -1,0 +1,11 @@
+{
+    "file": "Logic1Nearten-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "5-6",
+            "label": "boolean nearTen(int num)\treturn num % 10 <= 2 || num % 10 >= 8;"
+        }
+    ],
+    "edges": []
+}

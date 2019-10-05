@@ -1,0 +1,129 @@
+{
+    "file": "Ap1Mergetwo-CFG.java",
+    "nodes": [
+        {
+            "id": "a4",
+            "line": "10-11-12-13-15",
+            "label": "String[] mergeTwo(String[] a, String[] b, int n)\tString[] arr = new String[n]\tint aIndex = 0\tint bIndex = 0\tint index = 0"
+        },
+        {
+            "id": 5,
+            "line": 15,
+            "label": "for (index < n)"
+        },
+        {
+            "id": "a5",
+            "line": "0-29",
+            "label": "endfor\treturn arr;"
+        },
+        {
+            "id": 8,
+            "line": 16,
+            "label": "if (a[aIndex].compareTo(b[bIndex]) < 0)"
+        },
+        {
+            "id": "a6",
+            "line": "17-18",
+            "label": "arr[index] = a[aIndex]\taIndex++"
+        },
+        {
+            "id": 12,
+            "line": 19,
+            "label": "if (a[aIndex].compareTo(b[bIndex]) > 0)"
+        },
+        {
+            "id": "a7",
+            "line": "0-15",
+            "label": "endif\tindex++"
+        },
+        {
+            "id": "a8",
+            "line": "20-21",
+            "label": "arr[index] = b[bIndex]\tbIndex++"
+        },
+        {
+            "id": 15,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": "a10",
+            "line": "23-24-25",
+            "label": "arr[index] = a[aIndex]\taIndex++\tbIndex++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 4,
+            "source": "a4",
+            "target": 5,
+            "label": ""
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 6,
+            "source": 5,
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 8,
+            "target": "a6",
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": "a6",
+            "target": "a7",
+            "label": ""
+        },
+        {
+            "id": 10,
+            "source": 8,
+            "target": 12,
+            "label": "False"
+        },
+        {
+            "id": 11,
+            "source": 12,
+            "target": "a8",
+            "label": "True"
+        },
+        {
+            "id": 13,
+            "source": "a8",
+            "target": 15,
+            "label": ""
+        },
+        {
+            "id": 14,
+            "source": 12,
+            "target": "a10",
+            "label": "False"
+        },
+        {
+            "id": 17,
+            "source": "a10",
+            "target": 15,
+            "label": ""
+        },
+        {
+            "id": 18,
+            "source": 15,
+            "target": "a7",
+            "label": ""
+        },
+        {
+            "id": 20,
+            "source": "a7",
+            "target": 5,
+            "label": ""
+        }
+    ]
+}

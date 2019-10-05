@@ -1,0 +1,68 @@
+{
+    "file": "Array1Maxtriple-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "6-7-9",
+            "label": "int maxTriple(int[] nums)\tint max = nums[0]\tif (max < nums[nums.length / 2])"
+        },
+        {
+            "id": 3,
+            "line": 10,
+            "label": "max = nums[nums.length / 2]"
+        },
+        {
+            "id": "a3",
+            "line": "0-12",
+            "label": "endif\tif (max < nums[nums.length - 1])"
+        },
+        {
+            "id": 6,
+            "line": 13,
+            "label": "max = nums[nums.length - 1]"
+        },
+        {
+            "id": "a4",
+            "line": "0-15",
+            "label": "endif\treturn max;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 6,
+            "source": "a3",
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "file": "Warmup2Stringtimes-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "5-6-7-9",
+            "label": "String stringTimes(String str, int n)\tchar[] nCopy = new char[n * str.length()]\tint index = 0\tint i = 0"
+        },
+        {
+            "id": 4,
+            "line": 9,
+            "label": "for (i < n)"
+        },
+        {
+            "id": "a4",
+            "line": "0-16",
+            "label": "endfor\treturn new String(nCopy);"
+        },
+        {
+            "id": 7,
+            "line": 10,
+            "label": "int j = 0"
+        },
+        {
+            "id": 8,
+            "line": 10,
+            "label": "for (j < str.length())"
+        },
+        {
+            "id": 11,
+            "line": 11,
+            "label": "nCopy[index] = str.charAt(j)"
+        },
+        {
+            "id": "a5",
+            "line": "0-9",
+            "label": "endfor\ti++"
+        },
+        {
+            "id": "a6",
+            "line": "12-10",
+            "label": "index++\tj++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 4,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": 8,
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 8,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": 8,
+            "target": 11,
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": 11,
+            "target": "a6",
+            "label": ""
+        },
+        {
+            "id": 11,
+            "source": "a6",
+            "target": 8,
+            "label": ""
+        },
+        {
+            "id": 13,
+            "source": "a5",
+            "target": 4,
+            "label": ""
+        }
+    ]
+}

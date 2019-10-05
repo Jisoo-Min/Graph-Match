@@ -1,0 +1,40 @@
+{
+    "file": "String1Extrafront-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "String extraFront(String str)\tif (str.length() >= 2)"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "str = str.substring(0, 2)"
+        },
+        {
+            "id": "a2",
+            "line": "0-10",
+            "label": "endif\treturn str + str + str;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": 2,
+            "target": "a2",
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        }
+    ]
+}

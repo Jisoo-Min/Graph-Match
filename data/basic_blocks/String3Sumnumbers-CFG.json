@@ -1,0 +1,196 @@
+{
+    "file": "String3Sumnumbers-CFG.java",
+    "nodes": [
+        {
+            "id": "a4",
+            "line": "6-7-8-9-10",
+            "label": "int sumNumbers(String str)\tint sum = 0\tint i = 0\tint begin\tint end"
+        },
+        {
+            "id": 5,
+            "line": 12,
+            "label": "while (i < str.length() && !Character.isDigit(str.charAt(i)))"
+        },
+        {
+            "id": "a6",
+            "line": "0-15-16",
+            "label": "endwhile\tbegin = i\tend = i"
+        },
+        {
+            "id": 7,
+            "line": 13,
+            "label": "i++"
+        },
+        {
+            "id": 10,
+            "line": 18,
+            "label": "while (i < str.length())"
+        },
+        {
+            "id": "a7",
+            "line": "0-32",
+            "label": "endwhile\tif (end > begin)"
+        },
+        {
+            "id": 12,
+            "line": 19,
+            "label": "if (!Character.isDigit(str.charAt(i)))"
+        },
+        {
+            "id": 13,
+            "line": 20,
+            "label": "sum += Integer.parseInt(str.substring(begin, end))"
+        },
+        {
+            "id": 14,
+            "line": 21,
+            "label": "while (i < str.length() && !Character.isDigit(str.charAt(i)))"
+        },
+        {
+            "id": "a9",
+            "line": "0-24-25",
+            "label": "endwhile\tbegin = i\tend = i"
+        },
+        {
+            "id": 16,
+            "line": 22,
+            "label": "i++"
+        },
+        {
+            "id": 19,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": "a10",
+            "line": "27-28",
+            "label": "end++\ti++"
+        },
+        {
+            "id": 23,
+            "line": 33,
+            "label": "sum += Integer.parseInt(str.substring(begin, end))"
+        },
+        {
+            "id": "a11",
+            "line": "0-35",
+            "label": "endif\treturn sum;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 4,
+            "source": "a4",
+            "target": 5,
+            "label": ""
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 6,
+            "source": 5,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 7,
+            "target": 5,
+            "label": ""
+        },
+        {
+            "id": 10,
+            "source": "a6",
+            "target": 10,
+            "label": ""
+        },
+        {
+            "id": 11,
+            "source": 10,
+            "target": "a7",
+            "label": "False"
+        },
+        {
+            "id": 12,
+            "source": 10,
+            "target": 12,
+            "label": "True"
+        },
+        {
+            "id": 13,
+            "source": 12,
+            "target": 13,
+            "label": "True"
+        },
+        {
+            "id": 14,
+            "source": 13,
+            "target": 14,
+            "label": ""
+        },
+        {
+            "id": 15,
+            "source": 14,
+            "target": "a9",
+            "label": "False"
+        },
+        {
+            "id": 16,
+            "source": 14,
+            "target": 16,
+            "label": "True"
+        },
+        {
+            "id": 17,
+            "source": 16,
+            "target": 14,
+            "label": ""
+        },
+        {
+            "id": 20,
+            "source": "a9",
+            "target": 19,
+            "label": ""
+        },
+        {
+            "id": 21,
+            "source": 12,
+            "target": "a10",
+            "label": "False"
+        },
+        {
+            "id": 23,
+            "source": "a10",
+            "target": 19,
+            "label": ""
+        },
+        {
+            "id": 24,
+            "source": 19,
+            "target": 10,
+            "label": ""
+        },
+        {
+            "id": 26,
+            "source": "a7",
+            "target": 23,
+            "label": "True"
+        },
+        {
+            "id": 27,
+            "source": 23,
+            "target": "a11",
+            "label": ""
+        },
+        {
+            "id": 28,
+            "source": "a7",
+            "target": "a11",
+            "label": "False"
+        }
+    ]
+}

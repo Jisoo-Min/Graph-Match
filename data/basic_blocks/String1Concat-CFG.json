@@ -1,0 +1,56 @@
+{
+    "file": "String1Concat-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "String conCat(String a, String b)\tif (a.length() == 0 || b.length() == 0)"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "return a + b;"
+        },
+        {
+            "id": "a2",
+            "line": "0-10",
+            "label": "endif\tif (a.charAt(a.length() - 1) == b.charAt(0))"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "return a + b.substring(1);"
+        },
+        {
+            "id": "a3",
+            "line": "0-13",
+            "label": "endif\treturn a + b;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        }
+    ]
+}

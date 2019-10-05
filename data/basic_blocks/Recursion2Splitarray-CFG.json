@@ -1,0 +1,83 @@
+{
+    "file": "Recursion2Splitarray-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "8-9",
+            "label": "boolean splitArray(int[] nums)\treturn splitArrayHelper(0, nums, 0, 0);"
+        },
+        {
+            "id": "a2",
+            "line": "12-14",
+            "label": "boolean splitArrayHelper(int start, int[] nums, int group1, int group2)\tif (start >= nums.length)"
+        },
+        {
+            "id": 4,
+            "line": 15,
+            "label": "return group1 == group2;"
+        },
+        {
+            "id": "a3",
+            "line": "0-17",
+            "label": "endif\tif (splitArrayHelper(start+1, nums, group1 + nums[start], group2))"
+        },
+        {
+            "id": 7,
+            "line": 18,
+            "label": "return true;"
+        },
+        {
+            "id": "a4",
+            "line": "0-20",
+            "label": "endif\tif (splitArrayHelper(start+1, nums, group1, group2 + nums[start]))"
+        },
+        {
+            "id": 10,
+            "line": 21,
+            "label": "return true;"
+        },
+        {
+            "id": "a5",
+            "line": "0-23",
+            "label": "endif\treturn false;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 4,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": "a3",
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 8,
+            "source": "a4",
+            "target": 10,
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": "a4",
+            "target": "a5",
+            "label": "False"
+        }
+    ]
+}

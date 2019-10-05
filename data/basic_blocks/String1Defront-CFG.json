@@ -1,0 +1,139 @@
+{
+    "file": "String1Defront-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "String deFront(String str)\tif (str.length() == 1 && str.charAt(0) != 'a')"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "return '';"
+        },
+        {
+            "id": "a2",
+            "line": "0-10",
+            "label": "endif\tif (str.length() >= 2)"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "if (str.charAt(0) != 'a' && str.charAt(1) != 'b')"
+        },
+        {
+            "id": 6,
+            "line": 12,
+            "label": "return str.substring(2);"
+        },
+        {
+            "id": 8,
+            "line": 13,
+            "label": "if (str.charAt(0) != 'a')"
+        },
+        {
+            "id": 9,
+            "line": 14,
+            "label": "return str.substring(1);"
+        },
+        {
+            "id": 11,
+            "line": 15,
+            "label": "if (str.charAt(1) != 'b')"
+        },
+        {
+            "id": 12,
+            "line": 16,
+            "label": "return 'a' + str.substring(2);"
+        },
+        {
+            "id": 14,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": "a4",
+            "line": "0-0-0",
+            "label": "endif\tendif\tendif"
+        },
+        {
+            "id": 15,
+            "line": 20,
+            "label": "return str;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 5,
+            "target": 8,
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": 8,
+            "target": 9,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": 8,
+            "target": 11,
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": 11,
+            "target": 12,
+            "label": "True"
+        },
+        {
+            "id": 10,
+            "source": 11,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 13,
+            "source": "a4",
+            "target": 14,
+            "label": ""
+        },
+        {
+            "id": 14,
+            "source": "a2",
+            "target": 14,
+            "label": "False"
+        },
+        {
+            "id": 15,
+            "source": 14,
+            "target": 15,
+            "label": ""
+        }
+    ]
+}

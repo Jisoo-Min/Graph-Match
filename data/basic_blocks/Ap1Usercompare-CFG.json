@@ -1,0 +1,100 @@
+{
+    "file": "Ap1Usercompare-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "int userCompare(String aName, int aId, String bName, int bId)\tif (aName.compareTo(bName) < 0)"
+        },
+        {
+            "id": 2,
+            "line": 9,
+            "label": "return -1;"
+        },
+        {
+            "id": 4,
+            "line": 10,
+            "label": "if (aName.compareTo(bName) > 0)"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "return 1;"
+        },
+        {
+            "id": 7,
+            "line": 12,
+            "label": "if (aId < bId)"
+        },
+        {
+            "id": 8,
+            "line": 13,
+            "label": "return -1;"
+        },
+        {
+            "id": 10,
+            "line": 14,
+            "label": "if (aId > bId)"
+        },
+        {
+            "id": 11,
+            "line": 15,
+            "label": "return 1;"
+        },
+        {
+            "id": "a5",
+            "line": "0-0-0-0-18",
+            "label": "endif\tendif\tendif\tendif\treturn 0;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": 4,
+            "label": "False"
+        },
+        {
+            "id": 3,
+            "source": 4,
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": 7,
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 7,
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": 10,
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": 10,
+            "target": 11,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": 10,
+            "target": "a5",
+            "label": "False"
+        }
+    ]
+}

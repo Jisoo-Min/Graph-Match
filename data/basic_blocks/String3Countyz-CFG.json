@@ -1,0 +1,129 @@
+{
+    "file": "String3Countyz-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "int countYZ(String str)\tif (str.length() == 0)"
+        },
+        {
+            "id": 2,
+            "line": 9,
+            "label": "return 0;"
+        },
+        {
+            "id": "a3",
+            "line": "0-11-13",
+            "label": "endif\tint count = 0\tint i = 0"
+        },
+        {
+            "id": 6,
+            "line": 13,
+            "label": "for (i <= str.length() - 2)"
+        },
+        {
+            "id": "a4",
+            "line": "0-20",
+            "label": "endfor\tif (Character.toLowerCase(str.charAt(str.length() - 1)) == 'y' || Character.toLowerCase(str.charAt(str.length() - 1)) == 'z')"
+        },
+        {
+            "id": 9,
+            "line": 14,
+            "label": "if ((Character.toLowerCase(str.charAt(i)) == 'y' ||   Character.toLowerCase(str.charAt(i)) == 'z') && !Character.isLetter(str.charAt(i+1)))"
+        },
+        {
+            "id": 10,
+            "line": 17,
+            "label": "count++"
+        },
+        {
+            "id": 13,
+            "line": 22,
+            "label": "count++"
+        },
+        {
+            "id": "a5",
+            "line": "0-13",
+            "label": "endif\ti++"
+        },
+        {
+            "id": "a6",
+            "line": "0-24",
+            "label": "endif\treturn count;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": "a3",
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 6,
+            "source": 6,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": 9,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": 9,
+            "target": 10,
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": 10,
+            "target": "a5",
+            "label": ""
+        },
+        {
+            "id": 10,
+            "source": 9,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 12,
+            "source": "a5",
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 14,
+            "source": "a4",
+            "target": 13,
+            "label": "True"
+        },
+        {
+            "id": 15,
+            "source": 13,
+            "target": "a6",
+            "label": ""
+        },
+        {
+            "id": 16,
+            "source": "a4",
+            "target": "a6",
+            "label": "False"
+        }
+    ]
+}

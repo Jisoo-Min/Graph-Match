@@ -1,0 +1,51 @@
+{
+    "file": "Ap1Wordsfront-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "5-6-8",
+            "label": "String[] wordsFront(String[] words, int n)\tString[] arr = new String[n]\tint i = 0"
+        },
+        {
+            "id": 3,
+            "line": 8,
+            "label": "for (i < arr.length)"
+        },
+        {
+            "id": "a3",
+            "line": "0-11",
+            "label": "endfor\treturn arr;"
+        },
+        {
+            "id": "a4",
+            "line": "9-8",
+            "label": "arr[i] = words[i]\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": "a4",
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": "a4",
+            "target": 3,
+            "label": ""
+        }
+    ]
+}

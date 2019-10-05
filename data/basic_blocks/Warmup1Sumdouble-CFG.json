@@ -1,0 +1,34 @@
+{
+    "file": "Warmup1Sumdouble-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "5-6-7",
+            "label": "int sumDouble(int a, int b)\tint sum = a + b\tif (a == b)"
+        },
+        {
+            "id": 3,
+            "line": 8,
+            "label": "return 2 * sum;"
+        },
+        {
+            "id": "a3",
+            "line": "0-10",
+            "label": "endif\treturn sum;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        }
+    ]
+}

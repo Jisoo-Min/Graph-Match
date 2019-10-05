@@ -1,0 +1,117 @@
+{
+    "file": "Recursion2Groupsumclump-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "10-11",
+            "label": "boolean groupSumClump(int start, int[] nums, int target)\tif (start >= nums.length)"
+        },
+        {
+            "id": 2,
+            "line": 12,
+            "label": "return target == 0;"
+        },
+        {
+            "id": "a3",
+            "line": "0-14-15",
+            "label": "endif\tint i = start\tint sum = 0"
+        },
+        {
+            "id": 6,
+            "line": 17,
+            "label": "while (i < nums.length && nums[start] == nums[i])"
+        },
+        {
+            "id": "a4",
+            "line": "0-22",
+            "label": "endwhile\tif (groupSumClump(i, nums, target - sum))"
+        },
+        {
+            "id": "a5",
+            "line": "18-19",
+            "label": "sum += nums[i]\ti++"
+        },
+        {
+            "id": 11,
+            "line": 23,
+            "label": "return true;"
+        },
+        {
+            "id": "a6",
+            "line": "0-25",
+            "label": "endif\tif (groupSumClump(i, nums, target))"
+        },
+        {
+            "id": 14,
+            "line": 26,
+            "label": "return true;"
+        },
+        {
+            "id": "a7",
+            "line": "0-28",
+            "label": "endif\treturn false;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": "a3",
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 6,
+            "source": 6,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a5",
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": "a5",
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 11,
+            "source": "a4",
+            "target": 11,
+            "label": "True"
+        },
+        {
+            "id": 12,
+            "source": "a4",
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 14,
+            "source": "a6",
+            "target": 14,
+            "label": "True"
+        },
+        {
+            "id": 15,
+            "source": "a6",
+            "target": "a7",
+            "label": "False"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "file": "String1Combostring-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "7-8",
+            "label": "String comboString(String a, String b)\tif (b.length() < a.length())"
+        },
+        {
+            "id": "a3",
+            "line": "9-10-11",
+            "label": "String temp = a\ta = b\tb = temp"
+        },
+        {
+            "id": "a4",
+            "line": "0-14",
+            "label": "endif\treturn a + b + a;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": "a3",
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": "a3",
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 5,
+            "source": "a1",
+            "target": "a4",
+            "label": "False"
+        }
+    ]
+}

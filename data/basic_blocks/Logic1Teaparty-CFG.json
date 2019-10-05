@@ -1,0 +1,56 @@
+{
+    "file": "Logic1Teaparty-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "9-10",
+            "label": "int teaParty(int tea, int candy)\tif (tea < 5 || candy < 5)"
+        },
+        {
+            "id": 2,
+            "line": 11,
+            "label": "return 0;"
+        },
+        {
+            "id": "a2",
+            "line": "0-13",
+            "label": "endif\tif (tea >= 2 * candy || candy >= 2 * tea)"
+        },
+        {
+            "id": 5,
+            "line": 14,
+            "label": "return 2;"
+        },
+        {
+            "id": "a3",
+            "line": "0-16",
+            "label": "endif\treturn 1;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        }
+    ]
+}

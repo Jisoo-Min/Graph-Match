@@ -1,0 +1,146 @@
+{
+    "file": "Ap1Wordswithout-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "7-8-10",
+            "label": "String[] wordsWithout(String[] words, String target)\tint count = 0\tint i = 0"
+        },
+        {
+            "id": 3,
+            "line": 10,
+            "label": "for (i < words.length)"
+        },
+        {
+            "id": "a5",
+            "line": "0-15-16-18",
+            "label": "endfor\tString[] arr = new String[count]\tint index = 0\tint i = 0"
+        },
+        {
+            "id": 6,
+            "line": 11,
+            "label": "if (!words[i].equals(target))"
+        },
+        {
+            "id": 7,
+            "line": 12,
+            "label": "count++"
+        },
+        {
+            "id": 12,
+            "line": 18,
+            "label": "for (index < count)"
+        },
+        {
+            "id": "a6",
+            "line": "0-10",
+            "label": "endif\ti++"
+        },
+        {
+            "id": "a7",
+            "line": "0-25",
+            "label": "endfor\treturn arr;"
+        },
+        {
+            "id": 15,
+            "line": 19,
+            "label": "if (!words[i].equals(target))"
+        },
+        {
+            "id": "a8",
+            "line": "20-21",
+            "label": "arr[index] = words[i]\tindex++"
+        },
+        {
+            "id": "a9",
+            "line": "0-18",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 3,
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": 6,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": "a6",
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": "a6",
+            "target": 3,
+            "label": ""
+        },
+        {
+            "id": 13,
+            "source": "a5",
+            "target": 12,
+            "label": ""
+        },
+        {
+            "id": 14,
+            "source": 12,
+            "target": "a7",
+            "label": "False"
+        },
+        {
+            "id": 15,
+            "source": 12,
+            "target": 15,
+            "label": "True"
+        },
+        {
+            "id": 16,
+            "source": 15,
+            "target": "a8",
+            "label": "True"
+        },
+        {
+            "id": 18,
+            "source": "a8",
+            "target": "a9",
+            "label": ""
+        },
+        {
+            "id": 19,
+            "source": 15,
+            "target": "a9",
+            "label": "False"
+        },
+        {
+            "id": 21,
+            "source": "a9",
+            "target": 12,
+            "label": ""
+        }
+    ]
+}

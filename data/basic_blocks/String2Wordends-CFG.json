@@ -1,0 +1,146 @@
+{
+    "file": "String2Wordends-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "7-8-9-11",
+            "label": "String wordEnds(String str, String word)\tStringBuffer result = new StringBuffer()\tint i = 0\tif (str.length() >= word.length() + 1 && str.substring(0, word.length()).equals(word))"
+        },
+        {
+            "id": "a4",
+            "line": "13-14",
+            "label": "i = word.length() - 1\tresult.append(str.charAt(i + 1))"
+        },
+        {
+            "id": 6,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 7,
+            "line": 17,
+            "label": "while (i < str.length() - word.length())"
+        },
+        {
+            "id": "a5",
+            "line": "0-29",
+            "label": "endwhile\treturn result.toString();"
+        },
+        {
+            "id": 9,
+            "line": 18,
+            "label": "if (str.substring(i + 1, i + 1 + word.length()).equals(word))"
+        },
+        {
+            "id": "a7",
+            "line": "19-20-21",
+            "label": "result.append(str.charAt(i))\ti = i + word.length()\tif (i < str.length() - 1)"
+        },
+        {
+            "id": 13,
+            "line": 22,
+            "label": "result.append(str.charAt(i + 1))"
+        },
+        {
+            "id": 14,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 15,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 16,
+            "line": 25,
+            "label": "i++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": "a4",
+            "label": "True"
+        },
+        {
+            "id": 5,
+            "source": "a4",
+            "target": 6,
+            "label": ""
+        },
+        {
+            "id": 6,
+            "source": "a3",
+            "target": 6,
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": 7,
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": 7,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": 7,
+            "target": 9,
+            "label": "True"
+        },
+        {
+            "id": 10,
+            "source": 9,
+            "target": "a7",
+            "label": "True"
+        },
+        {
+            "id": 13,
+            "source": "a7",
+            "target": 13,
+            "label": "True"
+        },
+        {
+            "id": 14,
+            "source": 13,
+            "target": 14,
+            "label": ""
+        },
+        {
+            "id": 15,
+            "source": "a7",
+            "target": 14,
+            "label": "False"
+        },
+        {
+            "id": 16,
+            "source": 14,
+            "target": 15,
+            "label": ""
+        },
+        {
+            "id": 17,
+            "source": 9,
+            "target": 16,
+            "label": "False"
+        },
+        {
+            "id": 18,
+            "source": 16,
+            "target": 15,
+            "label": ""
+        },
+        {
+            "id": 19,
+            "source": 15,
+            "target": 7,
+            "label": ""
+        }
+    ]
+}

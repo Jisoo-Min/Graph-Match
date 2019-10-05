@@ -1,0 +1,118 @@
+{
+    "file": "Array2Notalone-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "7-8-10",
+            "label": "int[] notAlone(int[] nums, int val)\tint[] arr = new int[nums.length]\tif (nums.length >= 1)"
+        },
+        {
+            "id": "a3",
+            "line": "11-12",
+            "label": "arr[0] = nums[0]\tarr[arr.length-1] = nums[nums.length-1]"
+        },
+        {
+            "id": "a4",
+            "line": "0-15",
+            "label": "endif\tint i = 1"
+        },
+        {
+            "id": 7,
+            "line": 15,
+            "label": "for (i <= nums.length - 2)"
+        },
+        {
+            "id": "a5",
+            "line": "0-22",
+            "label": "endfor\treturn arr;"
+        },
+        {
+            "id": 10,
+            "line": 16,
+            "label": "if (nums[i] == val && nums[i] != nums[i-1] && nums[i] != nums[i+1])"
+        },
+        {
+            "id": 11,
+            "line": 17,
+            "label": "arr[i] = Math.max(nums[i-1], nums[i+1])"
+        },
+        {
+            "id": 13,
+            "line": 19,
+            "label": "arr[i] = nums[i]"
+        },
+        {
+            "id": "a6",
+            "line": "0-15",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": "a3",
+            "label": "True"
+        },
+        {
+            "id": 4,
+            "source": "a3",
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 5,
+            "source": "a2",
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a4",
+            "target": 7,
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": 7,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": 7,
+            "target": 10,
+            "label": "True"
+        },
+        {
+            "id": 10,
+            "source": 10,
+            "target": 11,
+            "label": "True"
+        },
+        {
+            "id": 11,
+            "source": 11,
+            "target": "a6",
+            "label": ""
+        },
+        {
+            "id": 12,
+            "source": 10,
+            "target": 13,
+            "label": "False"
+        },
+        {
+            "id": 13,
+            "source": 13,
+            "target": "a6",
+            "label": ""
+        },
+        {
+            "id": 15,
+            "source": "a6",
+            "target": 7,
+            "label": ""
+        }
+    ]
+}

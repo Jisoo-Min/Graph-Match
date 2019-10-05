@@ -1,0 +1,56 @@
+{
+    "file": "Ap1Scoresaverage-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "10-11-12-13",
+            "label": "int scoresAverage(int[] scores)\tint first = average(scores, 0, scores.length / 2)\tint second = average(scores, scores.length / 2, scores.length)\treturn Math.max(first, second);"
+        },
+        {
+            "id": "a5",
+            "line": "16-17-19",
+            "label": "int average(int[] scores, int start, int end)\tint sum = 0\tint i = start"
+        },
+        {
+            "id": 7,
+            "line": 19,
+            "label": "for (i < end)"
+        },
+        {
+            "id": "a6",
+            "line": "0-22",
+            "label": "endfor\treturn sum / (end - start);"
+        },
+        {
+            "id": "a7",
+            "line": "20-19",
+            "label": "sum += scores[i]\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 5,
+            "source": "a5",
+            "target": 7,
+            "label": ""
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": 7,
+            "target": "a7",
+            "label": "True"
+        },
+        {
+            "id": 9,
+            "source": "a7",
+            "target": 7,
+            "label": ""
+        }
+    ]
+}

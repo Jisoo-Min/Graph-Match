@@ -1,0 +1,11 @@
+{
+    "file": "Warmup1Lastdigit-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "boolean lastDigit(int a, int b)\treturn a % 10 == b % 10;"
+        }
+    ],
+    "edges": []
+}

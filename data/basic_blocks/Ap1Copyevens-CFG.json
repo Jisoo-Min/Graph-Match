@@ -1,0 +1,79 @@
+{
+    "file": "Ap1Copyevens-CFG.java",
+    "nodes": [
+        {
+            "id": "a3",
+            "line": "6-7-8-10",
+            "label": "int[] copyEvens(int[] nums, int count)\tint[] arr = new int[count]\tint index = 0\tint i = 0"
+        },
+        {
+            "id": 4,
+            "line": 10,
+            "label": "for (index < count)"
+        },
+        {
+            "id": "a4",
+            "line": "0-17",
+            "label": "endfor\treturn arr;"
+        },
+        {
+            "id": 7,
+            "line": 11,
+            "label": "if (nums[i] % 2 == 0)"
+        },
+        {
+            "id": "a5",
+            "line": "12-13",
+            "label": "arr[index] = nums[i]\tindex++"
+        },
+        {
+            "id": "a6",
+            "line": "0-10",
+            "label": "endif\ti++"
+        }
+    ],
+    "edges": [
+        {
+            "id": 3,
+            "source": "a3",
+            "target": 4,
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 4,
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": 7,
+            "target": "a5",
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": "a5",
+            "target": "a6",
+            "label": ""
+        },
+        {
+            "id": 9,
+            "source": 7,
+            "target": "a6",
+            "label": "False"
+        },
+        {
+            "id": 11,
+            "source": "a6",
+            "target": 4,
+            "label": ""
+        }
+    ]
+}

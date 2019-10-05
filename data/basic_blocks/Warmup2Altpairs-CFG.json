@@ -1,0 +1,90 @@
+{
+    "file": "Warmup2Altpairs-CFG.java",
+    "nodes": [
+        {
+            "id": "a4",
+            "line": "5-6-7-9-10",
+            "label": "String altPairs(String str)\tchar[] result = new char[str.length()]\tint count = 0\tint i = 0\tint inc = 1"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "while (i < str.length())"
+        },
+        {
+            "id": "a5",
+            "line": "0-22",
+            "label": "endwhile\treturn new String(result, 0, count);"
+        },
+        {
+            "id": "a8",
+            "line": "12-13-14-16",
+            "label": "result[count] = str.charAt(i)\tcount++\ti += inc\tif (inc == 1)"
+        },
+        {
+            "id": 11,
+            "line": 17,
+            "label": "inc = 3"
+        },
+        {
+            "id": 12,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 13,
+            "line": 19,
+            "label": "inc = 1"
+        }
+    ],
+    "edges": [
+        {
+            "id": 4,
+            "source": "a4",
+            "target": 5,
+            "label": ""
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a5",
+            "label": "False"
+        },
+        {
+            "id": 6,
+            "source": 5,
+            "target": "a8",
+            "label": "True"
+        },
+        {
+            "id": 10,
+            "source": "a8",
+            "target": 11,
+            "label": "True"
+        },
+        {
+            "id": 11,
+            "source": 11,
+            "target": 12,
+            "label": ""
+        },
+        {
+            "id": 12,
+            "source": "a8",
+            "target": 13,
+            "label": "False"
+        },
+        {
+            "id": 13,
+            "source": 13,
+            "target": 12,
+            "label": ""
+        },
+        {
+            "id": 14,
+            "source": 12,
+            "target": 5,
+            "label": ""
+        }
+    ]
+}

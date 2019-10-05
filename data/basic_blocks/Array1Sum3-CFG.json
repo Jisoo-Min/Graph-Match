@@ -1,0 +1,11 @@
+{
+    "file": "Array1Sum3-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "4-5",
+            "label": "int sum3(int[] nums)\treturn nums[0] + nums[1] + nums[2];"
+        }
+    ],
+    "edges": []
+}

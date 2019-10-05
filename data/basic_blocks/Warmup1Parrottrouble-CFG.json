@@ -1,0 +1,11 @@
+{
+    "file": "Warmup1Parrottrouble-CFG.java",
+    "nodes": [
+        {
+            "id": "a1",
+            "line": "6-7",
+            "label": "boolean parrotTrouble(boolean talking, int hour)\treturn talking && (hour < 7 || hour > 20);"
+        }
+    ],
+    "edges": []
+}

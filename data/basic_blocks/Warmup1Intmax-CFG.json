@@ -1,0 +1,68 @@
+{
+    "file": "Warmup1Intmax-CFG.java",
+    "nodes": [
+        {
+            "id": "a2",
+            "line": "4-5-7",
+            "label": "int intMax(int a, int b, int c)\tint largest = a\tif (b > largest)"
+        },
+        {
+            "id": 3,
+            "line": 8,
+            "label": "largest = b"
+        },
+        {
+            "id": "a3",
+            "line": "0-10",
+            "label": "endif\tif (c > largest)"
+        },
+        {
+            "id": 6,
+            "line": 11,
+            "label": "largest = c"
+        },
+        {
+            "id": "a4",
+            "line": "0-13",
+            "label": "endif\treturn largest;"
+        }
+    ],
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": "a3",
+            "label": "False"
+        },
+        {
+            "id": 6,
+            "source": "a3",
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": 6,
+            "target": "a4",
+            "label": ""
+        },
+        {
+            "id": 8,
+            "source": "a3",
+            "target": "a4",
+            "label": "False"
+        }
+    ]
+}
