@@ -17,16 +17,17 @@ def make_basic_blocks(input_file, output_type):
 	print("Start with default nodes")
 	print("now nodes: ",  [list(d.values())[0] for d in nodes])
 
-	cycle = 0     # Check cycle 
+	cycle = 1     # Check cycle 
 	pointer = 0   # It works as pointer in a list
-	alternative_node = 1 # When new node is inserted, use this as node id
+	alternative_node = 1 # When new node is inserted, use this as a node id
 
 	# Traverse nodes
 	while(pointer < len(nodes)):
 		# get node in nodes list
 		print("\n\nIn cycle: ", cycle)
 		cycle += 1
-
+		print("Which node is now selected: "),
+		pprint.pprint(nodes[pointer]['label']), 
 		###################################################################
 		# Get general information
 
@@ -61,7 +62,8 @@ def make_basic_blocks(input_file, output_type):
 			# Count the number of child nodes(branches) to check conditions
 			child_of_node  = [(child['target']) for idx, child in enumerate(edges) if child['source'] == node['id']]
 	        
-			# condition 1) If the node has multiple branches, cannot merge with the child nodes. (
+			# condition 1) If the node has multiple branches, cannot merge with the child nodes. 
+			# e.g. When node is an "if statement"
 			if(len(child_of_node) != 1): # Cannnot merge
 				pointer += 1 			 # Move pointer
 				continue
@@ -69,7 +71,7 @@ def make_basic_blocks(input_file, output_type):
 			# (condition 2) If the node has only one child, check condition 2
 			else: 
 				child_id = child_of_node[0] # Get the child's id
-
+				# For loop statements are here! -> multiple parents nodes
 				if(child_id in multi_parent_nodes): # If child node has multiple parent nodes, cannot merge
 					pointer += 1					# Move pointer
 					continue
@@ -100,7 +102,7 @@ def make_basic_blocks(input_file, output_type):
 						}
 					nodes.insert(pointer, new_node)
 
-	         		
+			
 	                
 	                # Find a edge which connects two nodes, and delete it
 					tmp_edge_idx, tmp_edge = [(idx, edge) for idx, edge in enumerate(edges) 
@@ -158,10 +160,10 @@ def dot_writer(file_name, nodes, edges):
                   "// graph-vertices\n")
     for n in nodes:
         node_id = n['id']
-        node_label = n['line'] + ":  " + n['label']
+        node_label = str(n['line']) + ":  " + n['label']
         
         node_label = node_label.replace("\"", "'")
-        result_file.write("  " + node_id + "  [label=\"" +  node_label + "\"]; \n")
+        result_file.write("  " + str(node_id) + "  [label=\"" +  node_label + "\"]; \n")
 
     result_file.write("// graph-edges\n")
     
@@ -171,7 +173,7 @@ def dot_writer(file_name, nodes, edges):
         edge_source = e['source']
         edge_target = e['target']
     
-        result_file.write("  " + edge_source + " -> " + edge_target + "")
+        result_file.write("  " + str(edge_source) + " -> " + str(edge_target) + "")
     
         if(edge_label == ""):
             result_file.write(";\n")
