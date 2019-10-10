@@ -17,7 +17,7 @@ Then, all sources are in the codingbat-data folder with class definition.
 ### 2. Run PROGEX
 ```sh
 cd progex-result
-./run_progex.sh
+./run_progex.sh [dot or json]
 ```
 
 ### 3. Make Graph with basic blocks
