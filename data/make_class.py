@@ -8,7 +8,7 @@ def get_file_name():
 
 def main():
 	#https://github.com/mirandaio/codingbat
-	path = "codingbat-master/java/"
+	path = "codingbat/java/"
 	dirs = os.listdir(path)
 
 	if not os.path.exists("codingbat-data"):
@@ -18,10 +18,10 @@ def main():
 	data_list = open("data_list", 'a')
 	for folder_name in dirs:
 		print("folder: ", folder_name)
-		files_list = os.listdir("codingbat-master/java/" + folder_name)
+		files_list = os.listdir("codingbat/java/" + folder_name)
 		for file_name in files_list:
 
-			file = open("codingbat-master/java/" + folder_name + "/" + file_name, "r")
+			file = open("codingbat/java/" + folder_name + "/" + file_name, "r")
 			begin = "class " + folder_name.title().replace("-", "") + file_name[:-5].title() + "{ \n"
 
 			codes = file.readlines()  # Get codes
