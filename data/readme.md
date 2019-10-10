@@ -38,7 +38,7 @@ python3 make_basic_blocks.py [path/file_name.json] dot
 python3 make_basic_blocks.py [path/file_name.json] json
 ```
 
-* If you want to recursively export json files, run below command.
+* If you want to recursively export json files, run below command. When you have a permission error, using `chmod +x run_make_basic_blocks.sh`
 ```sh
 ./run_make_basic_blocks.sh [json or dot]
 ````
