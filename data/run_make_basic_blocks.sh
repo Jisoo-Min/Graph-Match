@@ -1,8 +1,8 @@
 #!/bin/sh
 
-mkdir -p json-progex-result
 
-for file in ../codingbat-data/*
+for file in progex-result/json-progex-result/*
 do
-	java -jar progex.jar $file -format json -lang java -cfg -outdir ./json-progex-result/
+	echo $file
+	python3 make_basic_blocks.py $file json
 done
