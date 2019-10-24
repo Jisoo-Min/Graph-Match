@@ -29,6 +29,40 @@ def is_subgraph(big, small):
     plt.show()
         
 	
+####################################################################
+# @unique_graph: unique sub-graph structures given the number of nodes
+# return unique_graph
+####################################################################
+def find_unique_subgraph(num_node):
+    print("Unique subgraphs with {} nodes".format(num_node))
+    unique_graph = []
+
+    for g in graphs: # traverse all graphs
+        graph = g[0]
+
+        graph_combination = combinations(graph.nodes(), num_node)
+        for comb in graph_combination: # check all possible subgraphs
+            sub_nodes = list(comb)
+            sub_in_graph = graph.subgraph(sub_nodes)
+
+            
+            if not unique_graph: # empty list 
+                unique_graph.append(sub_in_graph)
+                print(graph.graph)
+            else:
+                index = 0
+                for u_g in unique_graph: # not empty, comparison is needed
+                    if(nx.is_isomorphic(u_g ,sub_in_graph)):
+                        break
+                    else:
+                        index += 1
+                     
+                if(index == len(unique_graph)):
+                    unique_graph.append(sub_in_graph)
+                    print(graph.graph)
+                    
+    
+    return unique_graph
 	
 """
 
@@ -44,7 +78,8 @@ def main():
 
     is_subgraph(big_graph, small_graph)
 
-
+    sub_graph_with_2_nodes = find_unique_subgraph(2)
+    
 if __name__ == "__main__":
 	main()
 
