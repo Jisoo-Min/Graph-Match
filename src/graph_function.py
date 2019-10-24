@@ -19,11 +19,11 @@ def is_subgraph(big, small):
     # Draw two compared graphs
     fig = plt.figure(figsize=(5, 10))
     plt.subplot(2, 1, 1)
-    nx.draw(big_graph)
+    nx.draw(big)
     plt.title("bigger graph")
 
     plt.subplot(2, 1, 2)
-    nx.draw(small_graph)
+    nx.draw(small)
     plt.title("smaller graph") 
     
     plt.show()
@@ -69,7 +69,7 @@ def find_unique_subgraph(graphs, num_node):
 """
 
 def main():
-    big_graph = nx.drawing.nx_pydot.read_dot("data/basic_blocks_dot/Ap1Bigheights-CFG.dot")
+    big_graph = nx.drawing.nx_pydot.read_dot("../data/basic_blocks/dot/Ap1Bigheights-CFG.dot")
     
     small_graph = nx.MultiDiGraph()
     small_graph.add_node(0)
