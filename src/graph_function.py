@@ -33,7 +33,7 @@ def is_subgraph(big, small):
 # @unique_graph: unique sub-graph structures given the number of nodes
 # return unique_graph
 ####################################################################
-def find_unique_subgraph(num_node):
+def find_unique_subgraph(graphs, num_node):
     print("Unique subgraphs with {} nodes".format(num_node))
     unique_graph = []
 
