@@ -1,0 +1,13 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="8-9:  boolean squirrelPlay(int temp, boolean isSummer)	if (isSummer && 60 <= temp && temp <= 100)"]; 
+  2  [label="10:  return true;"]; 
+  a2  [label="0-12:  endif	if (!isSummer && 60 <= temp && temp <= 90)"]; 
+  5  [label="13:  return true;"]; 
+  a3  [label="0-15:  endif	return false;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+}

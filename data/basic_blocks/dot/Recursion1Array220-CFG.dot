@@ -1,0 +1,9 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="8-9:  boolean array220(int[] nums, int index)	if (index >= nums.length - 1)"]; 
+  2  [label="10:  return false;"]; 
+  a2  [label="0-12:  endif	return nums[index+1] == 10 * nums[index] || array220(nums, index + 1);"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+}

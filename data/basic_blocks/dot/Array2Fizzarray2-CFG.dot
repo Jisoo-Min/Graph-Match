@@ -1,0 +1,12 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="6-7-9:  String[] fizzArray2(int n)	String[] arr = new String[n]	int i = 0"]; 
+  3  [label="9:  for (i < n)"]; 
+  a3  [label="0-12:  endfor	return arr;"]; 
+  a4  [label="10-9:  arr[i] = String.valueOf(i)	i++"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> a4  [label="True"]; 
+  a4 -> 3;
+}

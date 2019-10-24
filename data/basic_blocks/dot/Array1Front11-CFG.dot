@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="5-6:  int[] front11(int[] a, int[] b)	if (a.length > 0 && b.length > 0)"]; 
+  2  [label="7:  return new int[] {a[0], b[0]};"]; 
+  4  [label="8:  if (a.length > 0)"]; 
+  5  [label="9:  return new int[] {a[0]};"]; 
+  7  [label="10:  if (b.length > 0)"]; 
+  8  [label="11:  return new int[] {b[0]};"]; 
+  a4  [label="0-0-0-14:  endif	endif	endif	return new int[0];"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> 4  [label="False"]; 
+  4 -> 5  [label="True"]; 
+  4 -> 7  [label="False"]; 
+  7 -> 8  [label="True"]; 
+  7 -> a4  [label="False"]; 
+}

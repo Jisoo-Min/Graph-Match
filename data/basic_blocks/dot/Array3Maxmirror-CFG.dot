@@ -1,0 +1,28 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="8-9-11:  int maxMirror(int[] nums)	int max = 0	int i = 0"]; 
+  3  [label="11:  for (i < nums.length)"]; 
+  a3  [label="0-25:  endfor	return max;"]; 
+  a4  [label="12-13:  int count = 0	int j = nums.length - 1"]; 
+  8  [label="13:  for (j >= 0 && i + count < nums.length)"]; 
+  11  [label="14:  if (nums[i + count] == nums[j])"]; 
+  a6  [label="0-22-11:  endfor	max = Math.max(max, count)	i++"]; 
+  12  [label="15:  count++"]; 
+  14  [label="17:  max = Math.max(max, count)"]; 
+  a7  [label="0-13:  endif	j--"]; 
+  15  [label="18:  count = 0"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> a4  [label="True"]; 
+  a4 -> 8;
+  8 -> a6  [label="False"]; 
+  8 -> 11  [label="True"]; 
+  11 -> 12  [label="True"]; 
+  12 -> a7;
+  11 -> 14  [label="False"]; 
+  14 -> 15;
+  15 -> a7;
+  a7 -> 8;
+  a6 -> 3;
+}

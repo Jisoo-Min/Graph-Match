@@ -1,0 +1,13 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="7-8:  int maxMod5(int a, int b)	if (a == b)"]; 
+  2  [label="9:  return 0;"]; 
+  a2  [label="0-11:  endif	if (a % 5 == b % 5)"]; 
+  5  [label="12:  return a < b ? a : b;"]; 
+  a3  [label="0-14:  endif	return a > b ? a : b;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+}

@@ -1,0 +1,16 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="7-9:  boolean dividesSelf(int n)	int val = n"]; 
+  2  [label="9:  for (val != 0)"]; 
+  a2  [label="0-15:  endfor	return true;"]; 
+  a3  [label="10-11:  int digit = val % 10	if (digit == 0 || n % digit != 0)"]; 
+  7  [label="12:  return false;"]; 
+  a4  [label="0-9:  endif	val /= 10"]; 
+// graph-edges
+  a1 -> 2;
+  2 -> a2  [label="False"]; 
+  2 -> a3  [label="True"]; 
+  a3 -> 7  [label="True"]; 
+  a3 -> a4  [label="False"]; 
+  a4 -> 2;
+}

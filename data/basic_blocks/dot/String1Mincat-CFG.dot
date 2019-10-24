@@ -1,0 +1,5 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="7-8-10:  String minCat(String a, String b)	int min = Math.min(a.length(), b.length())	return a.substring(a.length() - min) + b.substring(b.length() - min);"]; 
+// graph-edges
+}

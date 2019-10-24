@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  String fizzString(String str)	if (str.length() > 0 && str.charAt(0) == 'f' && str.charAt(str.length() - 1) == 'b')"]; 
+  2  [label="9:  return 'FizzBuzz';"]; 
+  a2  [label="0-11:  endif	if (str.length() > 0 && str.charAt(0) == 'f')"]; 
+  5  [label="12:  return 'Fizz';"]; 
+  a3  [label="0-14:  endif	if (str.length() > 0 && str.charAt(str.length() - 1) == 'b')"]; 
+  8  [label="15:  return 'Buzz';"]; 
+  a4  [label="0-17:  endif	return str;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+  a3 -> 8  [label="True"]; 
+  a3 -> a4  [label="False"]; 
+}

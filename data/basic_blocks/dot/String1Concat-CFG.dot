@@ -1,0 +1,13 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  String conCat(String a, String b)	if (a.length() == 0 || b.length() == 0)"]; 
+  2  [label="8:  return a + b;"]; 
+  a2  [label="0-10:  endif	if (a.charAt(a.length() - 1) == b.charAt(0))"]; 
+  5  [label="11:  return a + b.substring(1);"]; 
+  a3  [label="0-13:  endif	return a + b;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+}

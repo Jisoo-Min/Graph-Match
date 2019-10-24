@@ -1,0 +1,13 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="8-9:  int array11(int[] nums, int index)	if (index >= nums.length)"]; 
+  2  [label="10:  return 0;"]; 
+  a2  [label="0-12:  endif	if (nums[index] == 11)"]; 
+  5  [label="13:  return 1 + array11(nums, index + 1);"]; 
+  a3  [label="0-15:  endif	return array11(nums, index + 1);"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+}

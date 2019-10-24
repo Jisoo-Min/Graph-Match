@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="7-8:  String fizzString2(int n)	if (n % 15 == 0)"]; 
+  2  [label="9:  return 'FizzBuzz!';"]; 
+  a2  [label="0-11:  endif	if (n % 3 == 0)"]; 
+  5  [label="12:  return 'Fizz!';"]; 
+  a3  [label="0-14:  endif	if (n % 5 == 0)"]; 
+  8  [label="15:  return 'Buzz!';"]; 
+  a4  [label="0-17:  endif	return n + '!';"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+  a3 -> 8  [label="True"]; 
+  a3 -> a4  [label="False"]; 
+}

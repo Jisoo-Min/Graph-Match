@@ -1,0 +1,24 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="7-8:  int[] evenOdd(int[] nums)	int i = 0"]; 
+  2  [label="10:  while (i < nums.length && nums[i] % 2 == 0)"]; 
+  a2  [label="0-13:  endwhile	int j = i + 1"]; 
+  4  [label="11:  i++"]; 
+  6  [label="13:  for (j < nums.length)"]; 
+  a3  [label="0-22:  endfor	return nums;"]; 
+  9  [label="14:  if (nums[j] % 2 == 0)"]; 
+  a6  [label="15-16-17-18:  int temp = nums[i]	nums[i] = nums[j]	nums[j] = temp	i++"]; 
+  a7  [label="0-13:  endif	j++"]; 
+// graph-edges
+  a1 -> 2;
+  2 -> a2  [label="False"]; 
+  2 -> 4  [label="True"]; 
+  4 -> 2;
+  a2 -> 6;
+  6 -> a3  [label="False"]; 
+  6 -> 9  [label="True"]; 
+  9 -> a6  [label="True"]; 
+  a6 -> a7;
+  9 -> a7  [label="False"]; 
+  a7 -> 6;
+}

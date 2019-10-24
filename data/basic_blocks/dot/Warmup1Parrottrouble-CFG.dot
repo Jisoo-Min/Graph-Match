@@ -1,0 +1,5 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  boolean parrotTrouble(boolean talking, int hour)	return talking && (hour < 7 || hour > 20);"]; 
+// graph-edges
+}

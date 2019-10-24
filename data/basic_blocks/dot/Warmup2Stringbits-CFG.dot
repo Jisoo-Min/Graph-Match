@@ -1,0 +1,12 @@
+digraph result_test { 
+// graph-vertices
+  a4  [label="5-6-7-9-10:  String stringBits(String str)	int size = (int) Math.ceil((double) str.length() / 2)	char[] result = new char[size]	int index = 0	int i = 0"]; 
+  5  [label="10:  for (i < str.length())"]; 
+  a5  [label="0-15:  endfor	return new String(result);"]; 
+  a7  [label="11-12-10:  result[index] = str.charAt(i)	index++	i += 2"]; 
+// graph-edges
+  a4 -> 5;
+  5 -> a5  [label="False"]; 
+  5 -> a7  [label="True"]; 
+  a7 -> 5;
+}

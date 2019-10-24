@@ -1,0 +1,21 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="5-6-8:  boolean has12(int[] nums)	boolean found1 = false	int i = 0"]; 
+  3  [label="8:  for (i < nums.length)"]; 
+  a3  [label="0-16:  endfor	return false;"]; 
+  6  [label="9:  if (nums[i] == 1)"]; 
+  7  [label="10:  found1 = true"]; 
+  a4  [label="0-12:  endif	if (found1 && nums[i] == 2)"]; 
+  10  [label="13:  return true;"]; 
+  a5  [label="0-8:  endif	i++"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> 6  [label="True"]; 
+  6 -> 7  [label="True"]; 
+  7 -> a4;
+  6 -> a4  [label="False"]; 
+  a4 -> 10  [label="True"]; 
+  a4 -> a5  [label="False"]; 
+  a5 -> 3;
+}

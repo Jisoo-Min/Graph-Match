@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="6-7-9:  List wordsWithoutList(String[] words, int len)	ArrayList<String> list = new ArrayList<String>()	int i = 0"]; 
+  3  [label="9:  for (i < words.length)"]; 
+  a3  [label="0-14:  endfor	return list;"]; 
+  6  [label="10:  if (words[i].length() != len)"]; 
+  7  [label="11:  list.add(words[i])"]; 
+  a4  [label="0-9:  endif	i++"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> 6  [label="True"]; 
+  6 -> 7  [label="True"]; 
+  7 -> a4;
+  6 -> a4  [label="False"]; 
+  a4 -> 3;
+}

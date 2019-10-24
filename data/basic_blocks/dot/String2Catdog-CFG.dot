@@ -1,0 +1,22 @@
+digraph result_test { 
+// graph-vertices
+  a3  [label="5-6-7-9:  boolean catDog(String str)	int cat = 0	int dog = 0	int i = 0"]; 
+  4  [label="9:  for (i < str.length() - 2)"]; 
+  a4  [label="0-17:  endfor	return cat == dog;"]; 
+  7  [label="10:  if (str.substring(i, i + 3).equals('cat'))"]; 
+  8  [label="11:  cat++"]; 
+  a5  [label="0-13:  endif	if (str.substring(i, i + 3).equals('dog'))"]; 
+  11  [label="14:  dog++"]; 
+  a6  [label="0-9:  endif	i++"]; 
+// graph-edges
+  a3 -> 4;
+  4 -> a4  [label="False"]; 
+  4 -> 7  [label="True"]; 
+  7 -> 8  [label="True"]; 
+  8 -> a5;
+  7 -> a5  [label="False"]; 
+  a5 -> 11  [label="True"]; 
+  11 -> a6;
+  a5 -> a6  [label="False"]; 
+  a6 -> 4;
+}

@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="5-6:  int blackjack(int a, int b)	if (a > 21 && b > 21)"]; 
+  2  [label="7:  return 0;"]; 
+  a2  [label="0-9:  endif	if (a > 21)"]; 
+  5  [label="10:  return b;"]; 
+  a3  [label="0-12:  endif	if (b > 21)"]; 
+  8  [label="13:  return a;"]; 
+  a4  [label="0-15:  endif	return a > b ? a : b;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+  a3 -> 8  [label="True"]; 
+  a3 -> a4  [label="False"]; 
+}

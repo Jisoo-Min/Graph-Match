@@ -1,0 +1,24 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="10-11:  boolean groupSumClump(int start, int[] nums, int target)	if (start >= nums.length)"]; 
+  2  [label="12:  return target == 0;"]; 
+  a3  [label="0-14-15:  endif	int i = start	int sum = 0"]; 
+  6  [label="17:  while (i < nums.length && nums[start] == nums[i])"]; 
+  a4  [label="0-22:  endwhile	if (groupSumClump(i, nums, target - sum))"]; 
+  a5  [label="18-19:  sum += nums[i]	i++"]; 
+  11  [label="23:  return true;"]; 
+  a6  [label="0-25:  endif	if (groupSumClump(i, nums, target))"]; 
+  14  [label="26:  return true;"]; 
+  a7  [label="0-28:  endif	return false;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a3  [label="False"]; 
+  a3 -> 6;
+  6 -> a4  [label="False"]; 
+  6 -> a5  [label="True"]; 
+  a5 -> 6;
+  a4 -> 11  [label="True"]; 
+  a4 -> a6  [label="False"]; 
+  a6 -> 14  [label="True"]; 
+  a6 -> a7  [label="False"]; 
+}

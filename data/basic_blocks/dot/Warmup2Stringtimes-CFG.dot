@@ -1,0 +1,21 @@
+digraph result_test { 
+// graph-vertices
+  a3  [label="5-6-7-9:  String stringTimes(String str, int n)	char[] nCopy = new char[n * str.length()]	int index = 0	int i = 0"]; 
+  4  [label="9:  for (i < n)"]; 
+  a4  [label="0-16:  endfor	return new String(nCopy);"]; 
+  7  [label="10:  int j = 0"]; 
+  8  [label="10:  for (j < str.length())"]; 
+  11  [label="11:  nCopy[index] = str.charAt(j)"]; 
+  a5  [label="0-9:  endfor	i++"]; 
+  a6  [label="12-10:  index++	j++"]; 
+// graph-edges
+  a3 -> 4;
+  4 -> a4  [label="False"]; 
+  4 -> 7  [label="True"]; 
+  7 -> 8;
+  8 -> a5  [label="False"]; 
+  8 -> 11  [label="True"]; 
+  11 -> a6;
+  a6 -> 8;
+  a5 -> 4;
+}

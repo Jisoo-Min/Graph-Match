@@ -1,0 +1,5 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="5-6:  String withoutEnd(String str)	return str.substring(1, str.length() - 1);"]; 
+// graph-edges
+}

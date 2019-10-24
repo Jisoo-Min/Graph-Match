@@ -1,0 +1,9 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  String delDel(String str)	if (str.length() >= 4 && str.substring(1, 4).equals('del'))"]; 
+  2  [label="8:  return str.charAt(0) + str.substring(4);"]; 
+  a2  [label="0-10:  endif	return str;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+}

@@ -1,0 +1,26 @@
+digraph result_test { 
+// graph-vertices
+  a3  [label="8-9-10-11:  String withoutString(String base, String remove)	char[] arr = new char[base.length()]	int count = 0	int i = 0"]; 
+  4  [label="13:  while (i <= base.length() - remove.length())"]; 
+  5  [label="0:  endwhile"]; 
+  6  [label="14:  if (base.substring(i, i + remove.length()).toLowerCase().equals(remove.toLowerCase()))"]; 
+  7  [label="16:  i += remove.length()"]; 
+  8  [label="0:  endif"]; 
+  a5  [label="18-19-20:  arr[count] = base.charAt(i)	count++	i++"]; 
+  12  [label="24:  while (i < base.length())"]; 
+  a6  [label="0-30:  endwhile	return new String(arr, 0, count);"]; 
+  a8  [label="25-26-27:  arr[count] = base.charAt(i)	count++	i++"]; 
+// graph-edges
+  a3 -> 4;
+  4 -> 5  [label="False"]; 
+  4 -> 6  [label="True"]; 
+  6 -> 7  [label="True"]; 
+  7 -> 8;
+  6 -> a5  [label="False"]; 
+  a5 -> 8;
+  8 -> 4;
+  5 -> 12;
+  12 -> a6  [label="False"]; 
+  12 -> a8  [label="True"]; 
+  a8 -> 12;
+}

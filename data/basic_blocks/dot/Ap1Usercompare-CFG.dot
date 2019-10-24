@@ -1,0 +1,21 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="7-8:  int userCompare(String aName, int aId, String bName, int bId)	if (aName.compareTo(bName) < 0)"]; 
+  2  [label="9:  return -1;"]; 
+  4  [label="10:  if (aName.compareTo(bName) > 0)"]; 
+  5  [label="11:  return 1;"]; 
+  7  [label="12:  if (aId < bId)"]; 
+  8  [label="13:  return -1;"]; 
+  10  [label="14:  if (aId > bId)"]; 
+  11  [label="15:  return 1;"]; 
+  a5  [label="0-0-0-0-18:  endif	endif	endif	endif	return 0;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> 4  [label="False"]; 
+  4 -> 5  [label="True"]; 
+  4 -> 7  [label="False"]; 
+  7 -> 8  [label="True"]; 
+  7 -> 10  [label="False"]; 
+  10 -> 11  [label="True"]; 
+  10 -> a5  [label="False"]; 
+}

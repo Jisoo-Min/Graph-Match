@@ -1,0 +1,29 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="7-8-10:  String[] wordsWithout(String[] words, String target)	int count = 0	int i = 0"]; 
+  3  [label="10:  for (i < words.length)"]; 
+  a5  [label="0-15-16-18:  endfor	String[] arr = new String[count]	int index = 0	int i = 0"]; 
+  6  [label="11:  if (!words[i].equals(target))"]; 
+  7  [label="12:  count++"]; 
+  12  [label="18:  for (index < count)"]; 
+  a6  [label="0-10:  endif	i++"]; 
+  a7  [label="0-25:  endfor	return arr;"]; 
+  15  [label="19:  if (!words[i].equals(target))"]; 
+  a8  [label="20-21:  arr[index] = words[i]	index++"]; 
+  a9  [label="0-18:  endif	i++"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a5  [label="False"]; 
+  3 -> 6  [label="True"]; 
+  6 -> 7  [label="True"]; 
+  7 -> a6;
+  6 -> a6  [label="False"]; 
+  a6 -> 3;
+  a5 -> 12;
+  12 -> a7  [label="False"]; 
+  12 -> 15  [label="True"]; 
+  15 -> a8  [label="True"]; 
+  a8 -> a9;
+  15 -> a9  [label="False"]; 
+  a9 -> 12;
+}

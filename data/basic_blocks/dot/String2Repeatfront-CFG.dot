@@ -1,0 +1,12 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="7-8-10:  String repeatFront(String str, int n)	StringBuffer result = new StringBuffer()	int i = n"]; 
+  3  [label="10:  for (i > 0)"]; 
+  a3  [label="0-13:  endfor	return result.toString();"]; 
+  a4  [label="11-10:  result.append(str.substring(0, i))	i--"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> a4  [label="True"]; 
+  a4 -> 3;
+}

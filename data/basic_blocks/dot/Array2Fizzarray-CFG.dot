@@ -1,0 +1,12 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="8-9-11:  int[] fizzArray(int n)	int[] arr = new int[n]	int i = 0"]; 
+  3  [label="11:  for (i < n)"]; 
+  a3  [label="0-14:  endfor	return arr;"]; 
+  a4  [label="12-11:  arr[i] = i	i++"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> a4  [label="True"]; 
+  a4 -> 3;
+}

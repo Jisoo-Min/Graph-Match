@@ -1,0 +1,22 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="6-7-8:  int[] frontPiece(int[] nums)	int[] arr	if (nums.length < 2)"]; 
+  3  [label="9:  arr = new int[nums.length]"]; 
+  a3  [label="0-13:  endif	if (nums.length > 0)"]; 
+  5  [label="11:  arr = new int[2]"]; 
+  7  [label="14:  arr[0] = nums[0]"]; 
+  a4  [label="0-16:  endif	if (nums.length > 1)"]; 
+  10  [label="17:  arr[1] = nums[1]"]; 
+  a5  [label="0-19:  endif	return arr;"]; 
+// graph-edges
+  a2 -> 3  [label="True"]; 
+  3 -> a3;
+  a2 -> 5  [label="False"]; 
+  5 -> a3;
+  a3 -> 7  [label="True"]; 
+  7 -> a4;
+  a3 -> a4  [label="False"]; 
+  a4 -> 10  [label="True"]; 
+  10 -> a5;
+  a4 -> a5  [label="False"]; 
+}

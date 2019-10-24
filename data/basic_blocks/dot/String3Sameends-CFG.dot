@@ -1,0 +1,18 @@
+digraph result_test { 
+// graph-vertices
+  a3  [label="6-7-8-10:  String sameEnds(String string)	int start = (int) Math.ceil((double) string.length() / 2)	int end = string.length() / 2	int i = 0"]; 
+  4  [label="10:  for (i < string.length() / 2)"]; 
+  a4  [label="0-19:  endfor	return '';"]; 
+  7  [label="11:  if (string.substring(0, end).equals(string.substring(start)))"]; 
+  8  [label="12:  return string.substring(0, end);"]; 
+  10  [label="14:  start++"]; 
+  a6  [label="15-0-10:  end--	endif	i++"]; 
+// graph-edges
+  a3 -> 4;
+  4 -> a4  [label="False"]; 
+  4 -> 7  [label="True"]; 
+  7 -> 8  [label="True"]; 
+  7 -> 10  [label="False"]; 
+  10 -> a6;
+  a6 -> 4;
+}

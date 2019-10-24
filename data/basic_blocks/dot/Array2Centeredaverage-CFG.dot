@@ -1,0 +1,12 @@
+digraph result_test { 
+// graph-vertices
+  a4  [label="9-10-11-12-14:  int centeredAverage(int[] nums)	int sum = 0	int min = nums[0]	int max = nums[0]	int i = 0"]; 
+  5  [label="14:  for (i < nums.length)"]; 
+  a5  [label="0-20:  endfor	return (sum - min - max) / (nums.length - 2);"]; 
+  a8  [label="15-16-17-14:  sum += nums[i]	min = Math.min(min, nums[i])	max = Math.max(max, nums[i])	i++"]; 
+// graph-edges
+  a4 -> 5;
+  5 -> a5  [label="False"]; 
+  5 -> a8  [label="True"]; 
+  a8 -> 5;
+}

@@ -1,0 +1,10 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  boolean posNeg(int a, int b, boolean negative)	if (negative)"]; 
+  2  [label="8:  return a < 0 && b < 0;"]; 
+  3  [label="0:  endif"]; 
+  4  [label="10:  return a * b < 0;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> 4  [label="False"]; 
+}

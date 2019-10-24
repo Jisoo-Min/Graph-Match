@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="7-8-10:  int matchUp(int[] nums1, int[] nums2)	int count = 0	int i = 0"]; 
+  3  [label="10:  for (i < nums1.length)"]; 
+  a3  [label="0-15:  endfor	return count;"]; 
+  6  [label="11:  if (Math.abs(nums1[i] - nums2[i]) <= 2 && nums1[i] != nums2[i])"]; 
+  7  [label="12:  count++"]; 
+  a4  [label="0-10:  endif	i++"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> 6  [label="True"]; 
+  6 -> 7  [label="True"]; 
+  7 -> a4;
+  6 -> a4  [label="False"]; 
+  a4 -> 3;
+}

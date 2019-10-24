@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  boolean strCopies(String str, String sub, int n)	if (n == 0)"]; 
+  2  [label="8:  return true;"]; 
+  a2  [label="0-10:  endif	if (str.length() < sub.length())"]; 
+  5  [label="11:  return false;"]; 
+  a3  [label="0-13:  endif	if (str.substring(0, sub.length()).equals(sub))"]; 
+  8  [label="14:  return strCopies(str.substring(1), sub, n-1);"]; 
+  a4  [label="0-16:  endif	return strCopies(str.substring(1), sub, n);"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+  a3 -> 8  [label="True"]; 
+  a3 -> a4  [label="False"]; 
+}

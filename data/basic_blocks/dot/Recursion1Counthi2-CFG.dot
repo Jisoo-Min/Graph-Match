@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  int countHi2(String str)	if (str.length() <= 1)"]; 
+  2  [label="8:  return 0;"]; 
+  a2  [label="0-10:  endif	if (str.length() > 2 && str.substring(0, 3).equals('xhi'))"]; 
+  5  [label="11:  return countHi2(str.substring(3));"]; 
+  a3  [label="0-13:  endif	if (str.substring(0, 2).equals('hi'))"]; 
+  8  [label="14:  return 1 + countHi2(str.substring(2));"]; 
+  a4  [label="0-16:  endif	return countHi2(str.substring(1));"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+  a3 -> 8  [label="True"]; 
+  a3 -> a4  [label="False"]; 
+}

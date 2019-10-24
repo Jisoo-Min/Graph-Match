@@ -1,0 +1,9 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="4-5:  boolean endsLy(String str)	if (str.length() < 2)"]; 
+  2  [label="6:  return false;"]; 
+  a2  [label="0-8:  endif	return str.substring(str.length() - 2).equals('ly');"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+}

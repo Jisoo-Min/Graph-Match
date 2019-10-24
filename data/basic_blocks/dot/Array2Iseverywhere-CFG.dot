@@ -1,0 +1,16 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  boolean isEverywhere(int[] nums, int val)	int i = 0"]; 
+  2  [label="7:  for (i < nums.length - 1)"]; 
+  a2  [label="0-12:  endfor	return true;"]; 
+  5  [label="8:  if (nums[i] != val && nums[i + 1] != val)"]; 
+  6  [label="9:  return false;"]; 
+  a3  [label="0-7:  endif	i++"]; 
+// graph-edges
+  a1 -> 2;
+  2 -> a2  [label="False"]; 
+  2 -> 5  [label="True"]; 
+  5 -> 6  [label="True"]; 
+  5 -> a3  [label="False"]; 
+  a3 -> 2;
+}

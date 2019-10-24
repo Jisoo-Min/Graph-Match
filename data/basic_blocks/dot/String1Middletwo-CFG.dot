@@ -1,0 +1,5 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  String middleTwo(String str)	return str.substring(str.length() / 2 - 1, str.length() / 2 + 1);"]; 
+// graph-edges
+}

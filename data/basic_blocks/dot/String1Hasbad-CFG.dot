@@ -1,0 +1,13 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="7-8:  boolean hasBad(String str)	if (str.length() == 3)"]; 
+  2  [label="9:  return str.substring(0, 3).equals('bad');"]; 
+  a2  [label="0-11:  endif	if (str.length() >= 4)"]; 
+  5  [label="12:  return str.substring(0, 3).equals('bad') || str.substring(1, 4).equals('bad');"]; 
+  a3  [label="0-15:  endif	return false;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+}

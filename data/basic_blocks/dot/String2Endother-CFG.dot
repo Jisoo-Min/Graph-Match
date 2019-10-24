@@ -1,0 +1,10 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  boolean endOther(String a, String b)	if (a.length() < b.length())"]; 
+  a3  [label="8-9-10:  String temp = a	a = b.toLowerCase()	b = temp.toLowerCase()"]; 
+  a4  [label="0-13:  endif	return a.substring(a.length() - b.length()).equals(b);"]; 
+// graph-edges
+  a1 -> a3  [label="True"]; 
+  a3 -> a4;
+  a1 -> a4  [label="False"]; 
+}

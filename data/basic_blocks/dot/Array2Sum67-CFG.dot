@@ -1,0 +1,27 @@
+digraph result_test { 
+// graph-vertices
+  a3  [label="6-7-8-10:  int sum67(int[] nums)	int sum = 0	boolean inRange = false	int i = 0"]; 
+  4  [label="10:  for (i < nums.length)"]; 
+  a4  [label="0-22:  endfor	return sum;"]; 
+  7  [label="11:  if (nums[i] == 6)"]; 
+  8  [label="12:  inRange = true"]; 
+  a5  [label="0-14:  endif	if (!inRange)"]; 
+  11  [label="15:  sum += nums[i]"]; 
+  a6  [label="0-17:  endif	if (inRange && nums[i] == 7)"]; 
+  14  [label="18:  inRange = false"]; 
+  a7  [label="0-10:  endif	i++"]; 
+// graph-edges
+  a3 -> 4;
+  4 -> a4  [label="False"]; 
+  4 -> 7  [label="True"]; 
+  7 -> 8  [label="True"]; 
+  8 -> a5;
+  7 -> a5  [label="False"]; 
+  a5 -> 11  [label="True"]; 
+  11 -> a6;
+  a5 -> a6  [label="False"]; 
+  a6 -> 14  [label="True"]; 
+  14 -> a7;
+  a6 -> a7  [label="False"]; 
+  a7 -> 4;
+}

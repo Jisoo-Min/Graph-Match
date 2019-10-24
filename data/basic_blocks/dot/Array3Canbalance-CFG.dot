@@ -1,0 +1,23 @@
+digraph result_test { 
+// graph-vertices
+  a3  [label="6-7-8-10:  boolean canBalance(int[] nums)	int first = 0	int second = 0	int i = 0"]; 
+  4  [label="10:  for (i < nums.length)"]; 
+  a4  [label="0-13:  endfor	int i = 0"]; 
+  9  [label="13:  for (i <= nums.length - 2)"]; 
+  a5  [label="11-10:  second += nums[i]	i++"]; 
+  a6  [label="0-21:  endfor	return false;"]; 
+  a8  [label="14-15-17:  first += nums[i]	second -= nums[i]	if (first == second)"]; 
+  15  [label="18:  return true;"]; 
+  a9  [label="0-13:  endif	i++"]; 
+// graph-edges
+  a3 -> 4;
+  4 -> a4  [label="False"]; 
+  4 -> a5  [label="True"]; 
+  a5 -> 4;
+  a4 -> 9;
+  9 -> a6  [label="False"]; 
+  9 -> a8  [label="True"]; 
+  a8 -> 15  [label="True"]; 
+  a8 -> a9  [label="False"]; 
+  a9 -> 9;
+}

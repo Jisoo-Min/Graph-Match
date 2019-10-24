@@ -1,0 +1,29 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  int[] zeroMax(int[] nums)	int i = nums.length - 1"]; 
+  2  [label="9:  while (i >= 0 && nums[i] % 2 == 0)"]; 
+  a2  [label="0-12:  endwhile	int j = i - 1"]; 
+  4  [label="10:  i--"]; 
+  6  [label="12:  for (j >= 0)"]; 
+  a3  [label="0-20:  endfor	return nums;"]; 
+  9  [label="13:  if (nums[j] == 0)"]; 
+  10  [label="14:  nums[j] = nums[i]"]; 
+  a4  [label="0-16:  endif	if (nums[j] % 2 == 1 && nums[j] > nums[i])"]; 
+  13  [label="17:  i = j"]; 
+  a5  [label="0-12:  endif	j--"]; 
+// graph-edges
+  a1 -> 2;
+  2 -> a2  [label="False"]; 
+  2 -> 4  [label="True"]; 
+  4 -> 2;
+  a2 -> 6;
+  6 -> a3  [label="False"]; 
+  6 -> 9  [label="True"]; 
+  9 -> 10  [label="True"]; 
+  10 -> a4;
+  9 -> a4  [label="False"]; 
+  a4 -> 13  [label="True"]; 
+  13 -> a5;
+  a4 -> a5  [label="False"]; 
+  a5 -> 6;
+}

@@ -1,0 +1,5 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="6-7-9:  boolean makeBricks(int small, int big, int goal)	int remainder = goal >= (5 * big) ? goal - (5 * big) : goal % 5	return small >= remainder;"]; 
+// graph-edges
+}

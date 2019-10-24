@@ -1,0 +1,22 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="5-6:  boolean doubleX(String str)	int i = 0"]; 
+  2  [label="6:  for (i < str.length() - 1)"]; 
+  a2  [label="0-14:  endfor	return false;"]; 
+  5  [label="7:  if (str.charAt(i) == 'x')"]; 
+  6  [label="8:  if (str.charAt(i + 1) == 'x')"]; 
+  7  [label="9:  return true;"]; 
+  8  [label="0:  endif"]; 
+  9  [label="11:  return false;"]; 
+  a3  [label="0-6:  endif	i++"]; 
+// graph-edges
+  a1 -> 2;
+  2 -> a2  [label="False"]; 
+  2 -> 5  [label="True"]; 
+  5 -> 6  [label="True"]; 
+  6 -> 7  [label="True"]; 
+  6 -> 9  [label="False"]; 
+  8 -> a3;
+  5 -> a3  [label="False"]; 
+  a3 -> 2;
+}

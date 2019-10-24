@@ -1,0 +1,19 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="6-7-8:  String plusOut(String str, String word)	StringBuffer result = new StringBuffer()	int i = 0"]; 
+  3  [label="10:  while (i < str.length())"]; 
+  a3  [label="0-21:  endwhile	return result.toString();"]; 
+  5  [label="11:  if (i <= str.length() - word.length() && str.substring(i, i + word.length()).equals(word))"]; 
+  a4  [label="13-14:  result.append(word)	i += word.length()"]; 
+  8  [label="0:  endif"]; 
+  a5  [label="16-17:  result.append('+')	i++"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> 5  [label="True"]; 
+  5 -> a4  [label="True"]; 
+  a4 -> 8;
+  5 -> a5  [label="False"]; 
+  a5 -> 8;
+  8 -> 3;
+}

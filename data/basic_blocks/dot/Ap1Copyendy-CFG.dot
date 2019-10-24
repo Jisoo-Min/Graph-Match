@@ -1,0 +1,20 @@
+digraph result_test { 
+// graph-vertices
+  a3  [label="9-10-11-13:  int[] copyEndy(int[] nums, int count)	int[] arr = new int[count]	int index = 0	int i = 0"]; 
+  4  [label="13:  for (index < count)"]; 
+  a4  [label="0-20:  endfor	return arr;"]; 
+  7  [label="14:  if (isEndy(nums[i]))"]; 
+  a5  [label="15-16:  arr[index] = nums[i]	index++"]; 
+  12  [label="23:  boolean isEndy(int n)"]; 
+  a6  [label="0-13:  endif	i++"]; 
+  13  [label="24:  return 0 <= n && n <= 10 || 90 <= n && n <= 100;"]; 
+// graph-edges
+  a3 -> 4;
+  4 -> a4  [label="False"]; 
+  4 -> 7  [label="True"]; 
+  7 -> a5  [label="True"]; 
+  a5 -> a6;
+  7 -> a6  [label="False"]; 
+  a6 -> 4;
+  12 -> 13;
+}

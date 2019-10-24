@@ -1,0 +1,16 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="5-6:  String repeatSeparator(String word, String sep, int count)	if (count == 0)"]; 
+  2  [label="7:  return '';"]; 
+  a3  [label="0-9-11:  endif	StringBuffer result = new StringBuffer()	int i = 0"]; 
+  6  [label="11:  for (i < count - 1)"]; 
+  a4  [label="0-16:  endfor	return result.append(word).toString();"]; 
+  a6  [label="12-13-11:  result.append(word)	result.append(sep)	i++"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a3  [label="False"]; 
+  a3 -> 6;
+  6 -> a4  [label="False"]; 
+  6 -> a6  [label="True"]; 
+  a6 -> 6;
+}

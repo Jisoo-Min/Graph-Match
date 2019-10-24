@@ -1,0 +1,13 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="8-9:  int bunnyEars2(int bunnies)	if (bunnies == 0)"]; 
+  2  [label="10:  return 0;"]; 
+  a2  [label="0-12:  endif	if (bunnies % 2 == 1)"]; 
+  5  [label="13:  return 2 + bunnyEars2(bunnies-1);"]; 
+  a3  [label="0-15:  endif	return 3 + bunnyEars2(bunnies-1);"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+}

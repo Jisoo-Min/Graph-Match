@@ -1,0 +1,15 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  int withoutDoubles(int die1, int die2, boolean noDoubles)	if (noDoubles && die1 == die2)"]; 
+  a2  [label="8-9:  die1++	if (die1 == 7)"]; 
+  4  [label="10:  die1 = 1"]; 
+  5  [label="0:  endif"]; 
+  a3  [label="0-13:  endif	return die1 + die2;"]; 
+// graph-edges
+  a1 -> a2  [label="True"]; 
+  a2 -> 4  [label="True"]; 
+  4 -> 5;
+  a2 -> 5  [label="False"]; 
+  5 -> a3;
+  a1 -> a3  [label="False"]; 
+}

@@ -1,0 +1,15 @@
+digraph result_test { 
+// graph-vertices
+  a3  [label="5-6-7-9:  String withoutX(String str)	int begin = 0	int end = str.length()	if (str.length() > 0 && str.charAt(0) == 'x')"]; 
+  4  [label="10:  begin = 1"]; 
+  a4  [label="0-12:  endif	if (str.length() > 1 && str.charAt(str.length() - 1) == 'x')"]; 
+  7  [label="13:  end--"]; 
+  a5  [label="0-15:  endif	return str.substring(begin, end);"]; 
+// graph-edges
+  a3 -> 4  [label="True"]; 
+  4 -> a4;
+  a3 -> a4  [label="False"]; 
+  a4 -> 7  [label="True"]; 
+  7 -> a5;
+  a4 -> a5  [label="False"]; 
+}

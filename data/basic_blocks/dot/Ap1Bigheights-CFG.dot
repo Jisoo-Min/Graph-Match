@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="8-9-11:  int bigHeights(int[] heights, int start, int end)	int count = 0	int i = start"]; 
+  3  [label="11:  for (i < end)"]; 
+  a3  [label="0-16:  endfor	return count;"]; 
+  6  [label="12:  if (Math.abs(heights[i] - heights[i+1]) >= 5)"]; 
+  7  [label="13:  count++"]; 
+  a4  [label="0-11:  endif	i++"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> 6  [label="True"]; 
+  6 -> 7  [label="True"]; 
+  7 -> a4;
+  6 -> a4  [label="False"]; 
+  a4 -> 3;
+}

@@ -1,0 +1,21 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="7-8-9:  boolean xyBalance(String str)	boolean y = false	int i = str.length() - 1"]; 
+  3  [label="9:  for (i >= 0)"]; 
+  a3  [label="0-17:  endfor	return true;"]; 
+  6  [label="10:  if (str.charAt(i) == 'y')"]; 
+  7  [label="11:  y = true"]; 
+  a4  [label="0-13:  endif	if (str.charAt(i) == 'x' && !y)"]; 
+  10  [label="14:  return false;"]; 
+  a5  [label="0-9:  endif	i--"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> 6  [label="True"]; 
+  6 -> 7  [label="True"]; 
+  7 -> a4;
+  6 -> a4  [label="False"]; 
+  a4 -> 10  [label="True"]; 
+  a4 -> a5  [label="False"]; 
+  a5 -> 3;
+}

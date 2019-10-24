@@ -1,0 +1,15 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="6-7-9:  int maxTriple(int[] nums)	int max = nums[0]	if (max < nums[nums.length / 2])"]; 
+  3  [label="10:  max = nums[nums.length / 2]"]; 
+  a3  [label="0-12:  endif	if (max < nums[nums.length - 1])"]; 
+  6  [label="13:  max = nums[nums.length - 1]"]; 
+  a4  [label="0-15:  endif	return max;"]; 
+// graph-edges
+  a2 -> 3  [label="True"]; 
+  3 -> a3;
+  a2 -> a3  [label="False"]; 
+  a3 -> 6  [label="True"]; 
+  6 -> a4;
+  a3 -> a4  [label="False"]; 
+}

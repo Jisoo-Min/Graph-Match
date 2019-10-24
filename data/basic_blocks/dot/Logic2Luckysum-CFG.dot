@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  int luckySum(int a, int b, int c)	if (a == 13)"]; 
+  2  [label="8:  return 0;"]; 
+  a2  [label="0-10:  endif	if (b == 13)"]; 
+  5  [label="11:  return a;"]; 
+  a3  [label="0-13:  endif	if (c == 13)"]; 
+  8  [label="14:  return a + b;"]; 
+  a4  [label="0-16:  endif	return a + b + c;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+  a3 -> 8  [label="True"]; 
+  a3 -> a4  [label="False"]; 
+}

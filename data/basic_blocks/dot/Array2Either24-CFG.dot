@@ -1,0 +1,22 @@
+digraph result_test { 
+// graph-vertices
+  a3  [label="5-6-7-9:  boolean either24(int[] nums)	boolean has22 = false	boolean has44 = false	int i = 0"]; 
+  4  [label="9:  for (i < nums.length - 1)"]; 
+  a4  [label="0-17:  endfor	return has22 != has44;"]; 
+  7  [label="10:  if (nums[i] == 2 && nums[i+1] == 2)"]; 
+  8  [label="11:  has22 = true"]; 
+  a5  [label="0-13:  endif	if (nums[i] == 4 && nums[i+1] == 4)"]; 
+  11  [label="14:  has44 = true"]; 
+  a6  [label="0-9:  endif	i++"]; 
+// graph-edges
+  a3 -> 4;
+  4 -> a4  [label="False"]; 
+  4 -> 7  [label="True"]; 
+  7 -> 8  [label="True"]; 
+  8 -> a5;
+  7 -> a5  [label="False"]; 
+  a5 -> 11  [label="True"]; 
+  11 -> a6;
+  a5 -> a6  [label="False"]; 
+  a6 -> 4;
+}

@@ -1,0 +1,5 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="5-6:  String makeAbba(String a, String b)	return a + b + b + a;"]; 
+// graph-edges
+}

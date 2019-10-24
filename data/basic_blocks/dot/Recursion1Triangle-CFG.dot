@@ -1,0 +1,9 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="7-8:  int triangle(int rows)	if (rows == 0)"]; 
+  2  [label="9:  return 0;"]; 
+  a2  [label="0-11:  endif	return rows + triangle(rows-1);"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+}

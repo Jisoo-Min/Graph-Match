@@ -1,0 +1,9 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  boolean in1To10(int n, boolean outsideMode)	if (outsideMode)"]; 
+  2  [label="8:  return n <= 1 || 10 <= n;"]; 
+  a2  [label="0-10:  endif	return 1 <= n && n <= 10;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+}

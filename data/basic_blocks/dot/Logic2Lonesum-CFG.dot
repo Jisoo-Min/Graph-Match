@@ -1,0 +1,20 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="5-6-8:  int loneSum(int a, int b, int c)	int sum = 0	if (a != b && a != c)"]; 
+  3  [label="9:  sum += a"]; 
+  a3  [label="0-11:  endif	if (b != a && b != c)"]; 
+  6  [label="12:  sum += b"]; 
+  a4  [label="0-14:  endif	if (c != a && c != b)"]; 
+  9  [label="15:  sum += c"]; 
+  a5  [label="0-17:  endif	return sum;"]; 
+// graph-edges
+  a2 -> 3  [label="True"]; 
+  3 -> a3;
+  a2 -> a3  [label="False"]; 
+  a3 -> 6  [label="True"]; 
+  6 -> a4;
+  a3 -> a4  [label="False"]; 
+  a4 -> 9  [label="True"]; 
+  9 -> a5;
+  a4 -> a5  [label="False"]; 
+}

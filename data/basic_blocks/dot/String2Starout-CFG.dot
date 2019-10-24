@@ -1,0 +1,43 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  String starOut(String str)	if (str.length() < 1)"]; 
+  2  [label="8:  return '';"]; 
+  a2  [label="0-10:  endif	if (str.length() == 1)"]; 
+  5  [label="11:  if (str.charAt(0) == '*')"]; 
+  6  [label="12:  return '';"]; 
+  7  [label="0:  endif"]; 
+  8  [label="14:  return str;"]; 
+  a5  [label="0-17-18-21:  endif	char[] arr = new char[str.length()]	int count = 0	if (str.charAt(0) != '*' && str.charAt(1) != '*')"]; 
+  a6  [label="22-23:  arr[count] = str.charAt(0)	count++"]; 
+  a7  [label="0-26:  endif	int i = 1"]; 
+  17  [label="26:  for (i < str.length() - 1)"]; 
+  a8  [label="0-34:  endfor	if (str.charAt(str.length()-1) != '*' && str.charAt(str.length()-2) != '*')"]; 
+  20  [label="27:  if (str.charAt(i-1)!='*' && str.charAt(i) != '*' && str.charAt(i+1) != '*')"]; 
+  a9  [label="29-30:  arr[count] = str.charAt(i)	count++"]; 
+  25  [label="36:  arr[count] = str.charAt(str.length() - 1)"]; 
+  a10  [label="0-26:  endif	i++"]; 
+  26  [label="37:  count++"]; 
+  a11  [label="0-40:  endif	return new String(arr, 0, count);"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  5 -> 6  [label="True"]; 
+  5 -> 8  [label="False"]; 
+  7 -> a5;
+  a2 -> a5  [label="False"]; 
+  a5 -> a6  [label="True"]; 
+  a6 -> a7;
+  a5 -> a7  [label="False"]; 
+  a7 -> 17;
+  17 -> a8  [label="False"]; 
+  17 -> 20  [label="True"]; 
+  20 -> a9  [label="True"]; 
+  a9 -> a10;
+  20 -> a10  [label="False"]; 
+  a10 -> 17;
+  a8 -> 25  [label="True"]; 
+  25 -> 26;
+  26 -> a11;
+  a8 -> a11  [label="False"]; 
+}

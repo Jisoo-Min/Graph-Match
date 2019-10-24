@@ -1,0 +1,13 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="10-11:  int dateFashion(int you, int date)	if (you <= 2 || date <= 2)"]; 
+  2  [label="12:  return 0;"]; 
+  a2  [label="0-14:  endif	if (you >= 8 || date >= 8)"]; 
+  5  [label="15:  return 2;"]; 
+  a3  [label="0-17:  endif	return 1;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+}

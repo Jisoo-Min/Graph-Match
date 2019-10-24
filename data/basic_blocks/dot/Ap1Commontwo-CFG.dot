@@ -1,0 +1,47 @@
+digraph result_test { 
+// graph-vertices
+  a4  [label="8-9-10-11-13:  int commonTwo(String[] a, String[] b)	int count = 0	int aIndex = 0	int bIndex = 0	if (a[0].equals(b[0]))"]; 
+  a6  [label="14-15-16:  count++	aIndex++	bIndex++"]; 
+  8  [label="0:  endif"]; 
+  9  [label="17:  if (a[0].compareTo(b[0]) < 0)"]; 
+  10  [label="18:  aIndex++"]; 
+  11  [label="0:  endif"]; 
+  12  [label="20:  bIndex++"]; 
+  13  [label="23:  while (aIndex < a.length && bIndex < b.length)"]; 
+  a7  [label="0-37:  endwhile	return count;"]; 
+  15  [label="24:  if (aIndex > 0 && a[aIndex-1].equals(a[aIndex]))"]; 
+  16  [label="25:  aIndex++"]; 
+  17  [label="0:  endif"]; 
+  18  [label="26:  if (a[aIndex].equals(b[bIndex]))"]; 
+  a9  [label="27-28-29:  count++	aIndex++	bIndex++"]; 
+  22  [label="0:  endif"]; 
+  23  [label="30:  if (a[aIndex].compareTo(b[bIndex]) < 0)"]; 
+  24  [label="31:  aIndex++"]; 
+  25  [label="0:  endif"]; 
+  26  [label="33:  bIndex++"]; 
+// graph-edges
+  a4 -> a6  [label="True"]; 
+  a6 -> 8;
+  a4 -> 9  [label="False"]; 
+  9 -> 10  [label="True"]; 
+  10 -> 11;
+  9 -> 12  [label="False"]; 
+  12 -> 11;
+  11 -> 8;
+  8 -> 13;
+  13 -> a7  [label="False"]; 
+  13 -> 15  [label="True"]; 
+  15 -> 16  [label="True"]; 
+  16 -> 17;
+  15 -> 18  [label="False"]; 
+  18 -> a9  [label="True"]; 
+  a9 -> 22;
+  18 -> 23  [label="False"]; 
+  23 -> 24  [label="True"]; 
+  24 -> 25;
+  23 -> 26  [label="False"]; 
+  26 -> 25;
+  25 -> 22;
+  22 -> 17;
+  17 -> 13;
+}

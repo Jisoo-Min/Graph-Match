@@ -1,0 +1,13 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="9-10:  int teaParty(int tea, int candy)	if (tea < 5 || candy < 5)"]; 
+  2  [label="11:  return 0;"]; 
+  a2  [label="0-13:  endif	if (tea >= 2 * candy || candy >= 2 * tea)"]; 
+  5  [label="14:  return 2;"]; 
+  a3  [label="0-16:  endif	return 1;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+}

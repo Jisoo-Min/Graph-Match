@@ -1,0 +1,9 @@
+digraph result_test { 
+// graph-vertices
+  a3  [label="6-7-8-10:  int close10(int a, int b)	int distA = Math.abs(a - 10)	int distB = Math.abs(b - 10)	if (distA == distB)"]; 
+  4  [label="11:  return 0;"]; 
+  a4  [label="0-13:  endif	return distA < distB ? a : b;"]; 
+// graph-edges
+  a3 -> 4  [label="True"]; 
+  a3 -> a4  [label="False"]; 
+}

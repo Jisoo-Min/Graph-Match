@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="6-7-9:  int countTriple(String str)	int count = 0	int i = 0"]; 
+  3  [label="9:  for (i <= str.length() - 3)"]; 
+  a3  [label="0-15:  endfor	return count;"]; 
+  6  [label="10:  if (str.charAt(i) == str.charAt(i+1) && str.charAt(i) == str.charAt(i+2))"]; 
+  7  [label="12:  count++"]; 
+  a4  [label="0-9:  endif	i++"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> 6  [label="True"]; 
+  6 -> 7  [label="True"]; 
+  7 -> a4;
+  6 -> a4  [label="False"]; 
+  a4 -> 3;
+}

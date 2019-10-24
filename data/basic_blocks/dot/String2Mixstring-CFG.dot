@@ -1,0 +1,19 @@
+digraph result_test { 
+// graph-vertices
+  a4  [label="6-7-8-9-11:  String mixString(String a, String b)	char[] arr	String end	int count = 0	if (a.length() < b.length())"]; 
+  a5  [label="12-13:  arr = new char[2 * a.length()]	end = b.substring(a.length())"]; 
+  a6  [label="0-19:  endif	int i = 0"]; 
+  a7  [label="15-16:  arr = new char[2 * b.length()]	end = a.substring(b.length())"]; 
+  11  [label="19:  for (i < arr.length / 2)"]; 
+  a8  [label="0-26:  endfor	return new String(arr) + end;"]; 
+  a12  [label="20-21-22-23-19:  arr[count] = a.charAt(i)	count++	arr[count] = b.charAt(i)	count++	i++"]; 
+// graph-edges
+  a4 -> a5  [label="True"]; 
+  a5 -> a6;
+  a4 -> a7  [label="False"]; 
+  a7 -> a6;
+  a6 -> 11;
+  11 -> a8  [label="False"]; 
+  11 -> a12  [label="True"]; 
+  a12 -> 11;
+}

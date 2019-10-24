@@ -1,0 +1,19 @@
+digraph result_test { 
+// graph-vertices
+  a3  [label="6-7-8-10:  String zipZap(String str)	char[] arr = new char[str.length()]	int count = 0	int i = 0"]; 
+  4  [label="11:  while (i < str.length())"]; 
+  a4  [label="0-26:  endwhile	return new String(arr, 0, count);"]; 
+  6  [label="12:  if (i < str.length() - 2 && str.charAt(i) == 'z' && str.charAt(i + 2) == 'p')"]; 
+  a8  [label="14-15-16-17-18:  arr[count] = 'z'	count++	arr[count] = 'p'	count++	i += 3"]; 
+  12  [label="0:  endif"]; 
+  a10  [label="20-21-22:  arr[count] = str.charAt(i)	count++	i++"]; 
+// graph-edges
+  a3 -> 4;
+  4 -> a4  [label="False"]; 
+  4 -> 6  [label="True"]; 
+  6 -> a8  [label="True"]; 
+  a8 -> 12;
+  6 -> a10  [label="False"]; 
+  a10 -> 12;
+  12 -> 4;
+}

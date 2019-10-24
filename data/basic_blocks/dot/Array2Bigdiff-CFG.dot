@@ -1,0 +1,12 @@
+digraph result_test { 
+// graph-vertices
+  a3  [label="5-6-7-9:  int bigDiff(int[] nums)	int min = nums[0]	int max = nums[0]	int i = 1"]; 
+  4  [label="9:  for (i < nums.length)"]; 
+  a4  [label="0-14:  endfor	return max - min;"]; 
+  a6  [label="10-11-9:  min = Math.min(min, nums[i])	max = Math.max(max, nums[i])	i++"]; 
+// graph-edges
+  a3 -> 4;
+  4 -> a4  [label="False"]; 
+  4 -> a6  [label="True"]; 
+  a6 -> 4;
+}

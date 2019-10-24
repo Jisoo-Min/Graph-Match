@@ -1,0 +1,26 @@
+digraph result_test { 
+// graph-vertices
+  a4  [label="10-11-12-13-15:  String[] mergeTwo(String[] a, String[] b, int n)	String[] arr = new String[n]	int aIndex = 0	int bIndex = 0	int index = 0"]; 
+  5  [label="15:  for (index < n)"]; 
+  a5  [label="0-29:  endfor	return arr;"]; 
+  8  [label="16:  if (a[aIndex].compareTo(b[bIndex]) < 0)"]; 
+  a6  [label="17-18:  arr[index] = a[aIndex]	aIndex++"]; 
+  12  [label="19:  if (a[aIndex].compareTo(b[bIndex]) > 0)"]; 
+  a7  [label="0-15:  endif	index++"]; 
+  a8  [label="20-21:  arr[index] = b[bIndex]	bIndex++"]; 
+  15  [label="0:  endif"]; 
+  a10  [label="23-24-25:  arr[index] = a[aIndex]	aIndex++	bIndex++"]; 
+// graph-edges
+  a4 -> 5;
+  5 -> a5  [label="False"]; 
+  5 -> 8  [label="True"]; 
+  8 -> a6  [label="True"]; 
+  a6 -> a7;
+  8 -> 12  [label="False"]; 
+  12 -> a8  [label="True"]; 
+  a8 -> 15;
+  12 -> a10  [label="False"]; 
+  a10 -> 15;
+  15 -> a7;
+  a7 -> 5;
+}

@@ -1,0 +1,5 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="7-8:  String makeTags(String tag, String word)	return '<' + tag + '>' + word + '</' + tag + '>';"]; 
+// graph-edges
+}

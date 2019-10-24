@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="5-6:  int strDist(String str, String sub)	if (str.length() < sub.length())"]; 
+  2  [label="7:  return 0;"]; 
+  a2  [label="0-9:  endif	if (str.substring(0, sub.length()).equals(sub) && str.substring(str.length() - sub.length()).equals(sub))"]; 
+  5  [label="11:  return str.length();"]; 
+  a3  [label="0-13:  endif	if (!str.substring(0, sub.length()).equals(sub))"]; 
+  8  [label="14:  return strDist(str.substring(1), sub);"]; 
+  a4  [label="0-16:  endif	return strDist(str.substring(0, str.length()-1), sub);"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+  a3 -> 8  [label="True"]; 
+  a3 -> a4  [label="False"]; 
+}

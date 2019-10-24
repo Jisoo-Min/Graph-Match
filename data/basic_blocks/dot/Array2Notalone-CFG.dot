@@ -1,0 +1,24 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="7-8-10:  int[] notAlone(int[] nums, int val)	int[] arr = new int[nums.length]	if (nums.length >= 1)"]; 
+  a3  [label="11-12:  arr[0] = nums[0]	arr[arr.length-1] = nums[nums.length-1]"]; 
+  a4  [label="0-15:  endif	int i = 1"]; 
+  7  [label="15:  for (i <= nums.length - 2)"]; 
+  a5  [label="0-22:  endfor	return arr;"]; 
+  10  [label="16:  if (nums[i] == val && nums[i] != nums[i-1] && nums[i] != nums[i+1])"]; 
+  11  [label="17:  arr[i] = Math.max(nums[i-1], nums[i+1])"]; 
+  13  [label="19:  arr[i] = nums[i]"]; 
+  a6  [label="0-15:  endif	i++"]; 
+// graph-edges
+  a2 -> a3  [label="True"]; 
+  a3 -> a4;
+  a2 -> a4  [label="False"]; 
+  a4 -> 7;
+  7 -> a5  [label="False"]; 
+  7 -> 10  [label="True"]; 
+  10 -> 11  [label="True"]; 
+  11 -> a6;
+  10 -> 13  [label="False"]; 
+  13 -> a6;
+  a6 -> 7;
+}

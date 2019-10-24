@@ -1,0 +1,26 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="7-8:  int countYZ(String str)	if (str.length() == 0)"]; 
+  2  [label="9:  return 0;"]; 
+  a3  [label="0-11-13:  endif	int count = 0	int i = 0"]; 
+  6  [label="13:  for (i <= str.length() - 2)"]; 
+  a4  [label="0-20:  endfor	if (Character.toLowerCase(str.charAt(str.length() - 1)) == 'y' || Character.toLowerCase(str.charAt(str.length() - 1)) == 'z')"]; 
+  9  [label="14:  if ((Character.toLowerCase(str.charAt(i)) == 'y' ||   Character.toLowerCase(str.charAt(i)) == 'z') && !Character.isLetter(str.charAt(i+1)))"]; 
+  10  [label="17:  count++"]; 
+  13  [label="22:  count++"]; 
+  a5  [label="0-13:  endif	i++"]; 
+  a6  [label="0-24:  endif	return count;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a3  [label="False"]; 
+  a3 -> 6;
+  6 -> a4  [label="False"]; 
+  6 -> 9  [label="True"]; 
+  9 -> 10  [label="True"]; 
+  10 -> a5;
+  9 -> a5  [label="False"]; 
+  a5 -> 6;
+  a4 -> 13  [label="True"]; 
+  13 -> a6;
+  a4 -> a6  [label="False"]; 
+}

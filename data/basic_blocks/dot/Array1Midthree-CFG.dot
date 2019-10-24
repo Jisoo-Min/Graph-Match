@@ -1,0 +1,5 @@
+digraph result_test { 
+// graph-vertices
+  a5  [label="6-7-8-9-10-11:  int[] midThree(int[] nums)	int[] arr = new int[3]	arr[0] = nums[nums.length / 2 - 1]	arr[1] = nums[nums.length / 2]	arr[2] = nums[nums.length / 2 + 1]	return arr;"]; 
+// graph-edges
+}

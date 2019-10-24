@@ -1,0 +1,19 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="10-11-13:  int sumHeights2(int[] heights, int start, int end)	int sum = 0	int i = start"]; 
+  3  [label="13:  for (i < end)"]; 
+  a3  [label="0-20:  endfor	return sum;"]; 
+  6  [label="14:  if (heights[i] < heights[i+1])"]; 
+  7  [label="15:  sum = sum + 2 * (heights[i+1] - heights[i])"]; 
+  9  [label="17:  sum = sum + heights[i] - heights[i+1]"]; 
+  a4  [label="0-13:  endif	i++"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> 6  [label="True"]; 
+  6 -> 7  [label="True"]; 
+  7 -> a4;
+  6 -> 9  [label="False"]; 
+  9 -> a4;
+  a4 -> 3;
+}

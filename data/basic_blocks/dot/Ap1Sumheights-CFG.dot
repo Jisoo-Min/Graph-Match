@@ -1,0 +1,12 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="9-10-12:  int sumHeights(int[] heights, int start, int end)	int sum = 0	int i = start"]; 
+  3  [label="12:  for (i < end)"]; 
+  a3  [label="0-15:  endfor	return sum;"]; 
+  a4  [label="13-12:  sum += Math.abs(heights[i] - heights[i+1])	i++"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> a4  [label="True"]; 
+  a4 -> 3;
+}

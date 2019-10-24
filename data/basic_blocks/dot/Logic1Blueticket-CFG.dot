@@ -1,0 +1,13 @@
+digraph result_test { 
+// graph-vertices
+  a4  [label="8-9-10-11-13:  int blueTicket(int a, int b, int c)	int ab = a + b	int bc = b + c	int ac = a + c	if (ab == 10 || bc == 10 || ac == 10)"]; 
+  5  [label="14:  return 10;"]; 
+  a5  [label="0-16:  endif	if (ab == bc + 10 || ab == ac + 10)"]; 
+  8  [label="17:  return 5;"]; 
+  a6  [label="0-19:  endif	return 0;"]; 
+// graph-edges
+  a4 -> 5  [label="True"]; 
+  a4 -> a5  [label="False"]; 
+  a5 -> 8  [label="True"]; 
+  a5 -> a6  [label="False"]; 
+}

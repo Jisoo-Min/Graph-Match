@@ -1,0 +1,5 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  int[] makeEnds(int[] nums)	return new int[] {nums[0], nums[nums.length - 1]};"]; 
+// graph-edges
+}

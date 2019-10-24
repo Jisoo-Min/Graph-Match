@@ -1,0 +1,16 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="4-5:  boolean has23(int[] nums)	int i = 0"]; 
+  2  [label="5:  for (i < nums.length)"]; 
+  a2  [label="0-10:  endfor	return false;"]; 
+  5  [label="6:  if (nums[i] == 2 || nums[i] == 3)"]; 
+  6  [label="7:  return true;"]; 
+  a3  [label="0-5:  endif	i++"]; 
+// graph-edges
+  a1 -> 2;
+  2 -> a2  [label="False"]; 
+  2 -> 5  [label="True"]; 
+  5 -> 6  [label="True"]; 
+  5 -> a3  [label="False"]; 
+  a3 -> 2;
+}

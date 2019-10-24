@@ -1,0 +1,5 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="5-6:  boolean nearHundred(int n)	return Math.abs(n - 100) <= 10 || Math.abs(n - 200) <= 10;"]; 
+// graph-edges
+}

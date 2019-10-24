@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a3  [label="6-7-8-10:  int[] copyEvens(int[] nums, int count)	int[] arr = new int[count]	int index = 0	int i = 0"]; 
+  4  [label="10:  for (index < count)"]; 
+  a4  [label="0-17:  endfor	return arr;"]; 
+  7  [label="11:  if (nums[i] % 2 == 0)"]; 
+  a5  [label="12-13:  arr[index] = nums[i]	index++"]; 
+  a6  [label="0-10:  endif	i++"]; 
+// graph-edges
+  a3 -> 4;
+  4 -> a4  [label="False"]; 
+  4 -> 7  [label="True"]; 
+  7 -> a5  [label="True"]; 
+  a5 -> a6;
+  7 -> a6  [label="False"]; 
+  a6 -> 4;
+}

@@ -1,0 +1,13 @@
+digraph result_test { 
+// graph-vertices
+  a3  [label="10-11-12-13:  int scoresAverage(int[] scores)	int first = average(scores, 0, scores.length / 2)	int second = average(scores, scores.length / 2, scores.length)	return Math.max(first, second);"]; 
+  a5  [label="16-17-19:  int average(int[] scores, int start, int end)	int sum = 0	int i = start"]; 
+  7  [label="19:  for (i < end)"]; 
+  a6  [label="0-22:  endfor	return sum / (end - start);"]; 
+  a7  [label="20-19:  sum += scores[i]	i++"]; 
+// graph-edges
+  a5 -> 7;
+  7 -> a6  [label="False"]; 
+  7 -> a7  [label="True"]; 
+  a7 -> 7;
+}

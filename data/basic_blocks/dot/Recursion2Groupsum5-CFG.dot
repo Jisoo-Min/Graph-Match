@@ -1,0 +1,25 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="8-9:  boolean groupSum5(int start, int[] nums, int target)	if (start >= nums.length)"]; 
+  2  [label="10:  return target == 0;"]; 
+  a2  [label="0-12:  endif	if (nums[start] % 5 == 0)"]; 
+  5  [label="13:  if (start <= nums.length - 2 && nums[start+1] == 1)"]; 
+  6  [label="14:  return groupSum5(start+2, nums, target - nums[start]);"]; 
+  a3  [label="0-16:  endif	return groupSum5(start+1, nums, target - nums[start]);"]; 
+  a4  [label="0-19:  endif	if (groupSum5(start+1, nums, target - nums[start]))"]; 
+  11  [label="20:  return true;"]; 
+  a5  [label="0-22:  endif	if (groupSum5(start+1, nums, target))"]; 
+  14  [label="23:  return true;"]; 
+  a6  [label="0-25:  endif	return false;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  5 -> 6  [label="True"]; 
+  5 -> a3  [label="False"]; 
+  a2 -> a4  [label="False"]; 
+  a4 -> 11  [label="True"]; 
+  a4 -> a5  [label="False"]; 
+  a5 -> 14  [label="True"]; 
+  a5 -> a6  [label="False"]; 
+}

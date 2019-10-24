@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="10-11:  boolean groupSum(int start, int[] nums, int target)	if (start >= nums.length)"]; 
+  2  [label="12:  return target == 0;"]; 
+  a2  [label="0-14:  endif	if (groupSum(start+1, nums, target - nums[start]))"]; 
+  5  [label="15:  return true;"]; 
+  a3  [label="0-17:  endif	if (groupSum(start+1, nums, target))"]; 
+  8  [label="18:  return true;"]; 
+  a4  [label="0-20:  endif	return false;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+  a3 -> 8  [label="True"]; 
+  a3 -> a4  [label="False"]; 
+}

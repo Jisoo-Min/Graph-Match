@@ -1,0 +1,5 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="4-5:  String helloName(String name)	return 'Hello ' + name + '!';"]; 
+// graph-edges
+}

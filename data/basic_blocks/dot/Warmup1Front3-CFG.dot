@@ -1,0 +1,12 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="6-7-8:  String front3(String str)	String front	if (str.length() < 3)"]; 
+  3  [label="9:  front = str"]; 
+  a3  [label="0-13:  endif	return front + front + front;"]; 
+  5  [label="11:  front = str.substring(0, 3)"]; 
+// graph-edges
+  a2 -> 3  [label="True"]; 
+  3 -> a3;
+  a2 -> 5  [label="False"]; 
+  5 -> a3;
+}

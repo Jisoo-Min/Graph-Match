@@ -1,0 +1,10 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="10-11:  int roundSum(int a, int b, int c)	return round10(a) + round10(b) + round10(c);"]; 
+  a3  [label="14-15-17:  int round10(int num)	int rd = num % 10	if (rd >= 5)"]; 
+  5  [label="18:  return num + 10 - rd;"]; 
+  a4  [label="0-20:  endif	return num - rd;"]; 
+// graph-edges
+  a3 -> 5  [label="True"]; 
+  a3 -> a4  [label="False"]; 
+}

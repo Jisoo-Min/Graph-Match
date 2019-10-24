@@ -1,0 +1,5 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="5-6:  boolean more20(int n)	return n % 20 == 1 || n % 20 == 2;"]; 
+// graph-edges
+}

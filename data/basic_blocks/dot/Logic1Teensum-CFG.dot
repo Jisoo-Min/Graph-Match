@@ -1,0 +1,9 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  int teenSum(int a, int b)	if ((13 <= a && a <= 19) || (13 <= b && b <= 19))"]; 
+  2  [label="8:  return 19;"]; 
+  a2  [label="0-10:  endif	return a + b;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+}

@@ -1,0 +1,24 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="7-8-10:  int maxSpan(int[] nums)	int max = 0	int i = 0"]; 
+  3  [label="10:  for (i < nums.length)"]; 
+  a3  [label="0-22:  endfor	return max;"]; 
+  6  [label="11:  int j = nums.length - 1"]; 
+  7  [label="13:  while (nums[i] != nums[j])"]; 
+  a5  [label="0-16-18:  endwhile	int span = j - i + 1	if (span > max)"]; 
+  9  [label="14:  j--"]; 
+  12  [label="19:  max = span"]; 
+  a6  [label="0-10:  endif	i++"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> 6  [label="True"]; 
+  6 -> 7;
+  7 -> a5  [label="False"]; 
+  7 -> 9  [label="True"]; 
+  9 -> 7;
+  a5 -> 12  [label="True"]; 
+  12 -> a6;
+  a5 -> a6  [label="False"]; 
+  a6 -> 3;
+}

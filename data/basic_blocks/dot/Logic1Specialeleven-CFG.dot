@@ -1,0 +1,5 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  boolean specialEleven(int n)	return (n % 11) == 0 || (n % 11) == 1;"]; 
+// graph-edges
+}

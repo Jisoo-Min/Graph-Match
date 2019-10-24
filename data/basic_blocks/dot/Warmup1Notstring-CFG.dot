@@ -1,0 +1,9 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  String notString(String str)	if (str.length() >= 3 && str.substring(0, 3).equals('not'))"]; 
+  2  [label="8:  return str;"]; 
+  a2  [label="0-10:  endif	return 'not ' + str;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+}

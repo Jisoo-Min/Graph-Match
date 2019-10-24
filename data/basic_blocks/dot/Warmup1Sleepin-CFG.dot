@@ -1,0 +1,5 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  boolean sleepIn(boolean weekday, boolean vacation)	return !weekday || vacation;"]; 
+// graph-edges
+}

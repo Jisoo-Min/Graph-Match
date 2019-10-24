@@ -1,0 +1,19 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="9-10:  String alarmClock(int day, boolean vacation)	if (vacation)"]; 
+  2  [label="11:  if (day == 0 || day == 6)"]; 
+  3  [label="12:  return 'off';"]; 
+  4  [label="0:  endif"]; 
+  5  [label="14:  return '10:00';"]; 
+  a2  [label="0-17:  endif	if (day == 0 || day == 6)"]; 
+  8  [label="18:  return '10:00';"]; 
+  a3  [label="0-20:  endif	return '7:00';"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  2 -> 3  [label="True"]; 
+  2 -> 5  [label="False"]; 
+  4 -> a2;
+  a1 -> a2  [label="False"]; 
+  a2 -> 8  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+}

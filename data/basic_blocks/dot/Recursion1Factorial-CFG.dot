@@ -1,0 +1,9 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="5-6:  int factorial(int n)	if (n == 1)"]; 
+  2  [label="7:  return 1;"]; 
+  a2  [label="0-9:  endif	return n * factorial(n - 1);"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+}

@@ -1,0 +1,9 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="9-10:  int fibonacci(int n)	if (n <= 1)"]; 
+  2  [label="11:  return n;"]; 
+  a2  [label="0-13:  endif	return fibonacci(n-1) + fibonacci(n-2);"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+}

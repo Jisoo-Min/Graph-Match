@@ -1,0 +1,38 @@
+digraph result_test { 
+// graph-vertices
+  a4  [label="6-7-8-9-10:  int sumNumbers(String str)	int sum = 0	int i = 0	int begin	int end"]; 
+  5  [label="12:  while (i < str.length() && !Character.isDigit(str.charAt(i)))"]; 
+  a6  [label="0-15-16:  endwhile	begin = i	end = i"]; 
+  7  [label="13:  i++"]; 
+  10  [label="18:  while (i < str.length())"]; 
+  a7  [label="0-32:  endwhile	if (end > begin)"]; 
+  12  [label="19:  if (!Character.isDigit(str.charAt(i)))"]; 
+  13  [label="20:  sum += Integer.parseInt(str.substring(begin, end))"]; 
+  14  [label="21:  while (i < str.length() && !Character.isDigit(str.charAt(i)))"]; 
+  a9  [label="0-24-25:  endwhile	begin = i	end = i"]; 
+  16  [label="22:  i++"]; 
+  19  [label="0:  endif"]; 
+  a10  [label="27-28:  end++	i++"]; 
+  23  [label="33:  sum += Integer.parseInt(str.substring(begin, end))"]; 
+  a11  [label="0-35:  endif	return sum;"]; 
+// graph-edges
+  a4 -> 5;
+  5 -> a6  [label="False"]; 
+  5 -> 7  [label="True"]; 
+  7 -> 5;
+  a6 -> 10;
+  10 -> a7  [label="False"]; 
+  10 -> 12  [label="True"]; 
+  12 -> 13  [label="True"]; 
+  13 -> 14;
+  14 -> a9  [label="False"]; 
+  14 -> 16  [label="True"]; 
+  16 -> 14;
+  a9 -> 19;
+  12 -> a10  [label="False"]; 
+  a10 -> 19;
+  19 -> 10;
+  a7 -> 23  [label="True"]; 
+  23 -> a11;
+  a7 -> a11  [label="False"]; 
+}

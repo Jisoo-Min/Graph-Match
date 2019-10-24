@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="7-8:  int redTicket(int a, int b, int c)	if (a == 2 && b == 2 && c == 2)"]; 
+  2  [label="9:  return 10;"]; 
+  a2  [label="0-11:  endif	if (a == b && b == c)"]; 
+  5  [label="12:  return 5;"]; 
+  a3  [label="0-14:  endif	if (a != b && a != c)"]; 
+  8  [label="15:  return 1;"]; 
+  a4  [label="0-17:  endif	return 0;"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  a2 -> a3  [label="False"]; 
+  a3 -> 8  [label="True"]; 
+  a3 -> a4  [label="False"]; 
+}

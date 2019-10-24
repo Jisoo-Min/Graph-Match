@@ -1,0 +1,24 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="5-6-7:  int countClumps(int[] nums)	int count = 0	int i = 0"]; 
+  3  [label="9:  while (i < nums.length)"]; 
+  a3  [label="0-22:  endwhile	return count;"]; 
+  a5  [label="10-11-12:  int val = nums[i]	i++	int length = 1"]; 
+  8  [label="13:  while (i < nums.length && nums[i] == val)"]; 
+  a6  [label="0-18:  endwhile	if (length > 1)"]; 
+  a7  [label="14-15:  i++	length++"]; 
+  13  [label="19:  count++"]; 
+  14  [label="0:  endif"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> a3  [label="False"]; 
+  3 -> a5  [label="True"]; 
+  a5 -> 8;
+  8 -> a6  [label="False"]; 
+  8 -> a7  [label="True"]; 
+  a7 -> 8;
+  a6 -> 13  [label="True"]; 
+  13 -> 14;
+  a6 -> 14  [label="False"]; 
+  14 -> 3;
+}

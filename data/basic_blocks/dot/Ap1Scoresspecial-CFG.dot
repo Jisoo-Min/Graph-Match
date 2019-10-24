@@ -1,0 +1,18 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="8-9:  int scoresSpecial(int[] a, int[] b)	return largestSpecial(a) + largestSpecial(b);"]; 
+  a3  [label="12-13-15:  int largestSpecial(int[] a)	int largest = 0	int i = 0"]; 
+  5  [label="15:  for (i < a.length)"]; 
+  a4  [label="0-20:  endfor	return largest;"]; 
+  8  [label="16:  if (a[i] % 10 == 0 && a[i] > largest)"]; 
+  9  [label="17:  largest = a[i]"]; 
+  a5  [label="0-15:  endif	i++"]; 
+// graph-edges
+  a3 -> 5;
+  5 -> a4  [label="False"]; 
+  5 -> 8  [label="True"]; 
+  8 -> 9  [label="True"]; 
+  9 -> a5;
+  8 -> a5  [label="False"]; 
+  a5 -> 5;
+}

@@ -1,0 +1,16 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  int[] shiftLeft(int[] nums)	if (nums.length < 1)"]; 
+  2  [label="8:  return nums;"]; 
+  a3  [label="0-10-12:  endif	int first = nums[0]	int i = 1"]; 
+  6  [label="12:  for (i < nums.length)"]; 
+  a5  [label="0-15-17:  endfor	nums[nums.length - 1] = first	return nums;"]; 
+  a6  [label="13-12:  nums[i - 1] = nums[i]	i++"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a3  [label="False"]; 
+  a3 -> 6;
+  6 -> a5  [label="False"]; 
+  6 -> a6  [label="True"]; 
+  a6 -> 6;
+}

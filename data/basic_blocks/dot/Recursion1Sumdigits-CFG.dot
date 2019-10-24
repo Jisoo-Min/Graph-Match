@@ -1,0 +1,9 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="5-6:  int sumDigits(int n)	if (n == 0)"]; 
+  2  [label="7:  return 0;"]; 
+  a2  [label="0-9:  endif	return n % 10 + sumDigits(n / 10);"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+}

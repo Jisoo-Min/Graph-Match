@@ -1,0 +1,9 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  String twoChar(String str, int index)	if (index + 2 > str.length() || index < 0)"]; 
+  2  [label="8:  return str.substring(0, 2);"]; 
+  a2  [label="0-10:  endif	return str.substring(index, index + 2);"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+}

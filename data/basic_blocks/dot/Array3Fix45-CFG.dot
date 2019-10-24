@@ -1,0 +1,31 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="8-9-10:  int[] fix45(int[] nums)	int i = 0	int j = 0"]; 
+  3  [label="12:  while (j < nums.length && nums[j] != 5)"]; 
+  4  [label="0:  endwhile"]; 
+  5  [label="13:  j++"]; 
+  6  [label="15:  while (i < nums.length)"]; 
+  a3  [label="0-27:  endwhile	return nums;"]; 
+  8  [label="16:  if (nums[i] == 4)"]; 
+  a5  [label="17-18-19:  int temp = nums[i+1]	nums[i+1] = nums[j]	nums[j] = temp"]; 
+  12  [label="21:  while ((j < nums.length && nums[j] != 5) || j == i + 1)"]; 
+  13  [label="0:  endwhile"]; 
+  14  [label="22:  j++"]; 
+  a6  [label="0-24:  endif	i++"]; 
+// graph-edges
+  a2 -> 3;
+  3 -> 4  [label="False"]; 
+  3 -> 5  [label="True"]; 
+  5 -> 3;
+  4 -> 6;
+  6 -> a3  [label="False"]; 
+  6 -> 8  [label="True"]; 
+  8 -> a5  [label="True"]; 
+  a5 -> 12;
+  12 -> 13  [label="False"]; 
+  12 -> 14  [label="True"]; 
+  14 -> 12;
+  13 -> a6;
+  8 -> a6  [label="False"]; 
+  a6 -> 6;
+}

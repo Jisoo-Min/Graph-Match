@@ -1,0 +1,15 @@
+digraph result_test { 
+// graph-vertices
+  a2  [label="6-7-9:  String startOz(String str)	String result = ''	if (str.length() >= 1 && str.charAt(0) == 'o')"]; 
+  3  [label="10:  result += str.charAt(0)"]; 
+  a3  [label="0-12:  endif	if (str.length() >= 2 && str.charAt(1) == 'z')"]; 
+  6  [label="13:  result += str.charAt(1)"]; 
+  a4  [label="0-15:  endif	return result;"]; 
+// graph-edges
+  a2 -> 3  [label="True"]; 
+  3 -> a3;
+  a2 -> a3  [label="False"]; 
+  a3 -> 6  [label="True"]; 
+  6 -> a4;
+  a3 -> a4  [label="False"]; 
+}

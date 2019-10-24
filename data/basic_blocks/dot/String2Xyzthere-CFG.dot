@@ -1,0 +1,20 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  boolean xyzThere(String str)	if (str.length() >= 3 && str.substring(0, 3).equals('xyz'))"]; 
+  2  [label="8:  return true;"]; 
+  a2  [label="0-10:  endif	int i = 1"]; 
+  5  [label="10:  for (i < str.length() - 2)"]; 
+  a3  [label="0-15:  endfor	return false;"]; 
+  8  [label="11:  if (str.charAt(i - 1) != '.' && str.substring(i, i + 3).equals('xyz'))"]; 
+  9  [label="12:  return true;"]; 
+  a4  [label="0-10:  endif	i++"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5;
+  5 -> a3  [label="False"]; 
+  5 -> 8  [label="True"]; 
+  8 -> 9  [label="True"]; 
+  8 -> a4  [label="False"]; 
+  a4 -> 5;
+}

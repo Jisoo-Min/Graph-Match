@@ -1,0 +1,17 @@
+digraph result_test { 
+// graph-vertices
+  a1  [label="6-7:  int count8(int n)	if (n == 0)"]; 
+  2  [label="8:  return 0;"]; 
+  a2  [label="0-10:  endif	if (n % 10 == 8)"]; 
+  5  [label="11:  if ((n / 10) % 10 == 8)"]; 
+  6  [label="12:  return 2 + count8(n/10);"]; 
+  a3  [label="0-14:  endif	return 1 + count8(n/10);"]; 
+  a4  [label="0-17:  endif	return count8(n/10);"]; 
+// graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> a2  [label="False"]; 
+  a2 -> 5  [label="True"]; 
+  5 -> 6  [label="True"]; 
+  5 -> a3  [label="False"]; 
+  a2 -> a4  [label="False"]; 
+}
