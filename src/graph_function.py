@@ -7,7 +7,6 @@ from itertools import permutations
 
 def is_subgraph(big, small):
     big_permutation = list(permutations(big.nodes(), len(small.nodes())))
-    print(big_permutation)
     
     for perm in big_permutation:
         sub_nodes = list(perm)
