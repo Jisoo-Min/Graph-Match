@@ -1,6 +1,8 @@
 import pydot
 import networkx as nx
+import matplotlib.pyplot as plt
 from itertools import permutations
+
 
 
 def is_subgraph(big, small):
@@ -16,8 +18,19 @@ def is_subgraph(big, small):
         else:
             continue
         
+
+    # Draw two compared graphs
+    fig = plt.figure(figsize=(5, 10))
+    plt.subplot(2, 1, 1)
+    nx.draw(big_graph)
+    plt.title("bigger graph")
+
+    plt.subplot(2, 1, 2)
+    nx.draw(small_graph)
+    plt.title("smaller graph") 
         
-        
+	
+	
 """
 
 def main():
