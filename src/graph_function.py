@@ -14,9 +14,8 @@ def is_subgraph(big, small):
         sub_in_big = big.subgraph(sub_nodes)
         
         if(nx.is_isomorphic(sub_in_big, small_graph) == True):
-            return True
-        else:
-            continue
+            print("It is a Subgraph!!")
+            break
         
 
     # Draw two compared graphs
@@ -28,6 +27,8 @@ def is_subgraph(big, small):
     plt.subplot(2, 1, 2)
     nx.draw(small_graph)
     plt.title("smaller graph") 
+    
+    plt.show()
         
 	
 	
