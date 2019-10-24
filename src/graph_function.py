@@ -1,8 +1,8 @@
-Aimport pydot
+import pydot
 import networkx as nx
 import matplotlib.pyplot as plt
 from itertools import combinations
-
+import classify_graph
 
 def is_subgraph(big, small):
     big_combination = list(combinations(big.nodes(), len(small.nodes())))
@@ -63,7 +63,9 @@ def find_unique_subgraph(graphs, num_node):
                     
     
     return unique_graph
-	
+
+
+
 """
 
 def main():
@@ -78,8 +80,9 @@ def main():
 
     is_subgraph(big_graph, small_graph)
 
-    sub_graph_with_2_nodes = find_unique_subgraph(2)
-    
+    graphs = classify_graph.classify_graph("../data/basic_blocks/json/")
+
+    find_unique_subgraph(graphs, 2) 
 if __name__ == "__main__":
 	main()
 
