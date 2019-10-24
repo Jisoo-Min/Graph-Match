@@ -1,22 +1,21 @@
 import pydot
 import networkx as nx
 import matplotlib.pyplot as plt
-from itertools import permutations
-
+from itertools import combinations
 
 
 def is_subgraph(big, small):
-    big_permutation = list(permutations(big.nodes(), len(small.nodes())))
+    big_combination = list(combinations(big.nodes(), len(small.nodes())))
+    #print(big_permutation)
     
-    for perm in big_permutation:
-        sub_nodes = list(perm)
+    for comb in big_combination:
+        sub_nodes = list(comb)
         sub_in_big = big.subgraph(sub_nodes)
         
-        if(nx.is_isomorphic(sub_in_big, small_graph) == True):
+        if(nx.is_isomorphic(sub_in_big, small) == True):
             print("It is a Subgraph!!")
             break
         
-
     # Draw two compared graphs
     fig = plt.figure(figsize=(5, 10))
     plt.subplot(2, 1, 1)
