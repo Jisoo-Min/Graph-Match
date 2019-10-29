@@ -5,7 +5,8 @@ from itertools import combinations
 import classify_graph
 
 ####################################################################
-# 두 그래프를 넣었을 때, small이 big의 subgraph인지
+# When two inputs 'big and small' are given, 
+# check if the small graph is the subgraph of the big one.
 ####################################################################
 def is_subgraph(big, small):
     big_combination = list(combinations(big.nodes(), len(small.nodes())))
@@ -50,7 +51,7 @@ def find_unique_subgraph(graphs, num_node):
 
             if not unique_graph: # empty list 
                 unique_graph.append(sub_in_graph)
-                print(graph.graph)
+                print("new unique subgraph is in " + graph.graph['name'])
             else:
                 index = 0
                 for u_g in unique_graph: # not empty, comparison is needed
@@ -61,20 +62,14 @@ def find_unique_subgraph(graphs, num_node):
                      
                 if(index == len(unique_graph)):
                     unique_graph.append(sub_in_graph)
-                    print(graph.graph)
+                    print("new unique subgraph is in " + graph.graph['name'])
                     
     print("There are {} unique subgraph in input graph".format(len(unique_graph)))
 
-    """
-
-    
-    for u_g in unique_graph:
-        nx.draw(u_g)
-    """
     return unique_graph
 
 ####################################################################
-# data에 만들어둔 subgraph를 읽어온다
+# Read all kinds of subgraphs
 ####################################################################
 def read_subgraphs():
     sub_graphs = []
@@ -87,28 +82,12 @@ def read_subgraphs():
 
 
 ####################################################################
-# graph안에 입력된 subgraph가 몇번이나 나타나는지
-####################################################################
-def how_many_sub(graph, sub):
-    combination = list(combinations(graph.nodes(), len(sub.nodes())))
-    
-    for comb in combination:
-        sub_nodes = list(comb)
-        sub_in_graph = big.subgraph(sub_nodes)
-        
-        if(nx.is_isomorphic(sub_in_big, sub) == True):
-            print("Input subgraph is in the graph")
-            break
-        
-
-
-####################################################################
-# 어떤 substructure (subgraph)를 가지고 있는지 
+# Check how many subgraphs exist on the graph
 ####################################################################
 def contain_which_sub(graph):
 
     ####################################################################
-    # graph안에 입력된 subgraph가 몇번이나 나타나는지
+    # Check how many times a subgraph appears on the graph
     ####################################################################
     def how_many_sub(graph, sub):
 
