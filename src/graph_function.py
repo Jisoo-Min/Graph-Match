@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 from itertools import combinations
 import classify_graph
 
+####################################################################
+# 두 그래프를 넣었을 때, small이 big의 subgraph인지
+####################################################################
 def is_subgraph(big, small):
     big_combination = list(combinations(big.nodes(), len(small.nodes())))
     #print(big_permutation)
@@ -45,7 +48,6 @@ def find_unique_subgraph(graphs, num_node):
             sub_nodes = list(comb)
             sub_in_graph = graph.subgraph(sub_nodes)
 
-            
             if not unique_graph: # empty list 
                 unique_graph.append(sub_in_graph)
                 print(graph.graph)
@@ -61,16 +63,87 @@ def find_unique_subgraph(graphs, num_node):
                     unique_graph.append(sub_in_graph)
                     print(graph.graph)
                     
+    print("There are {} unique subgraph in input graph".format(len(unique_graph)))
+
+    """
+
     
+    for u_g in unique_graph:
+        nx.draw(u_g)
+    """
     return unique_graph
 
+####################################################################
+# data에 만들어둔 subgraph를 읽어온다
+####################################################################
+def read_subgraphs():
+    sub_graphs = []
+    for id in range(10):
+        sub_graph = nx.drawing.nx_pydot.read_dot("../data/subgraphs/index" + str(id) + ".dot")
+        sub_graphs.append(sub_graph)
 
 
-"""
+    return sub_graphs
+
+
+####################################################################
+# graph안에 입력된 subgraph가 몇번이나 나타나는지
+####################################################################
+def how_many_sub(graph, sub):
+    combination = list(combinations(graph.nodes(), len(sub.nodes())))
+    
+    for comb in combination:
+        sub_nodes = list(comb)
+        sub_in_graph = big.subgraph(sub_nodes)
+        
+        if(nx.is_isomorphic(sub_in_big, sub) == True):
+            print("Input subgraph is in the graph")
+            break
+        
+
+
+####################################################################
+# 어떤 substructure (subgraph)를 가지고 있는지 
+####################################################################
+def contain_which_sub(graph):
+
+    ####################################################################
+    # graph안에 입력된 subgraph가 몇번이나 나타나는지
+    ####################################################################
+    def how_many_sub(graph, sub):
+
+        count = 0
+        combination = list(combinations(graph.nodes(), len(sub.nodes())))
+        
+        for comb in combination:
+            sub_nodes = list(comb)
+            sub_in_graph = graph.subgraph(sub_nodes)
+            
+            if(nx.is_isomorphic(sub_in_graph, sub) == True):
+                print("Input subgraph is in the graph")
+                count += 1
+
+        return count
+    ####################################################################
+
+    sub_graphs = read_subgraphs()
+    count_subs = []
+
+
+    for sub in sub_graphs:
+        count_subs.append(how_many_sub(graph, sub))
+
+    print(count_subs)
+
+
+
+
 
 def main():
     big_graph = nx.drawing.nx_pydot.read_dot("../data/basic_blocks/dot/Ap1Bigheights-CFG.dot")
-    
+    contain_which_sub(big_graph)
+
+    """
     small_graph = nx.MultiDiGraph()
     small_graph.add_node(0)
     small_graph.add_node(1)
@@ -79,11 +152,11 @@ def main():
     small_graph.add_edge(0, 2)
 
     is_subgraph(big_graph, small_graph)
-
+    """
     graphs = classify_graph.classify_graph("../data/basic_blocks/json/")
 
-    find_unique_subgraph(graphs, 2) 
+    find_unique_subgraph(graphs, 4) 
+    
+
 if __name__ == "__main__":
 	main()
-
-"""
