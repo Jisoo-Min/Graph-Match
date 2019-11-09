@@ -1,4 +1,5 @@
-import pydotimport os
+import pydot
+import os
 import pydot
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -6,21 +7,21 @@ from itertools import combinations
 import classify_graph
 
 ####################################################################
-# When two inputs 'big and small' are given, 
+# When two inputs 'big and small' are given,
 # check if the small graph is the subgraph of the big one.
 ####################################################################
 def is_subgraph(big, small):
     big_combination = list(combinations(big.nodes(), len(small.nodes())))
     #print(big_permutation)
-    
+
     for comb in big_combination:
         sub_nodes = list(comb)
         sub_in_big = big.subgraph(sub_nodes)
-        
+
         if(nx.is_isomorphic(sub_in_big, small) == True):
             print("It is a Subgraph!!")
             return True
-    
+
     """
     # Draw two compared graphs
     fig = plt.figure(figsize=(5, 10))
@@ -30,14 +31,14 @@ def is_subgraph(big, small):
 
     plt.subplot(2, 1, 2)
     nx.draw(small)
-    plt.title("smaller graph") 
-    
+    plt.title("smaller graph")
+
     plt.show()
     """
-    
+
     return False
-        
-    
+
+
 ####################################################################
 # @unique_graph: unique sub-graph structures given the number of nodes
 # return unique_graph
@@ -54,7 +55,7 @@ def find_unique_subgraph(graphs, num_node):
             sub_nodes = list(comb)
             sub_in_graph = graph.subgraph(sub_nodes)
 
-            if not unique_graph: # empty list 
+            if not unique_graph: # empty list
                 unique_graph.append(sub_in_graph)
                 print("new unique subgraph is in " + graph.graph['name'])
             else:
@@ -64,11 +65,11 @@ def find_unique_subgraph(graphs, num_node):
                         break
                     else:
                         index += 1
-                     
+
                 if(index == len(unique_graph)):
                     unique_graph.append(sub_in_graph)
                     print("new unique subgraph is in " + graph.graph['name'])
-                    
+
     print("There are {} unique subgraph in input graph".format(len(unique_graph)))
 
     return unique_graph
@@ -98,11 +99,11 @@ def contain_which_sub(graph):
 
         count = 0
         combination = list(combinations(graph.nodes(), len(sub.nodes())))
-        
+
         for comb in combination:
             sub_nodes = list(comb)
             sub_in_graph = graph.subgraph(sub_nodes)
-            
+
             if(nx.is_isomorphic(sub_in_graph, sub) == True):
                 print("Input subgraph is in the graph")
                 count += 1
@@ -125,13 +126,13 @@ def contain_which_sub(graph):
 ####################################################################
 def read_all_graphs(path):
     dot_files = os.listdir(path)
-    
+
     graphs = []
     for f in dot_files:
         graphs.append(nx.drawing.nx_pydot.read_dot(path+ f))
-        
+
     return graphs
-        
+
 
 
 ####################################################################
@@ -140,16 +141,16 @@ def read_all_graphs(path):
 # the other is the number of graphs without the subgraph
 ####################################################################
 def split_graphs_by(sub, graphs):
-    
+
     include     = 0
     not_include = 0
-    
+
     for g in graphs:
         if(is_subgraph(g, sub) == True):
             include += 1
         else:
             not_include += 1
-            
+
     return include, not_include
 
 def main():
@@ -169,7 +170,7 @@ def main():
     """Test2: find_unique_subgraphs
     graphs = classify_graph.classify_graph("../data/basic_blocks/json/")
 
-    find_unique_subgraph(graphs, 4) 
+    find_unique_subgraph(graphs, 4)
 
     """
 
@@ -178,7 +179,7 @@ def main():
     subs = read_subgraphs()
     split_graphs_by(subs[23], all_graphs)
     """
-    
+
 
 if __name__ == "__main__":
 	main()

@@ -21,8 +21,8 @@ def evaluate(model, test_df, embed, sub_num):
 	    session.run([tf.global_variables_initializer(), tf.tables_initializer()])
 	    test_embeddings = session.run(embed(test_sentences))
 	    print (test_embeddings.shape)
-	    
-	    
+
+
 	test_loss, test_acc = model.evaluate(test_embeddings, test_df[sub_num].values)
 
 	print('Test accuracy:', test_acc)
@@ -98,7 +98,7 @@ def main():
 	    session.run([tf.global_variables_initializer(), tf.tables_initializer()])
 	    train_embeddings = session.run(embed(train_sentences))
 	    print (train_embeddings.shape)
-  
+
 
 	model = Sequential([Dense(512, input_shape=(512,)),
 					    Activation('relu'),
@@ -119,7 +119,6 @@ def main():
 						])
 	"""
 
-	"""
 
 	model.compile(optimizer='adam',
             	  loss='sparse_categorical_crossentropy',
