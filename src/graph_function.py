@@ -1,4 +1,5 @@
-import pydotimport os
+import pydot
+import os
 import pydot
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -79,7 +80,7 @@ def find_unique_subgraph(graphs, num_node):
 def read_subgraphs():
     sub_graphs = []
     for id in range(27):
-        sub_graph = nx.drawing.nx_pydot.read_dot("../data/subgraphs/index" + str(id) + ".dot")
+        sub_graph = nx.drawing.nx_pydot.read_dot("../data/subgraphs/Index" + str(id) + ".dot")
         sub_graphs.append(sub_graph)
 
 
