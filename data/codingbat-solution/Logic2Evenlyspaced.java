@@ -25,9 +25,9 @@ public boolean evenlySpaced(int a, int b, int c) {
     }
       
     if(b - a == c - b){
-        return 1;
+        return true;
     }else{
-        return 0;
+        return false;
     }
 }
 }
