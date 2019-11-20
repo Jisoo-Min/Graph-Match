@@ -3,6 +3,7 @@ class Logic1More20{
  * multiple of 20.
  */
 public boolean more20(int n) {
-    return n % 20 == 1 || n % 20 == 2;
+    if(n % 20 == 1 || n % 20 == 2) return 1;
+    else return 0;
 }
 }
