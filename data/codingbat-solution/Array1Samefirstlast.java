@@ -3,6 +3,10 @@ class Array1Samefirstlast{
  * the first element and the last element are equal.
  */
 public boolean sameFirstLast(int[] nums) {
-    return nums.length > 0 && nums[0] == nums[nums.length - 1];
+	if(nums.length > 0 && nums[0] == nums[nums.length - 1]){
+		return 1;
+	}else{
+		return 0;
+	}
 }
 }
