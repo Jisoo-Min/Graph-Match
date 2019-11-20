@@ -4,9 +4,9 @@ class Array1Samefirstlast{
  */
 public boolean sameFirstLast(int[] nums) {
 	if(nums.length > 0 && nums[0] == nums[nums.length - 1]){
-		return 1;
+		return true;
 	}else{
-		return 0;
+		return false;
 	}
 }
 }
