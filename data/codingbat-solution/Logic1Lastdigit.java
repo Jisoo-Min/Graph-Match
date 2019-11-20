@@ -3,6 +3,7 @@ class Logic1Lastdigit{
  * rightmost digit. The ints are non-negative.
  */
 public boolean lastDigit(int a, int b, int c) {
-    return (a % 10 == b % 10) || (a % 10 == c % 10) || (b % 10 == c % 10);
+    if((a % 10 == b % 10) || (a % 10 == c % 10) || (b % 10 == c % 10)) return 1;
+    else return 0;
 }
 }
