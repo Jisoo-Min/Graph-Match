@@ -6,8 +6,8 @@ class Logic1Cigarparty{
  * values is successful, or false otherwise.
  */
 public boolean cigarParty(int cigars, boolean isWeekend) {
-   if((isWeekend && cigars >= 40) || (cigars >= 40 && cigars <= 60)) return 1;
-   else return 0;
+   if((isWeekend && cigars >= 40) || (cigars >= 40 && cigars <= 60)) return true;
+   else return false;
 
 }
 }
