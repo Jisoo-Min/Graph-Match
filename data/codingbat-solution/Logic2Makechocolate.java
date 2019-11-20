@@ -12,6 +12,12 @@ public int makeChocolate(int small, int big, int goal) {
     }else{
     	remainder = goal % 5;
     }
-    return remainder <= small ? remainder : -1;
+    
+    if(remainder <= small){
+        return remainder;
+    }else{
+        return -1;
+    }
+    
 }
 }
