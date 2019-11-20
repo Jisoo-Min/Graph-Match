@@ -21,6 +21,10 @@ public int[] copyEndy(int[] nums, int count) {
 }
 
 public boolean isEndy(int n) {
-    return 0 <= n && n <= 10 || 90 <= n && n <= 100;
+    if(0 <= n && n <= 10 || 90 <= n && n <= 100){
+        return 1;
+    }else{
+        return 0;
+    }
 }
 }
