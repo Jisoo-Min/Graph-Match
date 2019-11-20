@@ -5,8 +5,13 @@ class Logic2Makechocolate{
  * can't be done.
  */
 public int makeChocolate(int small, int big, int goal) {
-    int remainder = goal >= 5 * big ? goal - (5 * big) : goal % 5;
-    
+    int remainder;
+
+    if(goal >= 5 * big){
+    	remainder = goal - (5 * big);
+    }else{
+    	remainder = goal % 5;
+    }
     return remainder <= small ? remainder : -1;
 }
 }
