@@ -4,8 +4,13 @@ class Logic2Makebricks{
  * if it is possible to make the goal by choosing from the given bricks.
  */
 public boolean makeBricks(int small, int big, int goal) {
-    int remainder = goal >= (5 * big) ? goal - (5 * big) : goal % 5;
-    
+    int remainder;
+    if(goal >= (5 * big)){
+        remainder =  goal - (5 * big);
+    }else{
+        remainder = goal % 5;
+    }
+ 
     if(small >= remainder) return 1;
     else return 0;
 }
