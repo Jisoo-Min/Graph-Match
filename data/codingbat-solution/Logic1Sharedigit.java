@@ -8,6 +8,7 @@ public boolean shareDigit(int a, int b) {
     int bl = b / 10;
     int br = b % 10;
           
-    return al == bl || al == br || ar == bl || ar == br;
+    if(al == bl || al == br || ar == bl || ar == br) return 1;
+    else return 0;
 }
 }
