@@ -4,8 +4,14 @@ class Array1Maxend3{
  * that value. Return the changed array.
  */
 public int[] maxEnd3(int[] nums) {
-    int max = nums[0] > nums[2] ? nums[0] : nums[2];
-    
+	int max;
+
+	if(nums[0] > nums[2]){
+		max = nums[0];
+	}else{
+		max = nums[1];
+	}
+      
     nums[0] = max;
     nums[1] = max;
     nums[2] = max;
