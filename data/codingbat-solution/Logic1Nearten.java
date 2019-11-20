@@ -3,6 +3,7 @@ class Logic1Nearten{
  * multiple of 10.
  */
 public boolean nearTen(int num) {
-    return num % 10 <= 2 || num % 10 >= 8;
+    if(num % 10 <= 2 || num % 10 >= 8) return 1;
+    else return 0;
 }
 }
