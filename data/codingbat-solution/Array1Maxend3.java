@@ -11,11 +11,11 @@ public int[] maxEnd3(int[] nums) {
 	}else{
 		max = nums[1];
 	}
-      
-    nums[0] = max;
-    nums[1] = max;
-    nums[2] = max;
-            
+    
+    for(int i = 0; i<3; i++){
+    	nums[i] = max;
+    }
+
     return nums;
 }
 }
