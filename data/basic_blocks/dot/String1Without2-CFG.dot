@@ -1,6 +1,6 @@
 digraph result_test { 
 // graph-vertices
-  a1  [label="7-8:  String without2(String str)	if (str.length () >= 2 && str.substring(0, 2).equals(str.substring(str.length() - 2)))"]; 
+  a1  [label="7-8:  String without2(String str)	if (str.length () >= 2 &&  str.substring(0, 2).equals(str.substring(str.length() - 2)))"]; 
   2  [label="10:  return str.substring(2);"]; 
   a2  [label="0-12:  endif	return str;"]; 
 // graph-edges

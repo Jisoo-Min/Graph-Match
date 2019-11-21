@@ -2,7 +2,7 @@ digraph result_test {
 // graph-vertices
   a1  [label="7-8:  String endUp(String str)	if (str.length() < 3)"]; 
   2  [label="9:  return str.toUpperCase();"]; 
-  a2  [label="0-11:  endif	return str.substring(0, str.length() - 3) + str.substring(str.length() - 3).toUpperCase();"]; 
+  a2  [label="0-11:  endif	return str.substring(0, str.length() - 3) +  str.substring(str.length() - 3).toUpperCase();"]; 
 // graph-edges
   a1 -> 2  [label="True"]; 
   a1 -> a2  [label="False"]; 

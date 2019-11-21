@@ -1,9 +1,19 @@
 digraph result_test { 
 // graph-vertices
   a1  [label="7-8:  boolean inOrderEqual(int a, int b, int c, boolean equalOk)	if (equalOk)"]; 
-  2  [label="9:  return a <= b && b <= c;"]; 
-  a2  [label="0-11:  endif	return a < b && b < c;"]; 
+  2  [label="9:  if (a <= b && b <= c)"]; 
+  3  [label="9:  return true;"]; 
+  4  [label="0:  endif"]; 
+  a2  [label="0-11:  endif	if (a < b && b < c)"]; 
+  7  [label="11:  return true;"]; 
+  8  [label="0:  endif"]; 
+  9  [label="12:  return false;"]; 
 // graph-edges
   a1 -> 2  [label="True"]; 
+  2 -> 3  [label="True"]; 
+  2 -> 4  [label="False"]; 
+  4 -> a2;
   a1 -> a2  [label="False"]; 
+  a2 -> 7  [label="True"]; 
+  a2 -> 9  [label="False"]; 
 }

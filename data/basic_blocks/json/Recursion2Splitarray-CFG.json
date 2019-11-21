@@ -9,7 +9,7 @@
         {
             "id": "a2",
             "line": "12-14",
-            "label": "boolean splitArrayHelper(int start, int[] nums, int group1, int group2)\tif (start >= nums.length)"
+            "label": "boolean splitArrayHelper(int start, int[] nums, int group1,  int group2)\tif (start >= nums.length)"
         },
         {
             "id": 4,

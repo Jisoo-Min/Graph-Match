@@ -1,5 +1,10 @@
 digraph result_test { 
 // graph-vertices
-  a1  [label="6-7:  boolean commonEnd(int[] a, int[] b)	return a[0] == b[0] || a[a.length - 1] == b[b.length - 1];"]; 
+  a1  [label="6-7:  boolean commonEnd(int[] a, int[] b)	if (a[0] == b[0] || a[a.length - 1] == b[b.length - 1])"]; 
+  2  [label="8:  return true;"]; 
+  3  [label="0:  endif"]; 
+  4  [label="10:  return false;"]; 
 // graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> 4  [label="False"]; 
 }

@@ -6,7 +6,10 @@ digraph result_test {
   5  [label="10:  return b;"]; 
   a3  [label="0-12:  endif	if (b > 21)"]; 
   8  [label="13:  return a;"]; 
-  a4  [label="0-15:  endif	return a > b ? a : b;"]; 
+  a4  [label="0-15:  endif	if (a>b)"]; 
+  11  [label="16:  return a;"]; 
+  12  [label="0:  endif"]; 
+  13  [label="18:  return b;"]; 
 // graph-edges
   a1 -> 2  [label="True"]; 
   a1 -> a2  [label="False"]; 
@@ -14,4 +17,6 @@ digraph result_test {
   a2 -> a3  [label="False"]; 
   a3 -> 8  [label="True"]; 
   a3 -> a4  [label="False"]; 
+  a4 -> 11  [label="True"]; 
+  a4 -> 13  [label="False"]; 
 }

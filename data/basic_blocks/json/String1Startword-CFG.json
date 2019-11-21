@@ -4,7 +4,7 @@
         {
             "id": "a1",
             "line": "9-10",
-            "label": "String startWord(String str, String word)\tif (str.length() >= word.length() && str.substring(1, word.length()).equals(word.substring(1)))"
+            "label": "String startWord(String str, String word)\tif (str.length() >= word.length() &&  str.substring(1, word.length()).equals(word.substring(1)))"
         },
         {
             "id": 2,

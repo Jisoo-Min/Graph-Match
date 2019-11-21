@@ -14,7 +14,22 @@
         {
             "id": "a4",
             "line": "0-13",
-            "label": "endif\treturn distA < distB ? a : b;"
+            "label": "endif\tif (distA < distB)"
+        },
+        {
+            "id": 7,
+            "line": 14,
+            "label": "return a;"
+        },
+        {
+            "id": 8,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 9,
+            "line": 15,
+            "label": "return b;"
         }
     ],
     "edges": [
@@ -28,6 +43,18 @@
             "id": 4,
             "source": "a3",
             "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 6,
+            "source": "a4",
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": "a4",
+            "target": 9,
             "label": "False"
         }
     ]

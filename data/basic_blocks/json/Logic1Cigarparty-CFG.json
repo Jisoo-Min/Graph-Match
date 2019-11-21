@@ -4,17 +4,22 @@
         {
             "id": "a1",
             "line": "8-9",
-            "label": "boolean cigarParty(int cigars, boolean isWeekend)\tif (isWeekend)"
+            "label": "boolean cigarParty(int cigars, boolean isWeekend)\tif ((isWeekend && cigars >= 40) || (cigars >= 40 && cigars <= 60))"
         },
         {
             "id": 2,
-            "line": 10,
-            "label": "return 40 <= cigars;"
+            "line": 9,
+            "label": "return true;"
         },
         {
-            "id": "a2",
-            "line": "0-12",
-            "label": "endif\treturn 40 <= cigars && cigars <= 60;"
+            "id": 3,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 4,
+            "line": 10,
+            "label": "return false;"
         }
     ],
     "edges": [
@@ -27,7 +32,7 @@
         {
             "id": 2,
             "source": "a1",
-            "target": "a2",
+            "target": 4,
             "label": "False"
         }
     ]

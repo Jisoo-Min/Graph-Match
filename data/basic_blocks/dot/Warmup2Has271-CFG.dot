@@ -3,7 +3,7 @@ digraph result_test {
   a1  [label="7-8:  boolean has271(int[] nums)	int i = 0"]; 
   2  [label="8:  for (i < nums.length - 2)"]; 
   a2  [label="0-14:  endfor	return false;"]; 
-  5  [label="9:  if ((nums[i+1] == nums[i] + 5) && (Math.abs(nums[i+2] - (nums[i] - 1)) <= 2))"]; 
+  5  [label="9:  if ((nums[i+1] == nums[i] + 5) &&  (Math.abs(nums[i+2] - (nums[i] - 1)) <= 2))"]; 
   6  [label="11:  return true;"]; 
   a3  [label="0-8:  endif	i++"]; 
 // graph-edges

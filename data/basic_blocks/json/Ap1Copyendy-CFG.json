@@ -39,7 +39,22 @@
         {
             "id": 13,
             "line": 24,
-            "label": "return 0 <= n && n <= 10 || 90 <= n && n <= 100;"
+            "label": "if (0 <= n && n <= 10 || 90 <= n && n <= 100)"
+        },
+        {
+            "id": 14,
+            "line": 25,
+            "label": "return true;"
+        },
+        {
+            "id": 15,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 16,
+            "line": 27,
+            "label": "return false;"
         }
     ],
     "edges": [
@@ -90,6 +105,18 @@
             "source": 12,
             "target": 13,
             "label": ""
+        },
+        {
+            "id": 14,
+            "source": 13,
+            "target": 14,
+            "label": "True"
+        },
+        {
+            "id": 15,
+            "source": 13,
+            "target": 16,
+            "label": "False"
         }
     ]
 }

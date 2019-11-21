@@ -4,8 +4,75 @@
         {
             "id": "a2",
             "line": "7-8-10",
-            "label": "int makeChocolate(int small, int big, int goal)\tint remainder = goal >= 5 * big ? goal - (5 * big) : goal % 5\treturn remainder <= small ? remainder : -1;"
+            "label": "int makeChocolate(int small, int big, int goal)\tint remainder\tif (goal >= 5 * big)"
+        },
+        {
+            "id": 3,
+            "line": 11,
+            "label": "remainder = goal - (5 * big)"
+        },
+        {
+            "id": "a3",
+            "line": "0-16",
+            "label": "endif\tif (remainder <= small)"
+        },
+        {
+            "id": 5,
+            "line": 13,
+            "label": "remainder = goal % 5"
+        },
+        {
+            "id": 7,
+            "line": 17,
+            "label": "return remainder;"
+        },
+        {
+            "id": 8,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 9,
+            "line": 19,
+            "label": "return -1;"
         }
     ],
-    "edges": []
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a3",
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": "a3",
+            "target": 9,
+            "label": "False"
+        }
+    ]
 }

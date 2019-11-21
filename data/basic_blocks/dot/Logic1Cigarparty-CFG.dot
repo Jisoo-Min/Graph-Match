@@ -1,9 +1,10 @@
 digraph result_test { 
 // graph-vertices
-  a1  [label="8-9:  boolean cigarParty(int cigars, boolean isWeekend)	if (isWeekend)"]; 
-  2  [label="10:  return 40 <= cigars;"]; 
-  a2  [label="0-12:  endif	return 40 <= cigars && cigars <= 60;"]; 
+  a1  [label="8-9:  boolean cigarParty(int cigars, boolean isWeekend)	if ((isWeekend && cigars >= 40) || (cigars >= 40 && cigars <= 60))"]; 
+  2  [label="9:  return true;"]; 
+  3  [label="0:  endif"]; 
+  4  [label="10:  return false;"]; 
 // graph-edges
   a1 -> 2  [label="True"]; 
-  a1 -> a2  [label="False"]; 
+  a1 -> 4  [label="False"]; 
 }

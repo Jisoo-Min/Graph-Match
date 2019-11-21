@@ -19,7 +19,7 @@
         {
             "id": 6,
             "line": 10,
-            "label": "if (str.charAt(i) == str.charAt(i+1) && str.charAt(i) == str.charAt(i+2))"
+            "label": "if (str.charAt(i) == str.charAt(i+1) &&  str.charAt(i) == str.charAt(i+2))"
         },
         {
             "id": 7,

@@ -1,5 +1,10 @@
 digraph result_test { 
 // graph-vertices
-  a1  [label="5-6:  boolean nearTen(int num)	return num % 10 <= 2 || num % 10 >= 8;"]; 
+  a1  [label="5-6:  boolean nearTen(int num)	if (num % 10 <= 2 || num % 10 >= 8)"]; 
+  2  [label="6:  return true;"]; 
+  3  [label="0:  endif"]; 
+  4  [label="7:  return false;"]; 
 // graph-edges
+  a1 -> 2  [label="True"]; 
+  a1 -> 4  [label="False"]; 
 }

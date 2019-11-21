@@ -4,8 +4,36 @@
         {
             "id": "a1",
             "line": "5-6",
-            "label": "boolean lessBy10(int a, int b, int c)\treturn  Math.abs(a - b) >= 10 || Math.abs(a - c) >= 10 || Math.abs(b - c) >= 10;"
+            "label": "boolean lessBy10(int a, int b, int c)\tif (Math.abs(a - b) >= 10 || Math.abs(a - c) >= 10 ||  Math.abs(b - c) >= 10)"
+        },
+        {
+            "id": 2,
+            "line": 7,
+            "label": "return true;"
+        },
+        {
+            "id": 3,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 4,
+            "line": 8,
+            "label": "return false;"
         }
     ],
-    "edges": []
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": 4,
+            "label": "False"
+        }
+    ]
 }

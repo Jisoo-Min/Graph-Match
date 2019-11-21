@@ -34,7 +34,22 @@
         {
             "id": "a4",
             "line": "0-15",
-            "label": "endif\treturn a > b ? a : b;"
+            "label": "endif\tif (a>b)"
+        },
+        {
+            "id": 11,
+            "line": 16,
+            "label": "return a;"
+        },
+        {
+            "id": 12,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 13,
+            "line": 18,
+            "label": "return b;"
         }
     ],
     "edges": [
@@ -72,6 +87,18 @@
             "id": 8,
             "source": "a3",
             "target": "a4",
+            "label": "False"
+        },
+        {
+            "id": 10,
+            "source": "a4",
+            "target": 11,
+            "label": "True"
+        },
+        {
+            "id": 11,
+            "source": "a4",
+            "target": 13,
             "label": "False"
         }
     ]

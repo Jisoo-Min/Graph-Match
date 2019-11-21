@@ -3,9 +3,76 @@
     "nodes": [
         {
             "id": "a2",
-            "line": "6-7-9",
-            "label": "boolean makeBricks(int small, int big, int goal)\tint remainder = goal >= (5 * big) ? goal - (5 * big) : goal % 5\treturn small >= remainder;"
+            "line": "6-7-8",
+            "label": "boolean makeBricks(int small, int big, int goal)\tint remainder\tif (goal >= (5 * big))"
+        },
+        {
+            "id": 3,
+            "line": 9,
+            "label": "remainder =  goal - (5 * big)"
+        },
+        {
+            "id": "a3",
+            "line": "0-14",
+            "label": "endif\tif (small >= remainder)"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "remainder = goal % 5"
+        },
+        {
+            "id": 7,
+            "line": 14,
+            "label": "return true;"
+        },
+        {
+            "id": 8,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 9,
+            "line": 15,
+            "label": "return false;"
         }
     ],
-    "edges": []
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a3",
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a3",
+            "label": ""
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": "a3",
+            "target": 9,
+            "label": "False"
+        }
+    ]
 }

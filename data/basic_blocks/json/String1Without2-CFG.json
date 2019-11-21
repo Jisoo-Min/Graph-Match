@@ -4,7 +4,7 @@
         {
             "id": "a1",
             "line": "7-8",
-            "label": "String without2(String str)\tif (str.length () >= 2 && str.substring(0, 2).equals(str.substring(str.length() - 2)))"
+            "label": "String without2(String str)\tif (str.length () >= 2 &&  str.substring(0, 2).equals(str.substring(str.length() - 2)))"
         },
         {
             "id": 2,
