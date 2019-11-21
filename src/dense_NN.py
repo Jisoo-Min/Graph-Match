@@ -48,13 +48,24 @@ def evaluate(model, test_df, embed, sub_num):
 	print('| TN = {0} | FP = {1} | \n| FN = {2} | TP = {3} |'.format(correct[0], wrong[1], wrong[0], correct[1]))
 
 	TN = correct[0]; TP = correct[1]; FN = wrong[0]; FP = wrong[1];
-	precision = TP / (FP + TP)
-	recall = TP / (FN + TP)
-	print("precision = ", precision)
-	print("recall = ", recall)
-
-	f1_score = 2 * (precision * recall) / (precision + recall)
-	print("F1_score = ", f1_score)
+	try:
+		precision = TP / (FP + TP)
+		recall = TP / (FN + TP)
+		print("precision = ", precision)
+		print("recall = ", recall)
+	
+		if (precision + recall)==0 :
+			f1_score = 'Null'		
+		f1_score = 2 * (precision * recall) / (precision + recall)
+		print("F1_score = ", f1_score)
+	
+		result_pd = pd.DataFrame([[precision,recall,f1_score]])
+		result_pd.to_csv("NN_result.csv", mode = 'a',header= False)
+	except:
+		result_pd = pd.DataFrame([['Divided','By','Zero']])
+		result_pd.to_csv("NN_result.csv", mode = 'a', header = False)
+		
+		
 
 
 def main():
@@ -62,7 +73,6 @@ def main():
 	data = data.dropna()
 	data['Filename'] = (data['Category'].str.replace("-", "")).str.title() \
 						+ data['Filename'].str.title()
-
 
 
 	subs = gf.read_subgraphs()
@@ -107,7 +117,7 @@ def main():
 					    Dense(2),
 					    Activation('softmax'),
 						])
-	"""
+	
 
 	model = Sequential([Dense(512, input_shape=(512,)),
 					    Activation('relu'),
