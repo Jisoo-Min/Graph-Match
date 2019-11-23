@@ -4,8 +4,36 @@
         {
             "id": "a1",
             "line": "6-7",
-            "label": "boolean commonEnd(int[] a, int[] b)\treturn a[0] == b[0] || a[a.length - 1] == b[b.length - 1];"
+            "label": "boolean commonEnd(int[] a, int[] b)\tif (a[0] == b[0] || a[a.length - 1] == b[b.length - 1])"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "return true;"
+        },
+        {
+            "id": 3,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 4,
+            "line": 10,
+            "label": "return false;"
         }
     ],
-    "edges": []
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": 4,
+            "label": "False"
+        }
+    ]
 }

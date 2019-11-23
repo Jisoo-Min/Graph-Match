@@ -9,12 +9,37 @@
         {
             "id": 2,
             "line": 9,
-            "label": "return a <= b && b <= c;"
+            "label": "if (a <= b && b <= c)"
+        },
+        {
+            "id": 3,
+            "line": 9,
+            "label": "return true;"
+        },
+        {
+            "id": 4,
+            "line": 0,
+            "label": "endif"
         },
         {
             "id": "a2",
             "line": "0-11",
-            "label": "endif\treturn a < b && b < c;"
+            "label": "endif\tif (a < b && b < c)"
+        },
+        {
+            "id": 7,
+            "line": 11,
+            "label": "return true;"
+        },
+        {
+            "id": 8,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 9,
+            "line": 12,
+            "label": "return false;"
         }
     ],
     "edges": [
@@ -26,8 +51,38 @@
         },
         {
             "id": 2,
+            "source": 2,
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": 2,
+            "target": 4,
+            "label": "False"
+        },
+        {
+            "id": 4,
+            "source": 4,
+            "target": "a2",
+            "label": ""
+        },
+        {
+            "id": 5,
             "source": "a1",
             "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 7,
+            "source": "a2",
+            "target": 7,
+            "label": "True"
+        },
+        {
+            "id": 8,
+            "source": "a2",
+            "target": 9,
             "label": "False"
         }
     ]

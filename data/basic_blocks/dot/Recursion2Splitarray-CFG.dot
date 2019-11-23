@@ -1,7 +1,7 @@
 digraph result_test { 
 // graph-vertices
   a1  [label="8-9:  boolean splitArray(int[] nums)	return splitArrayHelper(0, nums, 0, 0);"]; 
-  a2  [label="12-14:  boolean splitArrayHelper(int start, int[] nums, int group1, int group2)	if (start >= nums.length)"]; 
+  a2  [label="12-14:  boolean splitArrayHelper(int start, int[] nums, int group1,  int group2)	if (start >= nums.length)"]; 
   4  [label="15:  return group1 == group2;"]; 
   a3  [label="0-17:  endif	if (splitArrayHelper(start+1, nums, group1 + nums[start], group2))"]; 
   7  [label="18:  return true;"]; 

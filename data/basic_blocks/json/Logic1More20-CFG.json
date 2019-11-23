@@ -4,8 +4,36 @@
         {
             "id": "a1",
             "line": "5-6",
-            "label": "boolean more20(int n)\treturn n % 20 == 1 || n % 20 == 2;"
+            "label": "boolean more20(int n)\tif (n % 20 == 1 || n % 20 == 2)"
+        },
+        {
+            "id": 2,
+            "line": 6,
+            "label": "return true;"
+        },
+        {
+            "id": 3,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 4,
+            "line": 7,
+            "label": "return false;"
         }
     ],
-    "edges": []
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": "a1",
+            "target": 4,
+            "label": "False"
+        }
+    ]
 }

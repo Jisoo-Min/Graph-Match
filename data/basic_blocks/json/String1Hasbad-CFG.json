@@ -19,7 +19,7 @@
         {
             "id": 5,
             "line": 12,
-            "label": "return str.substring(0, 3).equals('bad') || str.substring(1, 4).equals('bad');"
+            "label": "return str.substring(0, 3).equals('bad') ||  str.substring(1, 4).equals('bad');"
         },
         {
             "id": "a3",

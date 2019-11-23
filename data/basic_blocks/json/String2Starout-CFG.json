@@ -59,12 +59,12 @@
         {
             "id": "a8",
             "line": "0-34",
-            "label": "endfor\tif (str.charAt(str.length()-1) != '*' && str.charAt(str.length()-2) != '*')"
+            "label": "endfor\tif (str.charAt(str.length()-1) != '*' &&  str.charAt(str.length()-2) != '*')"
         },
         {
             "id": 20,
             "line": 27,
-            "label": "if (str.charAt(i-1)!='*' && str.charAt(i) != '*' && str.charAt(i+1) != '*')"
+            "label": "if (str.charAt(i-1)!='*' && str.charAt(i) != '*' &&  str.charAt(i+1) != '*')"
         },
         {
             "id": "a9",

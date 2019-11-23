@@ -19,7 +19,7 @@
         {
             "id": 6,
             "line": 12,
-            "label": "if (i < str.length() - 2 && str.charAt(i) == 'z' && str.charAt(i + 2) == 'p')"
+            "label": "if (i < str.length() - 2 && str.charAt(i) == 'z' &&  str.charAt(i + 2) == 'p')"
         },
         {
             "id": "a8",

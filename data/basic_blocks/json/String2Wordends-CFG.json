@@ -4,7 +4,7 @@
         {
             "id": "a3",
             "line": "7-8-9-11",
-            "label": "String wordEnds(String str, String word)\tStringBuffer result = new StringBuffer()\tint i = 0\tif (str.length() >= word.length() + 1 && str.substring(0, word.length()).equals(word))"
+            "label": "String wordEnds(String str, String word)\tStringBuffer result = new StringBuffer()\tint i = 0\tif (str.length() >= word.length() + 1 &&  str.substring(0, word.length()).equals(word))"
         },
         {
             "id": "a4",

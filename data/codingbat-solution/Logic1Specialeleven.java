@@ -4,7 +4,7 @@ class Logic1Specialeleven{
  * is special.
  */
 public boolean specialEleven(int n) {
-    if((n % 11) == 0 || (n % 11) == 1) return 1;
-    else return 0;
+    if((n % 11) == 0 || (n % 11) == 1) return true;
+    else return false;
 }
 }

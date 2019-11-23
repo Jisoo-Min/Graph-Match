@@ -14,7 +14,7 @@
         {
             "id": "a2",
             "line": "0-10",
-            "label": "endif\tif (str.length() >= 2 && (str.charAt(0) == 'g' && str.charAt(1) != 'g' || str.charAt(str.length()-1) == 'g' && str.charAt(str.length()-2) != 'g'))"
+            "label": "endif\tif (str.length() >= 2 && (str.charAt(0) == 'g' && str.charAt(1) != 'g' || str.charAt(str.length()-1) == 'g' &&  str.charAt(str.length()-2) != 'g'))"
         },
         {
             "id": 5,
@@ -39,7 +39,7 @@
         {
             "id": 11,
             "line": 17,
-            "label": "if (str.charAt(i) == 'g' && str.charAt(i-1) != 'g' && str.charAt(i+1) != 'g')"
+            "label": "if (str.charAt(i) == 'g' && str.charAt(i-1) != 'g' &&  str.charAt(i+1) != 'g')"
         },
         {
             "id": 12,

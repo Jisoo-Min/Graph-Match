@@ -19,7 +19,7 @@
         {
             "id": 5,
             "line": 9,
-            "label": "if ((nums[i+1] == nums[i] + 5) && (Math.abs(nums[i+2] - (nums[i] - 1)) <= 2))"
+            "label": "if ((nums[i+1] == nums[i] + 5) &&  (Math.abs(nums[i+2] - (nums[i] - 1)) <= 2))"
         },
         {
             "id": 6,

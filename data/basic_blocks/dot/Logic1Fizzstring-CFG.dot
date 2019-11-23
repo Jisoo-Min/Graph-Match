@@ -1,6 +1,6 @@
 digraph result_test { 
 // graph-vertices
-  a1  [label="6-7:  String fizzString(String str)	if (str.length() > 0 && str.charAt(0) == 'f' && str.charAt(str.length() - 1) == 'b')"]; 
+  a1  [label="6-7:  String fizzString(String str)	if (str.length() > 0 &&  str.charAt(0) == 'f' && str.charAt(str.length() - 1) == 'b')"]; 
   2  [label="9:  return 'FizzBuzz';"]; 
   a2  [label="0-11:  endif	if (str.length() > 0 && str.charAt(0) == 'f')"]; 
   5  [label="12:  return 'Fizz';"]; 

@@ -1,6 +1,6 @@
 digraph result_test { 
 // graph-vertices
-  a3  [label="7-8-9-11:  String wordEnds(String str, String word)	StringBuffer result = new StringBuffer()	int i = 0	if (str.length() >= word.length() + 1 && str.substring(0, word.length()).equals(word))"]; 
+  a3  [label="7-8-9-11:  String wordEnds(String str, String word)	StringBuffer result = new StringBuffer()	int i = 0	if (str.length() >= word.length() + 1 &&  str.substring(0, word.length()).equals(word))"]; 
   a4  [label="13-14:  i = word.length() - 1	result.append(str.charAt(i + 1))"]; 
   6  [label="0:  endif"]; 
   7  [label="17:  while (i < str.length() - word.length())"]; 

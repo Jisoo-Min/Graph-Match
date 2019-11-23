@@ -19,7 +19,7 @@
         {
             "id": 5,
             "line": 11,
-            "label": "if (i <= str.length() - word.length() && str.substring(i, i + word.length()).equals(word))"
+            "label": "if (i <= str.length() - word.length() &&  str.substring(i, i + word.length()).equals(word))"
         },
         {
             "id": "a4",

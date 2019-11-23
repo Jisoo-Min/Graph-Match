@@ -4,7 +4,7 @@
         {
             "id": "a1",
             "line": "6-7",
-            "label": "String fizzString(String str)\tif (str.length() > 0 && str.charAt(0) == 'f' && str.charAt(str.length() - 1) == 'b')"
+            "label": "String fizzString(String str)\tif (str.length() > 0 &&  str.charAt(0) == 'f' && str.charAt(str.length() - 1) == 'b')"
         },
         {
             "id": 2,

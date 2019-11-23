@@ -3,7 +3,7 @@ class Logic1Twoasone{
  * ints to get the third.
  */
 public boolean twoAsOne(int a, int b, int c) {
-    if(a + b == c || a + c == b || b + c == a) return 1;
-    else return 0;
+    if(a + b == c || a + c == b || b + c == a) return true;
+    else return false;
 }
 }

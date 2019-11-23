@@ -34,7 +34,22 @@
         {
             "id": "a11",
             "line": "0-27",
-            "label": "endif\treturn b - a == c - b;"
+            "label": "endif\tif (b - a == c - b)"
+        },
+        {
+            "id": 18,
+            "line": 28,
+            "label": "return true;"
+        },
+        {
+            "id": 19,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 20,
+            "line": 30,
+            "label": "return false;"
         }
     ],
     "edges": [
@@ -90,6 +105,18 @@
             "id": 18,
             "source": "a8",
             "target": "a11",
+            "label": "False"
+        },
+        {
+            "id": 20,
+            "source": "a11",
+            "target": 18,
+            "label": "True"
+        },
+        {
+            "id": 21,
+            "source": "a11",
+            "target": 20,
             "label": "False"
         }
     ]

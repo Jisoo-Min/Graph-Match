@@ -1,6 +1,6 @@
 digraph result_test { 
 // graph-vertices
-  a1  [label="9-10:  String startWord(String str, String word)	if (str.length() >= word.length() && str.substring(1, word.length()).equals(word.substring(1)))"]; 
+  a1  [label="9-10:  String startWord(String str, String word)	if (str.length() >= word.length() &&  str.substring(1, word.length()).equals(word.substring(1)))"]; 
   2  [label="12:  return str.substring(0, word.length());"]; 
   a2  [label="0-14:  endif	return '';"]; 
 // graph-edges

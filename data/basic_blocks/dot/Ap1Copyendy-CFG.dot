@@ -7,7 +7,10 @@ digraph result_test {
   a5  [label="15-16:  arr[index] = nums[i]	index++"]; 
   12  [label="23:  boolean isEndy(int n)"]; 
   a6  [label="0-13:  endif	i++"]; 
-  13  [label="24:  return 0 <= n && n <= 10 || 90 <= n && n <= 100;"]; 
+  13  [label="24:  if (0 <= n && n <= 10 || 90 <= n && n <= 100)"]; 
+  14  [label="25:  return true;"]; 
+  15  [label="0:  endif"]; 
+  16  [label="27:  return false;"]; 
 // graph-edges
   a3 -> 4;
   4 -> a4  [label="False"]; 
@@ -17,4 +20,6 @@ digraph result_test {
   7 -> a6  [label="False"]; 
   a6 -> 4;
   12 -> 13;
+  13 -> 14  [label="True"]; 
+  13 -> 16  [label="False"]; 
 }

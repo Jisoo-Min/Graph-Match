@@ -1,7 +1,23 @@
 digraph result_test { 
 // graph-vertices
-  a1  [label="7-8:  boolean closeFar(int a, int b, int c)	return (isClose(a, b) && isFar(a, b, c)) || (isClose(a, c) && isFar(a, c, b));"]; 
-  a2  [label="12-13:  boolean isClose(int a, int b)	return Math.abs(a - b) <= 1;"]; 
-  a3  [label="16-17:  boolean isFar(int a, int b, int c)	return Math.abs(a - c) >= 2 && Math.abs(b - c) >= 2;"]; 
+  a1  [label="7-8:  boolean closeFar(int a, int b, int c)	if (isClose(a, b) && isFar(a, b, c))"]; 
+  2  [label="8:  (isClose(a, c) && isFar(a, c, b))"]; 
+  a2  [label="0-9:  endif	return true;"]; 
+  5  [label="11:  return false;"]; 
+  a3  [label="15-16:  boolean isClose(int a, int b)	if (Math.abs(a - b) <= 1)"]; 
+  8  [label="17:  return true;"]; 
+  9  [label="0:  endif"]; 
+  10  [label="19:  return false;"]; 
+  a4  [label="23-24:  boolean isFar(int a, int b, int c)	if (Math.abs(a - c) >= 2 && Math.abs(b - c) >= 2)"]; 
+  13  [label="25:  return true;"]; 
+  14  [label="0:  endif"]; 
+  15  [label="27:  return false;"]; 
 // graph-edges
+  a1 -> 2  [label="True"]; 
+  2 -> a2;
+  a1 -> a2  [label="False"]; 
+  a3 -> 8  [label="True"]; 
+  a3 -> 10  [label="False"]; 
+  a4 -> 13  [label="True"]; 
+  a4 -> 15  [label="False"]; 
 }

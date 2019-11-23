@@ -14,7 +14,7 @@
         {
             "id": "a2",
             "line": "0-11",
-            "label": "endif\treturn str.substring(0, str.length() - 3) + str.substring(str.length() - 3).toUpperCase();"
+            "label": "endif\treturn str.substring(0, str.length() - 3) +  str.substring(str.length() - 3).toUpperCase();"
         }
     ],
     "edges": [

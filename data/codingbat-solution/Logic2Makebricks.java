@@ -11,7 +11,7 @@ public boolean makeBricks(int small, int big, int goal) {
         remainder = goal % 5;
     }
  
-    if(small >= remainder) return 1;
-    else return 0;
+    if(small >= remainder) return true;
+    else return false;
 }
 }

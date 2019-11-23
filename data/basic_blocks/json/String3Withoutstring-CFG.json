@@ -19,7 +19,7 @@
         {
             "id": 6,
             "line": 14,
-            "label": "if (base.substring(i, i + remove.length()).toLowerCase().equals(remove.toLowerCase()))"
+            "label": "if (base.substring(i, i + remove.length()).toLowerCase().equals( remove.toLowerCase()))"
         },
         {
             "id": 7,

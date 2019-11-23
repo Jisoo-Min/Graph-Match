@@ -1,7 +1,7 @@
 
 # PROGEX (Program Graph Extractor)
 
-version: 3.4.0 (October 2019)
+version: 3.4.5 (October 2019)
 
 PROGEX is a cross-platform tool for extracting well-known graphical program representations
 from software source code. PROGEX is written in Java, based on the ANTLR parser generator.

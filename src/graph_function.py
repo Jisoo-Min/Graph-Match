@@ -170,8 +170,8 @@ def main():
     """Test2: find_unique_subgraphs
     graphs = classify_graph.classify_graph("../data/basic_blocks/json/")
 
-    find_unique_subgraph(graphs, 4)
-
+    u_s = find_unique_subgraph(graphs, 4)
+    nx.draw(u_s[0])
     """
 
     """Test3: split_graphs_by_subgraph

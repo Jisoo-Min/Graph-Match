@@ -29,7 +29,7 @@
         {
             "id": 9,
             "line": 14,
-            "label": "if ((Character.toLowerCase(str.charAt(i)) == 'y' ||   Character.toLowerCase(str.charAt(i)) == 'z') && !Character.isLetter(str.charAt(i+1)))"
+            "label": "if ((Character.toLowerCase(str.charAt(i)) == 'y' ||  Character.toLowerCase(str.charAt(i)) == 'z') && !Character.isLetter(str.charAt(i+1)))"
         },
         {
             "id": 10,

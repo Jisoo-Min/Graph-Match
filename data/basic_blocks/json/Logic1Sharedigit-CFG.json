@@ -4,8 +4,36 @@
         {
             "id": "a5",
             "line": "5-6-7-8-9-11",
-            "label": "boolean shareDigit(int a, int b)\tint al = a / 10\tint ar = a % 10\tint bl = b / 10\tint br = b % 10\treturn al == bl || al == br || ar == bl || ar == br;"
+            "label": "boolean shareDigit(int a, int b)\tint al = a / 10\tint ar = a % 10\tint bl = b / 10\tint br = b % 10\tif (al == bl || al == br || ar == bl || ar == br)"
+        },
+        {
+            "id": 6,
+            "line": 11,
+            "label": "return true;"
+        },
+        {
+            "id": 7,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 8,
+            "line": 12,
+            "label": "return false;"
         }
     ],
-    "edges": []
+    "edges": [
+        {
+            "id": 5,
+            "source": "a5",
+            "target": 6,
+            "label": "True"
+        },
+        {
+            "id": 6,
+            "source": "a5",
+            "target": 8,
+            "label": "False"
+        }
+    ]
 }

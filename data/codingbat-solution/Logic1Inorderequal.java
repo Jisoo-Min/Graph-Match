@@ -6,9 +6,9 @@ class Logic1Inorderequal{
  */
 public boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
     if(equalOk)
-        if(a <= b && b <= c) return 1;
+        if(a <= b && b <= c) return true;
           
-    if(a < b && b < c) return 1;
-    else return 0;
+    if(a < b && b < c) return true;
+    else return false;
 }
 }

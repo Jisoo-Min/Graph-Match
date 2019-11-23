@@ -2,10 +2,50 @@
     "file": "Array1Maxend3-CFG.java",
     "nodes": [
         {
-            "id": "a5",
-            "line": "6-7-9-10-11-13",
-            "label": "int[] maxEnd3(int[] nums)\tint max = nums[0] > nums[2] ? nums[0] : nums[2]\tnums[0] = max\tnums[1] = max\tnums[2] = max\treturn nums;"
+            "id": "a2",
+            "line": "6-7-9",
+            "label": "int[] maxEnd3(int[] nums)\tint max\tif (nums[0] > nums[2])"
+        },
+        {
+            "id": 3,
+            "line": 10,
+            "label": "max = nums[0]"
+        },
+        {
+            "id": "a6",
+            "line": "0-15-16-17-20",
+            "label": "endif\tnums[0] = max\tnums[1] = max\tnums[2] = max\treturn nums;"
+        },
+        {
+            "id": 5,
+            "line": 12,
+            "label": "max = nums[1]"
         }
     ],
-    "edges": []
+    "edges": [
+        {
+            "id": 2,
+            "source": "a2",
+            "target": 3,
+            "label": "True"
+        },
+        {
+            "id": 3,
+            "source": 3,
+            "target": "a6",
+            "label": ""
+        },
+        {
+            "id": 4,
+            "source": "a2",
+            "target": 5,
+            "label": "False"
+        },
+        {
+            "id": 5,
+            "source": 5,
+            "target": "a6",
+            "label": ""
+        }
+    ]
 }

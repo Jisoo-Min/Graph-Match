@@ -4,18 +4,106 @@
         {
             "id": "a1",
             "line": "7-8",
-            "label": "boolean closeFar(int a, int b, int c)\treturn (isClose(a, b) && isFar(a, b, c)) || (isClose(a, c) && isFar(a, c, b));"
+            "label": "boolean closeFar(int a, int b, int c)\tif (isClose(a, b) && isFar(a, b, c))"
+        },
+        {
+            "id": 2,
+            "line": 8,
+            "label": "(isClose(a, c) && isFar(a, c, b))"
         },
         {
             "id": "a2",
-            "line": "12-13",
-            "label": "boolean isClose(int a, int b)\treturn Math.abs(a - b) <= 1;"
+            "line": "0-9",
+            "label": "endif\treturn true;"
+        },
+        {
+            "id": 5,
+            "line": 11,
+            "label": "return false;"
         },
         {
             "id": "a3",
-            "line": "16-17",
-            "label": "boolean isFar(int a, int b, int c)\treturn Math.abs(a - c) >= 2 && Math.abs(b - c) >= 2;"
+            "line": "15-16",
+            "label": "boolean isClose(int a, int b)\tif (Math.abs(a - b) <= 1)"
+        },
+        {
+            "id": 8,
+            "line": 17,
+            "label": "return true;"
+        },
+        {
+            "id": 9,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 10,
+            "line": 19,
+            "label": "return false;"
+        },
+        {
+            "id": "a4",
+            "line": "23-24",
+            "label": "boolean isFar(int a, int b, int c)\tif (Math.abs(a - c) >= 2 && Math.abs(b - c) >= 2)"
+        },
+        {
+            "id": 13,
+            "line": 25,
+            "label": "return true;"
+        },
+        {
+            "id": 14,
+            "line": 0,
+            "label": "endif"
+        },
+        {
+            "id": 15,
+            "line": 27,
+            "label": "return false;"
         }
     ],
-    "edges": []
+    "edges": [
+        {
+            "id": 1,
+            "source": "a1",
+            "target": 2,
+            "label": "True"
+        },
+        {
+            "id": 2,
+            "source": 2,
+            "target": "a2",
+            "label": ""
+        },
+        {
+            "id": 3,
+            "source": "a1",
+            "target": "a2",
+            "label": "False"
+        },
+        {
+            "id": 6,
+            "source": "a3",
+            "target": 8,
+            "label": "True"
+        },
+        {
+            "id": 7,
+            "source": "a3",
+            "target": 10,
+            "label": "False"
+        },
+        {
+            "id": 9,
+            "source": "a4",
+            "target": 13,
+            "label": "True"
+        },
+        {
+            "id": 10,
+            "source": "a4",
+            "target": 15,
+            "label": "False"
+        }
+    ]
 }

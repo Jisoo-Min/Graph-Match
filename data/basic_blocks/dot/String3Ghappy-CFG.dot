@@ -2,12 +2,12 @@ digraph result_test {
 // graph-vertices
   a1  [label="6-7:  boolean gHappy(String str)	if (str.length() == 1 && str.charAt(0) == 'g')"]; 
   2  [label="8:  return false;"]; 
-  a2  [label="0-10:  endif	if (str.length() >= 2 && (str.charAt(0) == 'g' && str.charAt(1) != 'g' || str.charAt(str.length()-1) == 'g' && str.charAt(str.length()-2) != 'g'))"]; 
+  a2  [label="0-10:  endif	if (str.length() >= 2 && (str.charAt(0) == 'g' && str.charAt(1) != 'g' || str.charAt(str.length()-1) == 'g' &&  str.charAt(str.length()-2) != 'g'))"]; 
   5  [label="14:  return false;"]; 
   a3  [label="0-16:  endif	int i = 1"]; 
   8  [label="16:  for (i <= str.length() - 2)"]; 
   a4  [label="0-22:  endfor	return true;"]; 
-  11  [label="17:  if (str.charAt(i) == 'g' && str.charAt(i-1) != 'g' && str.charAt(i+1) != 'g')"]; 
+  11  [label="17:  if (str.charAt(i) == 'g' && str.charAt(i-1) != 'g' &&  str.charAt(i+1) != 'g')"]; 
   12  [label="19:  return false;"]; 
   a5  [label="0-16:  endif	i++"]; 
 // graph-edges

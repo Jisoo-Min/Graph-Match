@@ -3,7 +3,7 @@ digraph result_test {
   a3  [label="6-7-8-10:  String zipZap(String str)	char[] arr = new char[str.length()]	int count = 0	int i = 0"]; 
   4  [label="11:  while (i < str.length())"]; 
   a4  [label="0-26:  endwhile	return new String(arr, 0, count);"]; 
-  6  [label="12:  if (i < str.length() - 2 && str.charAt(i) == 'z' && str.charAt(i + 2) == 'p')"]; 
+  6  [label="12:  if (i < str.length() - 2 && str.charAt(i) == 'z' &&  str.charAt(i + 2) == 'p')"]; 
   a8  [label="14-15-16-17-18:  arr[count] = 'z'	count++	arr[count] = 'p'	count++	i += 3"]; 
   12  [label="0:  endif"]; 
   a10  [label="20-21-22:  arr[count] = str.charAt(i)	count++	i++"]; 
