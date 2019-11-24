@@ -142,7 +142,7 @@ def make_basic_blocks(input_file, output_type):
 
 def json_writer(file_name, nodes, edges):
 
-	result_file = open('./basic_blocks/' + file_name[:-5] + ".json", "w+")
+	result_file = open('./basic_blocks/json/' + file_name[:-5] + ".json", "w+")
 	data = {
 		'file' : file_name[:-5] + ".java",
 		'nodes': nodes,
@@ -155,7 +155,7 @@ def json_writer(file_name, nodes, edges):
             
 def dot_writer(file_name, nodes, edges):
 
-    result_file = open("./basic_blocks/" + file_name[:-5] + ".dot", 'w+')
+    result_file = open("./basic_blocks/dot/" + file_name[:-5] + ".dot", 'w+')
     result_file.write("digraph " + "result_test { \n" +
                   "// graph-vertices\n")
     for n in nodes:
@@ -188,10 +188,20 @@ def dot_writer(file_name, nodes, edges):
 
 
 def main():
-	if not os.path.exists("basic_blocks"):
-		os.makedirs("basic_blocks")
 
-	make_basic_blocks(argv[1], argv[2])
+	input_file  = argv[1]
+	output_type = argv[2]
+
+	if(output_type == "json"):
+		if not os.path.exists("basic_blocks/json"):
+			os.makedirs("basic_blocks/json")
+	elif(output_type == "dot"):
+		if not os.path.exists("basic_blocks/dot"):
+			os.makedirs("basic_blocks/dot")
+
+
+
+	make_basic_blocks(input_file, output_type)
 
 
 
