@@ -3,6 +3,12 @@ class Warmup1Icyhot{
  * greater than 100.
  */
 public boolean icyHot(int temp1, int temp2) {
-    return (temp1 * temp2 < 0) && Math.abs(temp1 - temp2) >= 102;
+
+	if((temp1 * temp2 < 0) && Math.abs(temp1 - temp2) >= 102){
+		return true;
+	}else{
+		return false;
+	}
+    
 }
 }

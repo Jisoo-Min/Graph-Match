@@ -9,7 +9,11 @@ public boolean sum28(int[] nums) {
         if(nums[i] == 2)
             sum += nums[i];
     }
-                    
-    return sum == 8;
+       
+    if(sum == 8){
+    	return true;
+    }else{
+    	return false;
+    }
 }
 }

@@ -7,6 +7,10 @@ public boolean stringE(String str) {
         if(str.charAt(i) == 'e')
             num++;
     }
-    return 1 <= num && num <= 3;
+    if(1 <= num && num <= 3){
+    	return true;
+    }else{
+    	return false;
+    }
 }
 }

@@ -3,6 +3,10 @@ class Warmup1Starthi{
  * otherwise.
  */
 public boolean startHi(String str) {
-    return str.length() >= 2 && str.substring(0, 2).equals("hi");
+	if(str.length() >= 2 && str.substring(0, 2).equals("hi")){
+		return true;
+	}else{
+		return false;
+	}
 }
 }

@@ -13,7 +13,12 @@ public boolean double23(int[] nums) {
         if(nums[i] == 3)
             count3++;
     }
-                                      
-    return count2 == 2 || count3 == 2;
+         
+    if(count2 == 2 || count3 == 2){
+    	return true;
+    }else{
+    	return false;
+    }   
+  
 }
 }

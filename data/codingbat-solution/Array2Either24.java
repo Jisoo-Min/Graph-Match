@@ -13,7 +13,11 @@ public boolean either24(int[] nums) {
         if(nums[i] == 4 && nums[i+1] == 4)
             has44 = true;
     }
-                                      
-    return has22 != has44;
+    
+    if(has22 != has44){
+    	return true;
+    }else{
+    	return false;
+    }       
 }
 }

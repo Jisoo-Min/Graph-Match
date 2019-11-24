@@ -6,7 +6,13 @@ class Logic1Inorder{
 public boolean inOrder(int a, int b, int c, boolean bOk) {
     if(bOk)
         return c > b;
-        
-    return b > a && c > b;
+    
+
+    if(b > a && c > b){
+    	return true;
+    }else{
+    	return false;
+    }
+ 
 }
 }

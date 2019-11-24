@@ -15,7 +15,13 @@ public boolean haveThree(int[] nums) {
         if(nums[i] == 3)
             count++;
     }
-                                          
-    return count == 3;
+
+
+    if(count == 3){
+        return true;
+    }else{
+        return false;
+    }
+
 }
 }

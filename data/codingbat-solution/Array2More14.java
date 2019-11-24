@@ -13,7 +13,12 @@ public boolean more14(int[] nums) {
         if(nums[i] == 4)
             count4++;
     }
-                                      
-    return count1 > count4;
+           
+    if(count1 > count4){
+    	return true;
+    }else{
+    	return false;
+    }                           
+   
 }
 }

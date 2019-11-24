@@ -4,9 +4,19 @@ class Warmup1Posneg{
  * are negative.
  */
 public boolean posNeg(int a, int b, boolean negative) {
-    if(negative)
-        return a < 0 && b < 0;
-    else
-        return a * b < 0;
+    if(negative){
+    	if(a < 0 && b < 0){
+    		return true;
+    	}else{
+    		return false;
+    	}
+    }
+    else{
+    	if(a * b < 0){
+    		return true;
+    	}else{
+    		return false;
+    	}
+    }
 }
 }

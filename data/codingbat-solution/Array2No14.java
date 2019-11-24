@@ -12,7 +12,12 @@ public boolean no14(int[] nums) {
         if(nums[i] == 4)
             has4 = true;
     }
-                                    
-    return !has1 || !has4;
+
+    if(!has1 || !has4){
+    	return true;
+    }else{
+    	return false;
+    }
+
 }
 }

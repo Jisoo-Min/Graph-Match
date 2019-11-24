@@ -3,6 +3,11 @@ class Warmup1Mixstart{
  * anything, so "pix", "9ix" .. all count.
  */
 public boolean mixStart(String str) {
-    return str.length() >= 3 && str.substring(1, 3).equals("ix");
+	if(str.length() >= 3 && str.substring(1, 3).equals("ix")){
+		return true;
+	}else{
+		return false;
+	}
+    
 }
 }

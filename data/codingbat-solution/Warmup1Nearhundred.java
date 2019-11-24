@@ -3,6 +3,11 @@ class Warmup1Nearhundred{
  * Math.abs(num) computes the absolute value of a number.
  */
 public boolean nearHundred(int n) {
-    return Math.abs(n - 100) <= 10 || Math.abs(n - 200) <= 10;
+	if(Math.abs(n - 100) <= 10 || Math.abs(n - 200) <= 10){
+		return true;
+	}else{
+		return false;
+	}
+    
 }
 }

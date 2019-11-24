@@ -4,6 +4,11 @@ class Warmup1Parrottrouble{
  * hour is before 7 or after 20. Return true if we are in trouble.
  */
 public boolean parrotTrouble(boolean talking, int hour) {
-    return talking && (hour < 7 || hour > 20);
+	if(talking && (hour < 7 || hour > 20)){
+		return true;
+	}else{
+		return false
+	}
+    
 }
 }
