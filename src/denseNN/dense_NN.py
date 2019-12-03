@@ -53,23 +53,23 @@ def evaluate(model, test_df, embed, sub_num):
 		recall = TP / (FN + TP)
 		print("precision = ", precision)
 		print("recall = ", recall)
-	
+
 		if (precision + recall)==0 :
-			f1_score = 'Null'		
+			f1_score = 'Null'
 		f1_score = 2 * (precision * recall) / (precision + recall)
 		print("F1_score = ", f1_score)
-	
+
 		result_pd = pd.DataFrame([[precision,recall,f1_score]])
 		result_pd.to_csv("NN_result.csv", mode = 'a',header= False)
 	except:
 		result_pd = pd.DataFrame([['Divided','By','Zero']])
 		result_pd.to_csv("NN_result.csv", mode = 'a', header = False)
-		
-		
+
+
 
 
 def main():
-	data = pd.read_csv("../data/data.csv")
+	data = pd.read_csv("../../data/data.csv")
 	data = data.dropna()
 	data['Filename'] = (data['Category'].str.replace("-", "")).str.title() \
 						+ data['Filename'].str.title()
@@ -82,7 +82,7 @@ def main():
 
 	for i in data['Quesition_number'].values:
 	    filename = data.loc[i]['Filename']
-	    big_graph = nx.drawing.nx_pydot.read_dot("../data/basic_blocks/dot/" + filename + "-CFG.dot")
+	    big_graph = nx.drawing.nx_pydot.read_dot("../../data/basic_blocks/dot/" + filename + "-CFG.dot")
 	    data.loc[i, sub_num] = gf.is_subgraph(big_graph, sub)
 
 
@@ -117,7 +117,7 @@ def main():
 					    Dense(2),
 					    Activation('softmax'),
 						])
-	
+
 
 	model = Sequential([Dense(512, input_shape=(512,)),
 					    Activation('relu'),
@@ -127,7 +127,7 @@ def main():
 					    Dense(2),
 					    Activation('softmax'),
 						])
-	"""
+
 
 
 	model.compile(optimizer='adam',
