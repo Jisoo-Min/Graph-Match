@@ -48,21 +48,31 @@ def evaluate(model, test_df, embed, sub_num):
 	print('| TN = {0} | FP = {1} | \n| FN = {2} | TP = {3} |'.format(correct[0], wrong[1], wrong[0], correct[1]))
 
 	TN = correct[0]; TP = correct[1]; FN = wrong[0]; FP = wrong[1];
+	result_pd =[[TN,TP,FN,FP]]
+
 	try:
-		precision = TP / (FP + TP)
-		recall = TP / (FN + TP)
-		print("precision = ", precision)
-		print("recall = ", recall)
+		if FP + TP == 0 :
+			precision = 'Null'
+		else:
+			precision = TP / (FP + TP)
+		if FN + TP == 0 :
+			recall = 'Null'
+		else:
+			recall = TP / (FN + TP)
 
-		if (precision + recall)==0 :
+		if precision=='Null' or recall=='Null' or (precision + recall)==0:
 			f1_score = 'Null'
-		f1_score = 2 * (precision * recall) / (precision + recall)
-		print("F1_score = ", f1_score)
-
-		result_pd = pd.DataFrame([[precision,recall,f1_score]])
+		else:
+			f1_score = 2 * (precision * recall) / (precision + recall)
+		result_pd[0].append(precision)
+		result_pd[0].append(recall)
+		result_pd[0].append(f1_score)
+		result_pd =pd.DataFrame(result_pd)
 		result_pd.to_csv("NN_result.csv", mode = 'a',header= False)
-	except:
-		result_pd = pd.DataFrame([['Divided','By','Zero']])
+	except Exception as e:
+		print(e)
+		result_pd[0].append([['Error Occured']])
+		result_pd = pd.DataFrame(result_pd)
 		result_pd.to_csv("NN_result.csv", mode = 'a', header = False)
 
 
